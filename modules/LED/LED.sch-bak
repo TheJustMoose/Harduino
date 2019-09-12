@@ -1,0 +1,615 @@
+EESchema Schematic File Version 4
+LIBS:LED-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D791BF4
+P 7500 2500
+F 0 "H1" H 7600 2546 50  0000 L CNN
+F 1 "MountingHole" H 7600 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7500 2500 50  0001 C CNN
+F 3 "~" H 7500 2500 50  0001 C CNN
+	1    7500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D793188
+P 7500 3000
+F 0 "H2" H 7600 3046 50  0000 L CNN
+F 1 "MountingHole" H 7600 2955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7500 3000 50  0001 C CNN
+F 3 "~" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D793224
+P 7500 3500
+F 0 "H3" H 7600 3546 50  0000 L CNN
+F 1 "MountingHole" H 7600 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7500 3500 50  0001 C CNN
+F 3 "~" H 7500 3500 50  0001 C CNN
+	1    7500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D7932CC
+P 7500 4000
+F 0 "H4" H 7600 4046 50  0000 L CNN
+F 1 "MountingHole" H 7600 3955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7500 4000 50  0001 C CNN
+F 3 "~" H 7500 4000 50  0001 C CNN
+	1    7500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5D793457
+P 1025 2500
+F 0 "J1" H 975 2550 50  0000 C CNN
+F 1 "2" H 1275 2550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2500 50  0001 C CNN
+F 3 "~" H 1025 2500 50  0001 C CNN
+	1    1025 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5D794940
+P 1025 2650
+F 0 "J2" H 975 2700 50  0000 C CNN
+F 1 "3" H 1275 2700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2650 50  0001 C CNN
+F 3 "~" H 1025 2650 50  0001 C CNN
+	1    1025 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5D794B32
+P 1025 2800
+F 0 "J3" H 975 2850 50  0000 C CNN
+F 1 "4" H 1275 2850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2800 50  0001 C CNN
+F 3 "~" H 1025 2800 50  0001 C CNN
+	1    1025 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5D794C66
+P 1025 2950
+F 0 "J4" H 975 3000 50  0000 C CNN
+F 1 "5" H 1275 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2950 50  0001 C CNN
+F 3 "~" H 1025 2950 50  0001 C CNN
+	1    1025 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5D794EF4
+P 1025 3100
+F 0 "J5" H 975 3150 50  0000 C CNN
+F 1 "6" H 1275 3150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3100 50  0001 C CNN
+F 3 "~" H 1025 3100 50  0001 C CNN
+	1    1025 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J6
+U 1 1 5D795168
+P 1025 3250
+F 0 "J6" H 975 3300 50  0000 C CNN
+F 1 "7" H 1275 3300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3250 50  0001 C CNN
+F 3 "~" H 1025 3250 50  0001 C CNN
+	1    1025 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 5D795340
+P 1025 3400
+F 0 "J7" H 975 3450 50  0000 C CNN
+F 1 "8" H 1275 3450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3400 50  0001 C CNN
+F 3 "~" H 1025 3400 50  0001 C CNN
+	1    1025 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J8
+U 1 1 5D7955DE
+P 1025 3550
+F 0 "J8" H 975 3600 50  0000 C CNN
+F 1 "9" H 1275 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3550 50  0001 C CNN
+F 3 "~" H 1025 3550 50  0001 C CNN
+	1    1025 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J9
+U 1 1 5D7957DA
+P 1025 3700
+F 0 "J9" H 975 3750 50  0000 C CNN
+F 1 "10" H 1275 3750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3700 50  0001 C CNN
+F 3 "~" H 1025 3700 50  0001 C CNN
+	1    1025 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J10
+U 1 1 5D795810
+P 1025 3850
+F 0 "J10" H 975 3900 50  0000 C CNN
+F 1 "11" H 1275 3900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3850 50  0001 C CNN
+F 3 "~" H 1025 3850 50  0001 C CNN
+	1    1025 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J11
+U 1 1 5D7959D6
+P 1025 4000
+F 0 "J11" H 975 4050 50  0000 C CNN
+F 1 "12" H 1275 4050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 4000 50  0001 C CNN
+F 3 "~" H 1025 4000 50  0001 C CNN
+	1    1025 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J13
+U 1 1 5D795BCF
+P 6950 2500
+F 0 "J13" H 6900 2550 50  0000 C CNN
+F 1 "A0" H 7200 2550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 2500 50  0001 C CNN
+F 3 "~" H 6950 2500 50  0001 C CNN
+	1    6950 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J14
+U 1 1 5D7961B8
+P 6950 2650
+F 0 "J14" H 6900 2700 50  0000 C CNN
+F 1 "A1" H 7200 2700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 2650 50  0001 C CNN
+F 3 "~" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J15
+U 1 1 5D7963EC
+P 6950 2800
+F 0 "J15" H 6900 2850 50  0000 C CNN
+F 1 "A2" H 7200 2850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 2800 50  0001 C CNN
+F 3 "~" H 6950 2800 50  0001 C CNN
+	1    6950 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J16
+U 1 1 5D7965E2
+P 6950 2950
+F 0 "J16" H 6900 3000 50  0000 C CNN
+F 1 "A3" H 7200 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 2950 50  0001 C CNN
+F 3 "~" H 6950 2950 50  0001 C CNN
+	1    6950 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J17
+U 1 1 5D796826
+P 6950 3100
+F 0 "J17" H 6900 3150 50  0000 C CNN
+F 1 "A4" H 7200 3150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 3100 50  0001 C CNN
+F 3 "~" H 6950 3100 50  0001 C CNN
+	1    6950 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J18
+U 1 1 5D796A8E
+P 6950 3250
+F 0 "J18" H 6900 3300 50  0000 C CNN
+F 1 "A5" H 7200 3300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 3250 50  0001 C CNN
+F 3 "~" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J19
+U 1 1 5D796E8E
+P 6950 3550
+F 0 "J19" H 6900 3600 50  0000 C CNN
+F 1 "Vcc" H 7200 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 3550 50  0001 C CNN
+F 3 "~" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J20
+U 1 1 5D796F9E
+P 6950 3700
+F 0 "J20" H 6900 3750 50  0000 C CNN
+F 1 "Gnd" H 7200 3750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6950 3700 50  0001 C CNN
+F 3 "~" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J12
+U 1 1 5D79744D
+P 1025 4150
+F 0 "J12" H 975 4200 50  0000 C CNN
+F 1 "13" H 1275 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 4150 50  0001 C CNN
+F 3 "~" H 1025 4150 50  0001 C CNN
+	1    1025 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx_IEEE:4511 U?
+U 1 1 5D7A9916
+P 2600 4450
+F 0 "U?" H 2600 5016 50  0000 C CNN
+F 1 "4511" H 2600 4925 50  0000 C CNN
+F 2 "" H 2600 4450 50  0001 C CNN
+F 3 "" H 2600 4450 50  0001 C CNN
+	1    2600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:74LS139 U?
+U 1 1 5D7AA7E3
+P 3350 2800
+F 0 "U?" H 3350 3416 50  0000 C CNN
+F 1 "74LS139" H 3350 3325 50  0000 C CNN
+F 2 "" H 3350 2800 50  0001 C CNN
+F 3 "" H 3350 2800 50  0001 C CNN
+	1    3350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5D7AB237
+P 5100 4100
+F 0 "Q?" V 5050 4250 50  0000 C CNN
+F 1 "IRLML6402" V 5000 3900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 4025 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 5100 4100 50  0001 L CNN
+	1    5100 4100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5D7ABA31
+P 5100 3650
+F 0 "Q?" V 5050 3750 50  0000 L CNN
+F 1 "IRLML6402" V 5000 3250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 3575 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 5100 3650 50  0001 L CNN
+	1    5100 3650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5D7AC710
+P 5100 5000
+F 0 "Q?" V 5100 5200 50  0000 C CNN
+F 1 "IRLML6402" V 5000 4800 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 4925 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 5100 5000 50  0001 L CNN
+	1    5100 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5D7AD44A
+P 5100 4550
+F 0 "Q?" V 5100 4750 50  0000 C CNN
+F 1 "IRLML6402" V 5000 4350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 4475 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 5100 4550 50  0001 L CNN
+	1    5100 4550
+	0    -1   1    0   
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 5D7B111F
+P 4600 2200
+F 0 "D?" V 4650 2350 50  0000 R CNN
+F 1 "1N4148W" V 4500 2350 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4600 2025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4600 2200 50  0001 C CNN
+	1    4600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 5D7B1F06
+P 4300 2200
+F 0 "D?" V 4350 2350 50  0000 R CNN
+F 1 "1N4148W" V 4200 2400 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 4300 2025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4300 2200 50  0001 C CNN
+	1    4300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D?
+U 1 1 5D7B2356
+P 3950 2200
+F 0 "D?" V 4000 2350 50  0000 R CNN
+F 1 "1N4148W" V 3850 2400 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3950 2025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 3950 2200 50  0001 C CNN
+	1    3950 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CommonLibrary:7seg-4dig-0.4inch L?
+U 1 1 5D7B3B0A
+P 4150 4050
+F 0 "L?" H 4150 4215 50  0000 C CNN
+F 1 "7seg-4dig-0.4inch" H 4150 4124 50  0000 C CNN
+F 2 "" H 4175 4675 50  0001 C CNN
+F 3 "" H 4175 4675 50  0001 C CNN
+	1    4150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7AE2D8
+P 3450 4150
+F 0 "R?" V 3400 4000 50  0000 C CNN
+F 1 "1k" V 3450 4150 50  0000 C CNN
+F 2 "" V 3380 4150 50  0001 C CNN
+F 3 "~" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BBA15
+P 3450 4250
+F 0 "R?" V 3400 4100 50  0000 C CNN
+F 1 "1k" V 3450 4250 50  0000 C CNN
+F 2 "" V 3380 4250 50  0001 C CNN
+F 3 "~" H 3450 4250 50  0001 C CNN
+	1    3450 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BBE4D
+P 3450 4350
+F 0 "R?" V 3400 4200 50  0000 C CNN
+F 1 "1k" V 3450 4350 50  0000 C CNN
+F 2 "" V 3380 4350 50  0001 C CNN
+F 3 "~" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BC02D
+P 3450 4450
+F 0 "R?" V 3400 4300 50  0000 C CNN
+F 1 "1k" V 3450 4450 50  0000 C CNN
+F 2 "" V 3380 4450 50  0001 C CNN
+F 3 "~" H 3450 4450 50  0001 C CNN
+	1    3450 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BC2A1
+P 3450 4550
+F 0 "R?" V 3400 4400 50  0000 C CNN
+F 1 "1k" V 3450 4550 50  0000 C CNN
+F 2 "" V 3380 4550 50  0001 C CNN
+F 3 "~" H 3450 4550 50  0001 C CNN
+	1    3450 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BC4AC
+P 3450 4650
+F 0 "R?" V 3400 4500 50  0000 C CNN
+F 1 "1k" V 3450 4650 50  0000 C CNN
+F 2 "" V 3380 4650 50  0001 C CNN
+F 3 "~" H 3450 4650 50  0001 C CNN
+	1    3450 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7BC68C
+P 3450 4750
+F 0 "R?" V 3400 4600 50  0000 C CNN
+F 1 "1k" V 3450 4750 50  0000 C CNN
+F 2 "" V 3380 4750 50  0001 C CNN
+F 3 "~" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 4150 3300 4150
+Wire Wire Line
+	3150 4250 3300 4250
+Wire Wire Line
+	3150 4350 3300 4350
+Wire Wire Line
+	3150 4450 3300 4450
+Wire Wire Line
+	3150 4550 3300 4550
+Wire Wire Line
+	3150 4650 3300 4650
+Wire Wire Line
+	3150 4750 3300 4750
+Wire Wire Line
+	3600 4150 3750 4150
+Wire Wire Line
+	3600 4250 3750 4250
+Wire Wire Line
+	3600 4350 3750 4350
+Wire Wire Line
+	3600 4450 3750 4450
+Wire Wire Line
+	3600 4550 3750 4550
+Wire Wire Line
+	3600 4650 3750 4650
+Wire Wire Line
+	3600 4750 3750 4750
+$Comp
+L Device:R R?
+U 1 1 5D7C402B
+P 4950 3050
+F 0 "R?" V 4900 2900 50  0000 C CNN
+F 1 "100" V 4950 3050 50  0000 C CNN
+F 2 "" V 4880 3050 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+	1    4950 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7C4561
+P 4950 2900
+F 0 "R?" V 4900 2750 50  0000 C CNN
+F 1 "100" V 4950 2900 50  0000 C CNN
+F 2 "" V 4880 2900 50  0001 C CNN
+F 3 "~" H 4950 2900 50  0001 C CNN
+	1    4950 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7C4753
+P 4950 2700
+F 0 "R?" V 4900 2550 50  0000 C CNN
+F 1 "100" V 4950 2700 50  0000 C CNN
+F 2 "" V 4880 2700 50  0001 C CNN
+F 3 "~" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7C4A05
+P 4950 2550
+F 0 "R?" V 4900 2400 50  0000 C CNN
+F 1 "100" V 4950 2550 50  0000 C CNN
+F 2 "" V 4880 2550 50  0001 C CNN
+F 3 "~" H 4950 2550 50  0001 C CNN
+	1    4950 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3050 5100 3450
+Wire Wire Line
+	5100 2900 5450 2900
+Wire Wire Line
+	5450 2900 5450 3900
+Wire Wire Line
+	5450 3900 5100 3900
+Wire Wire Line
+	5100 2700 5550 2700
+Wire Wire Line
+	5550 2700 5550 4350
+Wire Wire Line
+	5550 4350 5100 4350
+Wire Wire Line
+	5100 2550 5650 2550
+Wire Wire Line
+	5650 2550 5650 4800
+Wire Wire Line
+	5650 4800 5100 4800
+Wire Wire Line
+	4550 4200 4600 4200
+Wire Wire Line
+	4600 4200 4600 3750
+Wire Wire Line
+	4600 3750 4900 3750
+Wire Wire Line
+	4550 4300 4650 4300
+Wire Wire Line
+	4650 4300 4650 4200
+Wire Wire Line
+	4650 4200 4900 4200
+Wire Wire Line
+	4550 4400 4650 4400
+Wire Wire Line
+	4650 4400 4650 4650
+Wire Wire Line
+	4650 4650 4900 4650
+Wire Wire Line
+	4550 4500 4600 4500
+Wire Wire Line
+	4600 4500 4600 5100
+Wire Wire Line
+	4600 5100 4900 5100
+Wire Wire Line
+	5300 3750 5300 4200
+Wire Wire Line
+	5300 4200 5300 4650
+Connection ~ 5300 4200
+Wire Wire Line
+	5300 4650 5300 5100
+Connection ~ 5300 4650
+Wire Wire Line
+	3900 2550 3950 2550
+Wire Wire Line
+	3900 2700 4300 2700
+Wire Wire Line
+	3900 2900 4600 2900
+Wire Wire Line
+	3900 3050 4800 3050
+Wire Wire Line
+	3950 2350 3950 2550
+Connection ~ 3950 2550
+Wire Wire Line
+	3950 2550 4800 2550
+Wire Wire Line
+	4300 2350 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	4300 2700 4800 2700
+Wire Wire Line
+	4600 2350 4600 2900
+Connection ~ 4600 2900
+Wire Wire Line
+	4600 2900 4800 2900
+$EndSCHEMATC

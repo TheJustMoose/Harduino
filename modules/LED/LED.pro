@@ -1,4 +1,4 @@
-update=11.09.2019 19:23:11
+update=13.09.2019 8:56:06
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Harduino.net
+LastNetListRead=LED.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -233,7 +233,7 @@ Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
-Enabled=1
+Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default

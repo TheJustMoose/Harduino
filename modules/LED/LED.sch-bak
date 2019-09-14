@@ -345,17 +345,6 @@ F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4148W D3
-U 1 1 5D7B111F
-P 4600 2200
-F 0 "D3" V 4650 2350 50  0000 R CNN
-F 1 "1N4148W" V 4500 2350 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 4600 2025 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4600 2200 50  0001 C CNN
-	1    4600 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Diode:1N4148W D2
 U 1 1 5D7B1F06
 P 4300 2200
@@ -594,8 +583,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 2700 4300 2700
 Wire Wire Line
-	3900 2900 4600 2900
-Wire Wire Line
 	3900 3050 4800 3050
 Wire Wire Line
 	3950 2350 3950 2550
@@ -607,11 +594,6 @@ Wire Wire Line
 Connection ~ 4300 2700
 Wire Wire Line
 	4300 2700 4800 2700
-Wire Wire Line
-	4600 2350 4600 2900
-Connection ~ 4600 2900
-Wire Wire Line
-	4600 2900 4800 2900
 $Comp
 L Device:R R12
 U 1 1 5D806B1E
@@ -637,12 +619,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5D811B8F
-P 7600 1675
-F 0 "#PWR0102" H 7600 1425 50  0001 C CNN
-F 1 "GND" H 7605 1502 50  0000 C CNN
-F 2 "" H 7600 1675 50  0001 C CNN
-F 3 "" H 7600 1675 50  0001 C CNN
-	1    7600 1675
+P 7600 1775
+F 0 "#PWR0102" H 7600 1525 50  0001 C CNN
+F 1 "GND" H 7605 1602 50  0000 C CNN
+F 2 "" H 7600 1775 50  0001 C CNN
+F 3 "" H 7600 1775 50  0001 C CNN
+	1    7600 1775
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -667,19 +649,6 @@ F 3 "" H 4800 1750 50  0001 C CNN
 	1    4800 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L CommonLibrary:6x6-tact-btn D6
-U 1 1 5D7B572A
-P 4800 1875
-F 0 "D6" H 4550 1975 50  0000 C CNN
-F 1 "6x6-tact-btn" H 5150 1975 50  0000 C CNN
-F 2 "CommonLibrary:6x6-tact-btn" H 4800 1975 50  0001 C CNN
-F 3 "" H 4800 1975 50  0001 C CNN
-	1    4800 1875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 2050 4600 1875
 Wire Wire Line
 	4600 1650 4300 1650
 Wire Wire Line
@@ -692,8 +661,6 @@ Wire Wire Line
 	5000 1425 5250 1425
 Wire Wire Line
 	5000 1650 5250 1650
-Wire Wire Line
-	5000 1875 5250 1875
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5D7D1D8C
@@ -732,8 +699,6 @@ Wire Wire Line
 Connection ~ 5250 1650
 Wire Wire Line
 	5250 1650 5400 1650
-Wire Wire Line
-	5250 1875 5250 1650
 $Comp
 L power:GND #PWR02
 U 1 1 5D7C0B09
@@ -787,8 +752,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 3700 6750 3700
 Wire Wire Line
-	2000 2500 2000 1000
-Wire Wire Line
 	2000 1000 5250 1000
 Wire Wire Line
 	5250 1000 5250 1425
@@ -796,84 +759,152 @@ Connection ~ 5250 1425
 Wire Wire Line
 	5250 1425 5250 1650
 Wire Wire Line
-	1200 2500 1225 2500
-Connection ~ 1225 2500
-Wire Wire Line
-	1225 2500 2000 2500
-Wire Wire Line
 	1750 4350 2050 4350
 Wire Wire Line
 	2050 4450 1800 4450
 Wire Wire Line
-	1800 4450 1800 3850
-Wire Wire Line
-	1200 3550 1225 3550
-Wire Wire Line
-	1850 3550 1850 4650
-Wire Wire Line
 	1850 4650 2050 4650
-Connection ~ 1225 3550
-Wire Wire Line
-	1225 3550 1850 3550
-Wire Wire Line
-	1200 3400 1225 3400
-Wire Wire Line
-	1900 3400 1900 4550
 Wire Wire Line
 	1900 4550 2050 4550
-Connection ~ 1225 3400
-Wire Wire Line
-	1225 3400 1900 3400
-Wire Wire Line
-	1200 3250 1225 3250
-Wire Wire Line
-	1700 4000 1700 4250
 Wire Wire Line
 	1200 4000 1225 4000
 Wire Wire Line
 	1700 4250 2050 4250
-Connection ~ 1225 4000
-Wire Wire Line
-	1225 4000 1700 4000
-Wire Wire Line
-	1200 3850 1225 3850
-Connection ~ 1225 3850
-Wire Wire Line
-	1225 3850 1800 3850
-Wire Wire Line
-	1750 3700 1750 4350
-Wire Wire Line
-	1200 3700 1225 3700
-Connection ~ 1225 3700
-Wire Wire Line
-	1225 3700 1750 3700
 $Comp
 L Device:R R13
 U 1 1 5D82C9F4
-P 2050 3800
-F 0 "R13" H 2120 3846 50  0000 L CNN
-F 1 "10k" H 2120 3755 50  0000 L CNN
-F 2 "" V 1980 3800 50  0001 C CNN
-F 3 "~" H 2050 3800 50  0001 C CNN
-	1    2050 3800
-	1    0    0    -1  
+P 1825 4750
+F 0 "R13" H 1895 4796 50  0000 L CNN
+F 1 "10k" H 1895 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1755 4750 50  0001 C CNN
+F 3 "~" H 1825 4750 50  0001 C CNN
+	1    1825 4750
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2050 3950 2050 4150
-Connection ~ 2050 4150
 Wire Wire Line
 	2050 4150 2050 4750
 $Comp
 L power:VCC #PWR0104
 U 1 1 5D837204
-P 2050 3600
-F 0 "#PWR0104" H 2050 3450 50  0001 C CNN
-F 1 "VCC" H 2067 3773 50  0000 C CNN
-F 2 "" H 2050 3600 50  0001 C CNN
-F 3 "" H 2050 3600 50  0001 C CNN
-	1    2050 3600
+P 1575 4750
+F 0 "#PWR0104" H 1575 4600 50  0001 C CNN
+F 1 "VCC" H 1592 4923 50  0000 C CNN
+F 2 "" H 1575 4750 50  0001 C CNN
+F 3 "" H 1575 4750 50  0001 C CNN
+	1    1575 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 2900 4800 2900
+Wire Wire Line
+	1200 2650 1225 2650
+Wire Wire Line
+	1850 2500 1850 4650
+Wire Wire Line
+	1200 2500 1225 2500
+Connection ~ 1225 2500
+Wire Wire Line
+	1225 2500 1850 2500
+Wire Wire Line
+	1200 2950 1225 2950
+Wire Wire Line
+	1750 2950 1750 4350
+Connection ~ 1225 2950
+Wire Wire Line
+	1225 2950 1750 2950
+Wire Wire Line
+	1200 3100 1225 3100
+Wire Wire Line
+	1800 3100 1800 4450
+Connection ~ 1225 3100
+Wire Wire Line
+	1225 3100 1800 3100
+Wire Wire Line
+	1900 3250 1900 4550
+Wire Wire Line
+	1200 3250 1225 3250
+Connection ~ 1225 3250
+Wire Wire Line
+	1225 3250 1900 3250
+Wire Wire Line
+	1200 2800 1225 2800
+Wire Wire Line
+	1700 2800 1700 4250
+Connection ~ 1225 2800
+Wire Wire Line
+	1225 2800 1700 2800
+Wire Wire Line
+	2000 1000 2000 3400
+Wire Wire Line
+	1200 3400 1225 3400
+Connection ~ 1225 3400
+Wire Wire Line
+	1225 3400 2000 3400
+NoConn ~ 1200 2650
+$Comp
+L Device:C C1
+U 1 1 5D7D571B
+P 7150 1400
+F 0 "C1" H 7150 1525 50  0000 L CNN
+F 1 "0.1uF" H 7150 1225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7188 1250 50  0001 C CNN
+F 3 "~" H 7150 1400 50  0001 C CNN
+	1    7150 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 3600 2050 3650
+	7150 1250 7150 1150
+Wire Wire Line
+	7150 1150 7600 1150
+Connection ~ 7600 1150
+Wire Wire Line
+	7600 1775 7600 1700
+Wire Wire Line
+	7150 1550 7150 1700
+Wire Wire Line
+	7150 1700 7600 1700
+Connection ~ 7600 1700
+Wire Wire Line
+	7600 1700 7600 1675
+Wire Wire Line
+	1575 4750 1675 4750
+Wire Wire Line
+	1975 4750 2050 4750
+Connection ~ 2050 4750
+Wire Wire Line
+	2575 3550 2575 3050
+Wire Wire Line
+	2575 3050 2800 3050
+Wire Wire Line
+	1200 3550 1225 3550
+Connection ~ 1225 3550
+Wire Wire Line
+	1225 3550 2575 3550
+Wire Wire Line
+	2625 3700 2625 2700
+Wire Wire Line
+	2625 2700 2800 2700
+Wire Wire Line
+	1200 3700 1225 3700
+Connection ~ 1225 3700
+Wire Wire Line
+	1225 3700 2625 3700
+Wire Wire Line
+	2400 3850 2400 2550
+Wire Wire Line
+	1200 3850 1225 3850
+Wire Wire Line
+	2400 2550 2800 2550
+Connection ~ 1225 3850
+Wire Wire Line
+	1225 3850 2400 3850
+NoConn ~ 1200 4000
+NoConn ~ 6750 3250
+NoConn ~ 6750 2500
+NoConn ~ 6750 2650
+NoConn ~ 6750 2800
+NoConn ~ 6750 2950
+NoConn ~ 6750 3100
+NoConn ~ 1225 4150
+NoConn ~ 3750 4850
 $EndSCHEMATC

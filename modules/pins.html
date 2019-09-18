@@ -12,45 +12,91 @@
 </tr>
 
 <tr><td>AVR pins</td>
-<td bgcolor="#ff9966">PD0</td><td bgcolor="#ff9966">PD1</td><td bgcolor="#ff9966">PD2</td><td bgcolor="#ff9966">PD3</td><td bgcolor="#ff9966">PD4</td><td bgcolor="#ff9966">PD5</td><td bgcolor="#ff9966">PD6</td><td bgcolor="#ff9966">PD7</td><td bgcolor="#99ff66">PB0</td><td bgcolor="#99ff66">PB1</td><td bgcolor="#99ff66">PB2</td><td bgcolor="#99ff66">PB3</td><td bgcolor="#99ff66">PB4</td><td bgcolor="#99ff66">PB5</td>
+<td bgcolor="#ff9966">PD0</td><td bgcolor="#ff9966">PD1</td><td bgcolor="#ff9966">PD2</td><td bgcolor="#ff9966">PD3</td><td bgcolor="#ff9966">PD4</td><td bgcolor="#ff9966">PD5</td><td bgcolor="#ff9966">PD6</td><td bgcolor="#ff9966">PD7</td>
+<td bgcolor="#99ff66">PB0</td><td bgcolor="#99ff66">PB1</td><td bgcolor="#99ff66">PB2</td><td bgcolor="#99ff66">PB3</td><td bgcolor="#99ff66">PB4</td><td bgcolor="#99ff66">PB5</td>
 <td bgcolor="#6699ff">PC5</td><td bgcolor="#6699ff">PC4</td><td bgcolor="#6699ff">PC3</td><td bgcolor="#6699ff">PC2</td><td bgcolor="#6699ff">PC1</td><td bgcolor="#6699ff">PC0</td>
 <td>-</td><td>-</td>
 <td>-</td>
 </tr>
 
+<tr><td>Arduino</td>
+<td>RX</td><td>TX</td><td>-</td><td><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">PWM</a></td><td>-</td><td>PWM</td><td>PWM</td><td>-</td>
+<td>-</td><td>PWM</td><td>PWM</td><td>PWM</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Arduino pins meaning</td>
+</tr>
+
 <tr><td>LED</td>
-<td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td><td>Btns</td><td>Enable</td><td>A1</td><td>A0</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>Btns</td><td>Enable</td><td>A1</td><td>A0</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>LED shield: 4digit 7segment 0.4inch LED + 74HC4511 + 74HC139 + 2x Btns</td>
 </tr>
 
 <tr><td>Valcoder</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>Pin1</td><td>Pin2</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>Btn</td><td>Pin1</td><td>Pin2</td>
 <td>+</td><td>+</td>
 <td>Valcoder and buttons</td>
 </tr>
 
 <tr><td>RTC</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>DS1307 + battery</td>
 </tr>
 
 <tr><td>Power</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>Just power connector to feed other shields</td>
 </tr>
 
 <tr><td>MOSFET</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>Powerful MOSFET to control some load</td>
+</tr>
+
+<tr><td>Keyboard</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>A1</td><td>A0</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Line1</td><td>Line2</td>
+<td>+</td><td>+</td>
+<td>12 buttons keyboard</td>
+</tr>
+
+<tr><td>Motors</td>
+<td>-</td><td>-</td><td>-</td><td>PWM</td><td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>Latch</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>L293 motor shield</td>
+</tr>
+
+<tr><td>A4988</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>Step</td><td>Dir</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>A4988 stepper motor driver</td>
+</tr>
+
+<tr><td>R-2R</td>
+<td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>D4</td><td>D5</td><td>D6</td><td>D7</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>R-2R with latch</td>
 </tr>
 
 </table>
@@ -58,11 +104,19 @@
 <br>
 
 <table border=1>
-<tr><td>Device</td><td>Shields list</td></tr>
-<tr><td>Clock</td><td>Harduino + LED + RTC + Valcoder</td></tr>
-<tr><td>Timer</td><td>Harduino + LED + Valcoder + MOSFET</td></tr>
-<tr><td></td><td></td></tr>
+<tr><td>Device</td><td>Harduino</td><td>LED</td><td>Valc</td><td>RTC</td><td>Kbd</td><td>Motor</td><td>Joystick</td><td>HC-05</td><td>MOSFET</td><td>Beep!</td><td>A4988</td><td>R-2R</td></tr>
+<tr><td>Clock</td><td>*</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td></tr>
+<tr><td>Timer</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td></tr>
+<tr><td>Thermostat</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td></tr>
+<tr><td>ThermoAlarm</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td></tr>
+<tr><td>Thermometer</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td></tr>
+<tr><td>Robot</td><td>*</td><td></td><td></td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td></tr>
+<tr><td>RC car</td><td>2x</td><td></td><td></td><td></td><td></td><td>*</td><td></td><td>2x</td><td></td><td></td></td><td></td><td></td></tr>
+<tr><td>Step Motor tester</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td></tr>
+<tr><td>Generator</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td></tr>
 </table>
+
+<p>ToDo: Move A1+A0 to PB4+PB5 pins</p>
 
 </body>
 </html>

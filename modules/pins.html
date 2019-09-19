@@ -27,9 +27,17 @@
 <td>Arduino pins meaning</td>
 </tr>
 
+<tr><td>LCD</td>
+<td>-</td><td>-</td><td>Enable</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>-</td><td>RS</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>LCD shield: 1602 in 4 bit mode</td>
+</tr>
+
 <tr><td>LED</td>
 <td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
-<td>Btns</td><td>Enable</td><td>A1</td><td>A0</td><td>-</td><td>-</td>
+<td>Line0</td><td>Enable</td><td>-</td><td>-</td><td>A1</td><td>A0</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>LED shield: 4digit 7segment 0.4inch LED + 74HC4511 + 74HC139 + 2x Btns</td>
@@ -37,10 +45,18 @@
 
 <tr><td>Valcoder</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>Btn</td><td>Pin1</td><td>Pin2</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A1</td><td>A0</td>
+<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Plus</td><td>Minus</td>
 <td>+</td><td>+</td>
 <td>Valcoder and buttons</td>
+</tr>
+
+<tr><td>Keyboard</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A1</td><td>A0</td>
+<td>-</td><td>-</td><td>LineADC</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>12 buttons keyboard: 74HC139 + 3x Line to 1x line via "R-2R"</td>
 </tr>
 
 <tr><td>RTC</td>
@@ -61,23 +77,15 @@
 
 <tr><td>MOSFET</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>?</td>
+<td>-</td><td>-</td><td>Gate1</td><td>Gate2</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>Powerful MOSFET to control some load</td>
 </tr>
 
-<tr><td>Keyboard</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>A1</td><td>A0</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Line1</td><td>Line2</td>
-<td>+</td><td>+</td>
-<td>12 buttons keyboard</td>
-</tr>
-
 <tr><td>Motors</td>
-<td>-</td><td>-</td><td>-</td><td>PWM</td><td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>Latch</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>Latch</td><td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td>
+<td>-</td><td>-</td><td>PWM1</td><td>PWM2</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>L293 motor shield</td>
@@ -85,7 +93,7 @@
 
 <tr><td>A4988</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>Step</td><td>Dir</td>
+<td>-</td><td>-</td><td>Step</td><td>Dir</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>A4988 stepper motor driver</td>
@@ -122,6 +130,7 @@
 <tr><td>RC car</td><td>2x</td><td></td><td></td><td></td><td></td><td>*</td><td></td><td>2x</td><td></td><td></td></td><td></td><td></td></tr>
 <tr><td>Step Motor tester</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td></tr>
 <tr><td>Generator</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td></tr>
+<tr><td>Radio</td><td>*</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td></tr>
 </table>
 
 <p>ToDo: Move A1+A0 to PB4+PB5 pins</p>

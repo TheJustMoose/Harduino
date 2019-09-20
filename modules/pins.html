@@ -1,6 +1,6 @@
 <html>
 <title>Modules pins</title>
-<body bgcolor="#FFFF99">
+<body bgcolor="#ffff99">
 
 <table border=1>
 
@@ -27,7 +27,7 @@
 <td>Arduino pins meaning</td>
 </tr>
 
-<tr><td>LCD</td>
+<tr bgcolor="#e3e3b5"><td>LCD</td>
 <td>-</td><td>-</td><td>Enable</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>-</td><td>RS</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -75,7 +75,7 @@
 <td>DS1307 + battery</td>
 </tr>
 
-<tr><td>Power</td>
+<tr bgcolor="#ffe699"><td>Power</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -123,7 +123,26 @@
 <td>8x8 LED matrix on ???</td>
 </tr>
 
+<tr bgcolor="#e6fff9"><td>I2C</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Many I2C pins</td>
+</tr>
+
 </table>
+
+<br>
+
+<p>Примечание:</p>
+<ul>
+<li>D0-D3 как бы шина данных</li>
+<li>Latch как бы сигнал записи</li>
+<li>A0-A1 как бы шина адреса</li>
+<li>LineX как бы сигнал чтения</li>
+<li>То есть, выставляем на ШД что-то, записываем, потом на ША выставляем адрес и что-то происходит (отображается цифра на индикаторе). Или отдельно ША, отдельно ШД. На ШД пишем просто данные (биты включения моторчика), а на ША пишем адрес чего-то (кнопки, которую хотим прочитать через LineX.</li>
+</ul>
 
 <br>
 
@@ -137,8 +156,8 @@
 <tr><td>Robot</td><td>*</td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td></tr>
 <tr><td>RC car</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td></tr>
 <tr><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td></tr>
-<tr><td>Generator</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td></tr>
-<tr><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td></tr>
+<tr><td>Generator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td></tr>
+<tr><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td></tr>
 </table>
 
 </body>

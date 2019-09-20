@@ -723,8 +723,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 4550 2050 4550
 Wire Wire Line
-	1200 4000 1225 4000
-Wire Wire Line
 	1700 4250 2050 4250
 $Comp
 L Device:R R13
@@ -842,26 +840,16 @@ Wire Wire Line
 	2625 2700 2800 2700
 Wire Wire Line
 	1200 3700 1225 3700
-Connection ~ 1225 3700
-Wire Wire Line
-	1225 3700 2625 3700
-Wire Wire Line
-	2400 3850 2400 2550
 Wire Wire Line
 	1200 3850 1225 3850
 Wire Wire Line
 	2400 2550 2800 2550
-Connection ~ 1225 3850
-Wire Wire Line
-	1225 3850 2400 3850
-NoConn ~ 1200 4000
 NoConn ~ 6750 3250
 NoConn ~ 6750 2500
 NoConn ~ 6750 2650
 NoConn ~ 6750 2800
 NoConn ~ 6750 2950
 NoConn ~ 6750 3100
-NoConn ~ 1225 4150
 NoConn ~ 3750 4850
 $Comp
 L Mechanical:MountingHole H4
@@ -907,4 +895,24 @@ F 3 "~" H 7500 2500 50  0001 C CNN
 	1    7500 2500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1450 3700 2400 3700
+Wire Wire Line
+	1450 3700 1450 4000
+Wire Wire Line
+	2400 3700 2400 2550
+Wire Wire Line
+	1500 4150 1500 3750
+Wire Wire Line
+	1500 3750 2450 3750
+Wire Wire Line
+	2450 3750 2450 3700
+Wire Wire Line
+	2450 3700 2625 3700
+Wire Wire Line
+	1225 4150 1500 4150
+Wire Wire Line
+	1225 4000 1450 4000
+NoConn ~ 1200 3700
+NoConn ~ 1200 3850
 $EndSCHEMATC

@@ -301,28 +301,6 @@ F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N4148W D2
-U 1 1 5D7B1F06
-P 4300 2200
-F 0 "D2" V 4350 2350 50  0000 R CNN
-F 1 "1N4148W" V 4200 2400 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 4300 2025 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 4300 2200 50  0001 C CNN
-	1    4300 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:1N4148W D1
-U 1 1 5D7B2356
-P 3950 2200
-F 0 "D1" V 4000 2350 50  0000 R CNN
-F 1 "1N4148W" V 3850 2400 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" H 3950 2025 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 3950 2200 50  0001 C CNN
-	1    3950 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L CommonLibrary:7seg-4dig-0.4inch L1
 U 1 1 5D7B3B0A
 P 4150 4050
@@ -915,4 +893,26 @@ Wire Wire Line
 	1225 4000 1450 4000
 NoConn ~ 1200 3700
 NoConn ~ 1200 3850
+$Comp
+L Diode:LL4148 D1
+U 1 1 5D8A50AE
+P 3950 2200
+F 0 "D1" V 3996 2121 50  0000 R CNN
+F 1 "LL4148" V 3905 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3950 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3950 2200 50  0001 C CNN
+	1    3950 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D2
+U 1 1 5D8A597F
+P 4300 2200
+F 0 "D2" V 4346 2121 50  0000 R CNN
+F 1 "LL4148" V 4255 2121 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4300 2025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 4300 2200 50  0001 C CNN
+	1    4300 2200
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

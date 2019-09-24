@@ -55,8 +55,8 @@
     (mod_edge_width 0.12)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 3.2 2)
-    (pad_drill 2.2)
+    (pad_size 2 2)
+    (pad_drill 1)
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
@@ -470,7 +470,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79784B)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7BA7) (tstamp 5D79784B)
     (at 125.73 82.55)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -499,7 +499,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 1 "Net-(J1-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -508,7 +508,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797860)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B9C) (tstamp 5D797860)
     (at 125.73 80.01)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -537,7 +537,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 2 "Net-(J2-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -546,7 +546,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797875)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B96) (tstamp 5D797875)
     (at 125.73 77.47)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -575,7 +575,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 3 "Net-(J3-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -584,7 +584,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79788A)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B8F) (tstamp 5D79788A)
     (at 125.73 74.93)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -613,7 +613,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 4 "Net-(J4-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -622,7 +622,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79789F)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B88) (tstamp 5D79789F)
     (at 125.73 72.39)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -651,7 +651,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 5 "Net-(J5-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -660,7 +660,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7978B4)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B7B) (tstamp 5D7978B4)
     (at 125.73 69.85)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -689,7 +689,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 6 "Net-(J6-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -698,7 +698,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7978C9)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B75) (tstamp 5D7978C9)
     (at 125.73 67.31)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -727,7 +727,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 7 "Net-(J7-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -736,7 +736,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7978DE)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B67) (tstamp 5D7978DE)
     (at 125.73 64.77)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -765,7 +765,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 8 "Net-(J8-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -774,7 +774,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7978F3)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B61) (tstamp 5D7978F3)
     (at 125.73 62.23)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -803,7 +803,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 9 "Net-(J9-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -812,7 +812,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797908)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B5B) (tstamp 5D797908)
     (at 125.73 59.69)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -841,7 +841,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 10 "Net-(J10-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -850,7 +850,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79791D)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B1E) (tstamp 5D79791D)
     (at 92.71 62.23)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -879,7 +879,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 11 "Net-(J11-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -888,7 +888,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797932)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B23) (tstamp 5D797932)
     (at 92.71 64.77)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -917,7 +917,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 12 "Net-(J12-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -926,7 +926,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797947)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B28) (tstamp 5D797947)
     (at 92.71 67.31)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -955,7 +955,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 13 "Net-(J13-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -964,7 +964,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79795C)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B35) (tstamp 5D79795C)
     (at 92.71 69.85)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -993,7 +993,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 14 "Net-(J14-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1002,7 +1002,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797971)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B3F) (tstamp 5D797971)
     (at 92.71 72.39)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1031,7 +1031,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 15 "Net-(J15-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1040,7 +1040,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D797986)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B44) (tstamp 5D797986)
     (at 92.71 74.93)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1069,7 +1069,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 16 "Net-(J16-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1078,7 +1078,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D79799B)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B49) (tstamp 5D79799B)
     (at 92.71 77.47)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1107,7 +1107,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 17 "Net-(J17-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1116,7 +1116,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7979B0)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B4E) (tstamp 5D7979B0)
     (at 92.71 80.01)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1145,7 +1145,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 18 "Net-(J18-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1154,7 +1154,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7979C5)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B16) (tstamp 5D7979C5)
     (at 92.71 59.69)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1183,7 +1183,7 @@
     (fp_text user %R (at 0 0 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 19 "Net-(J19-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))
@@ -1192,7 +1192,7 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5D7979DA)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5D7E7B53) (tstamp 5D7979DA)
     (at 92.71 82.55)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
@@ -1221,7 +1221,7 @@
     (fp_line (start 1.27 1.27) (end -1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start 1.27 -1.27) (end 1.27 1.27) (layer F.Fab) (width 0.1))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))
-    (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 20 "Net-(J20-Pad1)"))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.wrl
       (at (xyz 0 0 0))

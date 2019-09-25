@@ -61,6 +61,14 @@
 <td>12 buttons keyboard: 74HC139 + 3x Line to 1x line via "R-2R"</td>
 </tr>
 
+<tr><td>Raw Keyboard</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Line1</td><td>Line2</td>
+<td>+</td><td>+</td>
+<td>12 buttons keyboard matrix with 4x 1N4148 & 3x resistors</td>
+</tr>
+
 <tr><td>Keyboard for LCD</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>Line0</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
@@ -74,7 +82,7 @@
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
-<td>DS1307 + battery</td>
+<td>DS3231 + battery</td>
 </tr>
 
 <tr bgcolor="#ffe699"><td>Power</td>
@@ -173,18 +181,19 @@
 <br>
 
 <table border=1>
-<tr><td>Device</td><td>Harduino</td><td>LED</td><td>LÑD</td><td>Valc</td><td>RTC</td><td>Kbd</td><td>Motor</td><td>Joystick</td><td>HC-05</td><td>MOSFET</td><td>Beep!</td><td>A4988</td><td>R-2R</td><td>Kbd2</td><td>8x8 LED</td></tr>
-<tr><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Thermometer</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Robot</td><td>*</td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>RC car</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td></tr>
-<tr><td>Generator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td><td></td></tr>
-<tr><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td></tr>
-<tr><td>Smile!</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td>Device</td><td>Harduino</td><td>LED</td><td>LÑD</td><td>Valc</td><td>RTC</td><td>Kbd</td><td>Motor</td><td>Joystick</td><td>HC-05</td><td>MOSFET</td><td>Beep!</td><td>A4988</td><td>R-2R</td><td>Kbd2</td><td>8x8 LED</td><td>RawKbd</td><td></td><td></td><td></td></tr>
+<tr><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Thermometer</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Robot</td><td>*</td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>RC car</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Generator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Smile!</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Calculator</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td></tr>
 </table>
 
 </body>

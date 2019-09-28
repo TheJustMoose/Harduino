@@ -279,7 +279,7 @@ F 3 "~" H 4600 2400 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U1
+L Harduino-rescue:ATmega328P-AU-MCU_Microchip_ATmega U1
 U 1 1 5D8CAD7F
 P 2850 4850
 F 0 "U1" H 2650 3375 50  0000 C CNN

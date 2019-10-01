@@ -590,7 +590,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 4300 5500 4300
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
+L Harduino-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
 U 1 1 5D8FD6AF
 P 2850 4850
 F 0 "U1" H 2206 4896 50  0000 R CNN

@@ -804,14 +804,7 @@ Wire Wire Line
 	1975 4750 2050 4750
 Connection ~ 2050 4750
 Wire Wire Line
-	2575 3550 2575 3050
-Wire Wire Line
-	2575 3050 2800 3050
-Wire Wire Line
 	1200 3550 1225 3550
-Connection ~ 1225 3550
-Wire Wire Line
-	1225 3550 2575 3550
 Wire Wire Line
 	2625 3700 2625 2700
 Wire Wire Line
@@ -915,4 +908,18 @@ F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 4300 2200 50  0001 C CNN
 	1    4300 2200
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 1200 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5D8A7568
+P 2800 3150
+F 0 "#PWR?" H 2800 2900 50  0001 C CNN
+F 1 "GND" H 2805 2977 50  0000 C CNN
+F 2 "" H 2800 3150 50  0001 C CNN
+F 3 "" H 2800 3150 50  0001 C CNN
+	1    2800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3050 2800 3150
 $EndSCHEMATC

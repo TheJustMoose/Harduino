@@ -607,8 +607,6 @@ F 3 "~" H 1825 4750 50  0001 C CNN
 	1    1825 4750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2050 4150 2050 4750
 $Comp
 L power:VCC #PWR0104
 U 1 1 5D837204
@@ -694,7 +692,6 @@ Wire Wire Line
 	1575 4750 1675 4750
 Wire Wire Line
 	1975 4750 2050 4750
-Connection ~ 2050 4750
 Wire Wire Line
 	1200 3550 1225 3550
 Wire Wire Line
@@ -801,21 +798,21 @@ F 3 "" H 2600 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE:74HC238 U?
+L 74xx_IEEE:74HC238 U2
 U 1 1 5D9C6532
 P 3150 2750
-F 0 "U?" H 3150 3266 50  0000 C CNN
+F 0 "U2" H 3150 3266 50  0000 C CNN
 F 1 "74HC238" H 3150 3175 50  0000 C CNN
-F 2 "" H 3150 2750 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3150 2750 50  0001 C CNN
 F 3 "" H 3150 2750 50  0001 C CNN
 	1    3150 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 5D9D394C
 P 2500 2550
-F 0 "#PWR?" H 2500 2300 50  0001 C CNN
+F 0 "#PWR06" H 2500 2300 50  0001 C CNN
 F 1 "GND" V 2505 2422 50  0000 R CNN
 F 2 "" H 2500 2550 50  0001 C CNN
 F 3 "" H 2500 2550 50  0001 C CNN
@@ -840,21 +837,21 @@ Wire Wire Line
 Wire Wire Line
 	2450 3200 2450 3750
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 5D9EBC49
 P 2450 2850
-F 0 "R?" V 2375 2700 50  0000 C CNN
+F 0 "R14" V 2375 2700 50  0000 C CNN
 F 1 "10k" V 2450 2850 50  0000 C CNN
-F 2 "" V 2380 2850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 2850 50  0001 C CNN
 F 3 "~" H 2450 2850 50  0001 C CNN
 	1    2450 2850
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR05
 U 1 1 5D9F13EE
 P 2300 2850
-F 0 "#PWR?" H 2300 2700 50  0001 C CNN
+F 0 "#PWR05" H 2300 2700 50  0001 C CNN
 F 1 "VCC" V 2318 2977 50  0000 L CNN
 F 2 "" H 2300 2850 50  0001 C CNN
 F 3 "" H 2300 2850 50  0001 C CNN
@@ -880,10 +877,10 @@ Wire Wire Line
 Text Notes 4100 5100 0    50   ~ 0
 CC
 $Comp
-L Transistor_FET:IRLML2060 Q?
+L LED-rescue:IRLML2060-Transistor_FET Q4
 U 1 1 5DA18DC9
 P 5000 5300
-F 0 "Q?" H 4850 5375 50  0000 L CNN
+F 0 "Q4" H 4850 5375 50  0000 L CNN
 F 1 "IRLML2060" H 5206 5255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 5225 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5000 5300 50  0001 L CNN
@@ -891,10 +888,10 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q?
+L LED-rescue:IRLML2060-Transistor_FET Q3
 U 1 1 5DA2B1B5
 P 5000 4850
-F 0 "Q?" H 4875 4950 50  0000 L CNN
+F 0 "Q3" H 4875 4950 50  0000 L CNN
 F 1 "IRLML2060" H 5206 4805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 4775 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5000 4850 50  0001 L CNN
@@ -902,10 +899,10 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q?
+L LED-rescue:IRLML2060-Transistor_FET Q2
 U 1 1 5DA2DA6C
 P 5000 4400
-F 0 "Q?" H 4850 4500 50  0000 L CNN
+F 0 "Q2" H 4850 4500 50  0000 L CNN
 F 1 "IRLML2060" H 5206 4355 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 4325 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5000 4400 50  0001 L CNN
@@ -913,10 +910,10 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q?
+L LED-rescue:IRLML2060-Transistor_FET Q1
 U 1 1 5DA2F559
 P 5000 3950
-F 0 "Q?" H 4850 4075 50  0000 L CNN
+F 0 "Q1" H 4850 4075 50  0000 L CNN
 F 1 "IRLML2060" H 5206 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 3875 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5000 3950 50  0001 L CNN
@@ -924,10 +921,10 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 5DA32947
 P 4900 5575
-F 0 "#PWR?" H 4900 5325 50  0001 C CNN
+F 0 "#PWR07" H 4900 5325 50  0001 C CNN
 F 1 "GND" H 4905 5402 50  0000 C CNN
 F 2 "" H 4900 5575 50  0001 C CNN
 F 3 "" H 4900 5575 50  0001 C CNN
@@ -953,12 +950,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 4150 4800 4600
 Connection ~ 4800 4600
-Wire Wire Line
-	5100 3625 5200 3625
-Wire Wire Line
-	5200 3625 5200 3950
-Wire Wire Line
-	5100 3050 5100 3625
 Wire Wire Line
 	5450 4400 5200 4400
 Wire Wire Line
@@ -998,4 +989,23 @@ Wire Wire Line
 Wire Wire Line
 	2000 1000 7375 1000
 Connection ~ 7375 4475
+NoConn ~ 3700 2950
+NoConn ~ 3700 3050
+NoConn ~ 3700 3150
+NoConn ~ 3700 3250
+Wire Wire Line
+	5100 3050 5200 3050
+Wire Wire Line
+	5200 3050 5200 3950
+$Comp
+L power:GND #PWR08
+U 1 1 5D9EB639
+P 2050 4150
+F 0 "#PWR08" H 2050 3900 50  0001 C CNN
+F 1 "GND" H 2055 3977 50  0000 C CNN
+F 2 "" H 2050 4150 50  0001 C CNN
+F 3 "" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\private\!me\github\Harduino2\modules\HarduinoDIP\Harduino.sch)
-    (date "03.10.2019 8:37:55")
+    (date "08.10.2019 10:23:04")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -296,7 +296,7 @@
       (tstamp 5D98C8A9))
     (comp (ref D2)
       (value LED)
-      (footprint LED_THT:LED_D3.0mm)
+      (footprint LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
       (libsource (lib Device) (part LED) (description "LED generic"))
       (sheetpath (names /) (tstamps /))

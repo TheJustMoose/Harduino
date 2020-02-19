@@ -279,135 +279,357 @@ F 3 "~" H 1025 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D1
 U 1 1 5D9F7FA5
-P 2925 2325
-F 0 "D?" H 2925 2610 50  0000 C CNN
-F 1 "6x6-tact-btn" H 2925 2519 50  0000 C CNN
-F 2 "" H 2925 2425 50  0001 C CNN
-F 3 "" H 2925 2425 50  0001 C CNN
-	1    2925 2325
+P 2900 2400
+F 0 "D1" H 2900 2685 50  0000 C CNN
+F 1 "6x6-tact-btn" H 2900 2594 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 2900 2500 50  0001 C CNN
+F 3 "" H 2900 2500 50  0001 C CNN
+	1    2900 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D4
 U 1 1 5D9F8556
-P 2900 2825
-F 0 "D?" H 2900 3110 50  0000 C CNN
-F 1 "6x6-tact-btn" H 2900 3019 50  0000 C CNN
-F 2 "" H 2900 2925 50  0001 C CNN
-F 3 "" H 2900 2925 50  0001 C CNN
-	1    2900 2825
+P 2900 2850
+F 0 "D4" H 2900 3135 50  0000 C CNN
+F 1 "6x6-tact-btn" H 2900 3044 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 2900 2950 50  0001 C CNN
+F 3 "" H 2900 2950 50  0001 C CNN
+	1    2900 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D7
 U 1 1 5D9F890E
-P 2900 3225
-F 0 "D?" H 2900 3510 50  0000 C CNN
-F 1 "6x6-tact-btn" H 2900 3419 50  0000 C CNN
-F 2 "" H 2900 3325 50  0001 C CNN
-F 3 "" H 2900 3325 50  0001 C CNN
-	1    2900 3225
+P 2900 3250
+F 0 "D7" H 2900 3535 50  0000 C CNN
+F 1 "6x6-tact-btn" H 2900 3444 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 2900 3350 50  0001 C CNN
+F 3 "" H 2900 3350 50  0001 C CNN
+	1    2900 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D10
 U 1 1 5D9F8B93
-P 2875 3650
-F 0 "D?" H 2875 3935 50  0000 C CNN
-F 1 "6x6-tact-btn" H 2875 3844 50  0000 C CNN
-F 2 "" H 2875 3750 50  0001 C CNN
-F 3 "" H 2875 3750 50  0001 C CNN
-	1    2875 3650
+P 2900 3675
+F 0 "D10" H 2900 3960 50  0000 C CNN
+F 1 "6x6-tact-btn" H 2900 3869 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 2900 3775 50  0001 C CNN
+F 3 "" H 2900 3775 50  0001 C CNN
+	1    2900 3675
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D2
 U 1 1 5D9F9AE4
-P 3725 2350
-F 0 "D?" H 3725 2635 50  0000 C CNN
-F 1 "6x6-tact-btn" H 3725 2544 50  0000 C CNN
-F 2 "" H 3725 2450 50  0001 C CNN
-F 3 "" H 3725 2450 50  0001 C CNN
-	1    3725 2350
+P 3700 2400
+F 0 "D2" H 3700 2685 50  0000 C CNN
+F 1 "6x6-tact-btn" H 3700 2594 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 3700 2500 50  0001 C CNN
+F 3 "" H 3700 2500 50  0001 C CNN
+	1    3700 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D5
 U 1 1 5D9F9AEA
 P 3700 2850
-F 0 "D?" H 3700 3135 50  0000 C CNN
+F 0 "D5" H 3700 3135 50  0000 C CNN
 F 1 "6x6-tact-btn" H 3700 3044 50  0000 C CNN
-F 2 "" H 3700 2950 50  0001 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 3700 2950 50  0001 C CNN
 F 3 "" H 3700 2950 50  0001 C CNN
 	1    3700 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D8
 U 1 1 5D9F9AF0
 P 3700 3250
-F 0 "D?" H 3700 3535 50  0000 C CNN
+F 0 "D8" H 3700 3535 50  0000 C CNN
 F 1 "6x6-tact-btn" H 3700 3444 50  0000 C CNN
-F 2 "" H 3700 3350 50  0001 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 3700 3350 50  0001 C CNN
 F 3 "" H 3700 3350 50  0001 C CNN
 	1    3700 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D11
 U 1 1 5D9F9AF6
-P 3675 3675
-F 0 "D?" H 3675 3960 50  0000 C CNN
-F 1 "6x6-tact-btn" H 3675 3869 50  0000 C CNN
-F 2 "" H 3675 3775 50  0001 C CNN
-F 3 "" H 3675 3775 50  0001 C CNN
-	1    3675 3675
+P 3700 3675
+F 0 "D11" H 3700 3960 50  0000 C CNN
+F 1 "6x6-tact-btn" H 3700 3869 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 3700 3775 50  0001 C CNN
+F 3 "" H 3700 3775 50  0001 C CNN
+	1    3700 3675
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D3
 U 1 1 5D9FA2D2
-P 4500 2350
-F 0 "D?" H 4500 2635 50  0000 C CNN
-F 1 "6x6-tact-btn" H 4500 2544 50  0000 C CNN
-F 2 "" H 4500 2450 50  0001 C CNN
-F 3 "" H 4500 2450 50  0001 C CNN
-	1    4500 2350
+P 4475 2400
+F 0 "D3" H 4475 2685 50  0000 C CNN
+F 1 "6x6-tact-btn" H 4475 2594 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 4475 2500 50  0001 C CNN
+F 3 "" H 4475 2500 50  0001 C CNN
+	1    4475 2400
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D6
 U 1 1 5D9FA2D8
 P 4475 2850
-F 0 "D?" H 4475 3135 50  0000 C CNN
+F 0 "D6" H 4475 3135 50  0000 C CNN
 F 1 "6x6-tact-btn" H 4475 3044 50  0000 C CNN
-F 2 "" H 4475 2950 50  0001 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 4475 2950 50  0001 C CNN
 F 3 "" H 4475 2950 50  0001 C CNN
 	1    4475 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D9
 U 1 1 5D9FA2DE
 P 4475 3250
-F 0 "D?" H 4475 3535 50  0000 C CNN
+F 0 "D9" H 4475 3535 50  0000 C CNN
 F 1 "6x6-tact-btn" H 4475 3444 50  0000 C CNN
-F 2 "" H 4475 3350 50  0001 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 4475 3350 50  0001 C CNN
 F 3 "" H 4475 3350 50  0001 C CNN
 	1    4475 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CommonLibrary:6x6-tact-btn D?
+L CommonLibrary:6x6-tact-btn D12
 U 1 1 5D9FA2E4
-P 4450 3675
-F 0 "D?" H 4450 3960 50  0000 C CNN
-F 1 "6x6-tact-btn" H 4450 3869 50  0000 C CNN
-F 2 "" H 4450 3775 50  0001 C CNN
-F 3 "" H 4450 3775 50  0001 C CNN
-	1    4450 3675
+P 4475 3675
+F 0 "D12" H 4475 3960 50  0000 C CNN
+F 1 "6x6-tact-btn" H 4475 3869 50  0000 C CNN
+F 2 "CommonLibrary:6x6-tact-btn" H 4475 3775 50  0001 C CNN
+F 3 "" H 4475 3775 50  0001 C CNN
+	1    4475 3675
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2700 2400 2700 2850
+Wire Wire Line
+	2700 2850 2700 3250
+Connection ~ 2700 2850
+Wire Wire Line
+	2700 3250 2700 3675
+Connection ~ 2700 3250
+Wire Wire Line
+	3500 2400 3500 2850
+Wire Wire Line
+	4275 2400 4275 2850
+Wire Wire Line
+	3500 2850 3500 3250
+Connection ~ 3500 2850
+Wire Wire Line
+	4275 2850 4275 3250
+Connection ~ 4275 2850
+Wire Wire Line
+	3500 3250 3500 3675
+Connection ~ 3500 3250
+Wire Wire Line
+	4275 3250 4275 3675
+Connection ~ 4275 3250
+Wire Wire Line
+	3100 2400 3100 2475
+Wire Wire Line
+	3100 2475 3900 2475
+Wire Wire Line
+	3900 2475 3900 2400
+Wire Wire Line
+	3900 2475 4675 2475
+Wire Wire Line
+	4675 2475 4675 2400
+Connection ~ 3900 2475
+Wire Wire Line
+	3100 2850 3100 2925
+Wire Wire Line
+	3100 2925 3900 2925
+Wire Wire Line
+	3900 2925 3900 2850
+Wire Wire Line
+	3900 2925 4675 2925
+Wire Wire Line
+	4675 2925 4675 2850
+Connection ~ 3900 2925
+Wire Wire Line
+	3100 3250 3100 3325
+Wire Wire Line
+	3100 3325 3900 3325
+Wire Wire Line
+	3900 3325 3900 3250
+Wire Wire Line
+	3900 3325 4675 3325
+Wire Wire Line
+	4675 3325 4675 3250
+Connection ~ 3900 3325
+Wire Wire Line
+	3100 3675 3100 3750
+Wire Wire Line
+	3100 3750 3900 3750
+Wire Wire Line
+	3900 3750 3900 3675
+Wire Wire Line
+	3900 3750 4675 3750
+Wire Wire Line
+	4675 3750 4675 3675
+Connection ~ 3900 3750
+Wire Wire Line
+	4275 3675 4275 4000
+Wire Wire Line
+	4275 4000 5475 4000
+Wire Wire Line
+	5475 4000 5475 3750
+Wire Wire Line
+	5475 2500 6750 2500
+Connection ~ 4275 3675
+Wire Wire Line
+	3500 3675 3500 4125
+Wire Wire Line
+	3500 4125 5750 4125
+Wire Wire Line
+	5750 4125 5750 3550
+Wire Wire Line
+	5750 2650 6750 2650
+Connection ~ 3500 3675
+Wire Wire Line
+	2700 3675 2700 4275
+Wire Wire Line
+	2700 4275 6000 4275
+Wire Wire Line
+	6000 4275 6000 3350
+Wire Wire Line
+	6000 2800 6750 2800
+Connection ~ 2700 3675
+$Comp
+L Diode:LL4148 VD1
+U 1 1 5E4DB037
+P 2250 2475
+F 0 "VD1" H 2200 2575 50  0000 C CNN
+F 1 "LL4148" H 2450 2525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2250 2300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 2475 50  0001 C CNN
+	1    2250 2475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 VD2
+U 1 1 5E4DC08E
+P 2250 2925
+F 0 "VD2" H 2200 3025 50  0000 C CNN
+F 1 "LL4148" H 2450 2975 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2250 2750 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 2925 50  0001 C CNN
+	1    2250 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 VD3
+U 1 1 5E4DD3A3
+P 2250 3325
+F 0 "VD3" H 2200 3425 50  0000 C CNN
+F 1 "LL4148" H 2450 3375 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2250 3150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 3325 50  0001 C CNN
+	1    2250 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 VD4
+U 1 1 5E4DDED1
+P 2250 3750
+F 0 "VD4" H 2200 3850 50  0000 C CNN
+F 1 "LL4148" H 2450 3800 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2250 3575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 3750 50  0001 C CNN
+	1    2250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1225 2800 1300 2800
+Wire Wire Line
+	1225 3100 1300 3100
+$Comp
+L Device:R R1
+U 1 1 5E4E5F54
+P 6275 3350
+F 0 "R1" V 6175 3275 50  0000 C CNN
+F 1 "10k" V 6275 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6205 3350 50  0001 C CNN
+F 3 "~" H 6275 3350 50  0001 C CNN
+	1    6275 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E4E9D66
+P 6275 3550
+F 0 "R2" V 6175 3475 50  0000 C CNN
+F 1 "10k" V 6275 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6205 3550 50  0001 C CNN
+F 3 "~" H 6275 3550 50  0001 C CNN
+	1    6275 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E4EA16A
+P 6275 3750
+F 0 "R3" V 6175 3675 50  0000 C CNN
+F 1 "10k" V 6275 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6205 3750 50  0001 C CNN
+F 3 "~" H 6275 3750 50  0001 C CNN
+	1    6275 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6125 3350 6000 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6000 3350 6000 2800
+Wire Wire Line
+	6125 3550 5750 3550
+Connection ~ 5750 3550
+Wire Wire Line
+	5750 3550 5750 2650
+Wire Wire Line
+	6125 3750 5475 3750
+Connection ~ 5475 3750
+Wire Wire Line
+	5475 3750 5475 2500
+Wire Wire Line
+	6425 3350 6425 3550
+Wire Wire Line
+	6425 3550 6425 3750
+Connection ~ 6425 3550
+Wire Wire Line
+	6750 3550 6425 3550
+NoConn ~ 1225 2500
+NoConn ~ 1225 2650
+NoConn ~ 1225 3400
+NoConn ~ 1225 3550
+NoConn ~ 1225 3700
+NoConn ~ 1225 3850
+NoConn ~ 1225 4000
+NoConn ~ 1225 4150
+NoConn ~ 6750 2950
+NoConn ~ 6750 3100
+NoConn ~ 6750 3250
+NoConn ~ 6750 3700
+Wire Wire Line
+	2400 2475 3100 2475
+Connection ~ 3100 2475
+Wire Wire Line
+	2400 2925 3100 2925
+Connection ~ 3100 2925
+Wire Wire Line
+	2400 3325 3100 3325
+Connection ~ 3100 3325
+Wire Wire Line
+	2400 3750 3100 3750
+Connection ~ 3100 3750
 $EndSCHEMATC

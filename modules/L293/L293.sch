@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Harduino-cache
+LIBS:L293-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -332,4 +332,79 @@ F 3 "~" H 6550 3700 50  0001 C CNN
 $EndComp
 Connection ~ 6550 3550
 Connection ~ 6550 3700
+$Comp
+L Driver_Motor:L293D U1
+U 1 1 5E4E1F7C
+P 3750 3100
+F 0 "U1" H 3750 4281 50  0000 C CNN
+F 1 "L293D" H 3750 4190 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4000 2350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 3450 3800 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5E4E5DE1
+P 2200 2600
+F 0 "U?" H 2200 2917 50  0000 C CNN
+F 1 "74LVC1G79" H 2200 2826 50  0000 C CNN
+F 2 "" H 2200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2200 2600 50  0001 C CNN
+	1    2200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5E4E6677
+P 2200 3100
+F 0 "U?" H 2200 3417 50  0000 C CNN
+F 1 "74LVC1G79" H 2200 3326 50  0000 C CNN
+F 2 "" H 2200 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2200 3100 50  0001 C CNN
+	1    2200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5E4E6CD5
+P 2200 3600
+F 0 "U?" H 2200 3917 50  0000 C CNN
+F 1 "74LVC1G79" H 2200 3826 50  0000 C CNN
+F 2 "" H 2200 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2200 3600 50  0001 C CNN
+	1    2200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC1G79 U?
+U 1 1 5E4E7283
+P 2200 4100
+F 0 "U?" H 2200 4417 50  0000 C CNN
+F 1 "74LVC1G79" H 2200 4326 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2200 4100 50  0001 C CNN
+	1    2200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2500 3250 2500
+Wire Wire Line
+	2450 3000 2575 3000
+Wire Wire Line
+	2575 3000 2575 2700
+Wire Wire Line
+	2575 2700 3250 2700
+Wire Wire Line
+	2450 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 3100
+Wire Wire Line
+	2750 3100 3250 3100
+Wire Wire Line
+	2450 4000 2950 4000
+Wire Wire Line
+	3250 3300 2950 3300
+Wire Wire Line
+	2950 3300 2950 4000
 $EndSCHEMATC

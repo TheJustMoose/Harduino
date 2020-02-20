@@ -1757,7 +1757,7 @@
   (gr_text Gnd (at 93.726 82.9945) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (gr_text Harduino (at 110.236 47.4345) (layer F.SilkS)
+  (gr_text HardDuino (at 110.236 47.4345) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Gnd (at 84.5185 76.962) (layer F.SilkS)

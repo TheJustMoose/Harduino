@@ -981,7 +981,7 @@
     )
   )
 
-  (gr_text Harduino (at 109.22 52.07) (layer F.SilkS)
+  (gr_text HardDuino (at 109.22 52.07) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Gnd (at 90.17 82.55) (layer F.SilkS)

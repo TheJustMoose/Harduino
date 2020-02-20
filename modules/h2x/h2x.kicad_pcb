@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
     (trace_clearance 0.2)
@@ -1891,7 +1891,7 @@
   (gr_line (start 127 133.35) (end 91.44 133.35) (layer Edge.Cuts) (width 0.15) (tstamp 5D8C5693))
   (gr_line (start 129.54 95.25) (end 129.54 130.81) (layer Edge.Cuts) (width 0.15) (tstamp 5D8C5660))
   (gr_line (start 88.9 130.81) (end 88.9 95.25) (layer Edge.Cuts) (width 0.15) (tstamp 5D8C565E))
-  (gr_text Harduino (at 109.22 52.07) (layer F.SilkS)
+  (gr_text HardDuino (at 109.22 52.07) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Gnd (at 90.17 82.55) (layer F.SilkS)

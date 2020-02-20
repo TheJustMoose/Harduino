@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 0.6)
@@ -2072,7 +2072,7 @@
     )
   )
 
-  (gr_text Harduino (at 117.348 52.832) (layer F.SilkS)
+  (gr_text HardDuino (at 117.348 52.832) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Gnd (at 90.17 82.55) (layer F.SilkS)

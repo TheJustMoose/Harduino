@@ -159,8 +159,8 @@ ENDDEF
 #
 # Mechanical_MountingHole
 #
-DEF Mechanical_MountingHole MH 0 40 Y Y 1 F N
-F0 "MH" 0 200 50 H V C CNN
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
 F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN

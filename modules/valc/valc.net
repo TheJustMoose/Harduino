@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source D:\private\!me\github\Harduino\modules\valc\valc.sch)
-    (date "25.09.2019 8:38:56")
+    (source C:\PROJECT\github\Harduino\modules\valc\valc.sch)
+    (date "24/02/2020 20:01:16")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -299,7 +299,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5D8F41CD))
     (comp (ref R6)
-      (value 5k)
+      (value 10k)
       (footprint Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -400,21 +400,21 @@
       (footprints
         (fp MountingHole*))
       (fields
-        (field (name Reference) MH)
+        (field (name Reference) H)
         (field (name Value) MountingHole))))
   (libraries
     (library (logical 74xx_IEEE)
-      (uri R:\tools\KiCad\share\kicad\library/74xx_IEEE.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/74xx_IEEE.lib"))
     (library (logical CommonLibrary)
-      (uri D:/private/!me/github/Harduino/lib/CommonLibrary.lib))
+      (uri C:/PROJECT/github/Harduino/lib/CommonLibrary.lib))
     (library (logical Connector)
-      (uri R:\tools\KiCad\share\kicad\library/Connector.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Device)
-      (uri R:\tools\KiCad\share\kicad\library/Device.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
     (library (logical Diode)
-      (uri R:\tools\KiCad\share\kicad\library/Diode.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Diode.lib"))
     (library (logical Mechanical)
-      (uri R:\tools\KiCad\share\kicad\library/Mechanical.lib)))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
   (nets
     (net (code 1) (name "Net-(R3-Pad2)")
       (node (ref R4) (pin 1))

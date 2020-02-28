@@ -6,14 +6,14 @@
 
 <table border=1>
 
-<tr><td>Module</td>
+<tr><td>Module</td><td>Size</td>
 <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
 <td>A5</td><td>A4</td><td>A3</td><td>A2</td><td>A1</td><td>A0</td>
 <td>Gnd</td><td>Vcc</td>
-<td>Description</td><td>Size</td>
+<td>Description</td>
 </tr>
 
-<tr><td>AVR pins</td>
+<tr><td>AVR pins</td><td></td>
 <td bgcolor="#ff9966">PD0</td><td bgcolor="#ff9966">PD1</td><td bgcolor="#ff9966">PD2</td><td bgcolor="#ff9966">PD3</td><td bgcolor="#ff9966">PD4</td><td bgcolor="#ff9966">PD5</td><td bgcolor="#ff9966">PD6</td><td bgcolor="#ff9966">PD7</td>
 <td bgcolor="#99ff66">PB0</td><td bgcolor="#99ff66">PB1</td><td bgcolor="#99ff66">PB2</td><td bgcolor="#99ff66">PB3</td><td bgcolor="#99ff66">PB4</td><td bgcolor="#99ff66">PB5</td>
 <td bgcolor="#6699ff">PC5</td><td bgcolor="#6699ff">PC4</td><td bgcolor="#6699ff">PC3</td><td bgcolor="#6699ff">PC2</td><td bgcolor="#6699ff">PC1</td><td bgcolor="#6699ff">PC0</td>
@@ -21,7 +21,7 @@
 <td>Pin names like in ATmega328p datasheet ;)</td>
 </tr>
 
-<tr><td>Arduino</td>
+<tr><td>Arduino</td><td></td>
 <td>RX</td><td>TX</td><td>-</td><td><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">PWM</a></td><td>-</td><td>PWM</td><td>PWM</td><td>-</td>
 <td>-</td><td>PWM</td><td>PWM</td><td>PWM</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -29,15 +29,15 @@
 <td>Arduino pins meaning</td>
 </tr>
 
-<tr bgcolor="#e3e3b5"><td>LCD</td>
+<tr bgcolor="#e3e3b5"><td>LCD</td><td>2x</td>
 <td>-</td><td>-</td><td>Enable</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>-</td><td>RS</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
-<td>LCD shield: 1602 in 4 bit mode</td><td>2x</td>
+<td>LCD shield: 1602 in 4 bit mode</td>
 </tr>
 
-<tr bgcolor="#ff9966"><td>LED</td>
+<tr bgcolor="#ff9966"><td>LED</td><td>1x...</td>
 <td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>Line0</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -45,7 +45,7 @@
 <td>LED shield: 4digit 7segment 0.4inch LED (Common Cathode) + 74HC4511 + 74HC238 + 2x Btns</td>
 </tr>
 
-<tr bgcolor="#ff9966"><td>LED</td>
+<tr bgcolor="#ff9966"><td>LED</td><td></td>
 <td>-</td><td>-</td><td>Enable?</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>Line0</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -53,7 +53,7 @@
 <td>LED shield: 4digit 7segment 0.4inch LED (Common Anode) + 74LS247 + 74HC139 + 2x Btns</td>
 </tr>
 
-<tr><td>Valcoder</td>
+<tr><td>Valcoder</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
 <td>-</td><td>-</td><td>-</td><td>Line0</td><td>Plus</td><td>Minus</td>
@@ -61,7 +61,7 @@
 <td>Valcoder and 2x buttons</td>
 </tr>
 
-<tr bgcolor="#99ff66"><td>Raw Kbd</td>
+<tr bgcolor="#99ff66"><td>Raw Kbd</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>Line0</td><td>Line1</td><td>Line2</td>
@@ -69,7 +69,7 @@
 <td>12 buttons keyboard matrix with 4x 1N4148 & 3x resistors (Do not use with valcoder!)</td>
 </tr>
 
-<tr bgcolor="#99ff66"><td>Kbd for LCD/LED</td>
+<tr bgcolor="#99ff66"><td>Kbd for LCD/LED</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td colspan=2>Line0+Jumper</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
 <td>-</td><td>-</td><td>Line1</td><td>-</td><td>-</td><td>-</td>
@@ -77,7 +77,7 @@
 <td>8 buttons keyboard: 74HC139 + 2x Line</td>
 </tr>
 
-<tr bgcolor="#99ff66"><td>SMD Kbd for LCD/LED</td>
+<tr bgcolor="#99ff66"><td>SMD Kbd for LCD/LED</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td colspan=2>Line0+Jumper</td><td>-</td><td>A2</td><td>A0</td><td>A1</td>
 <td>-</td><td>-</td><td>Line1</td><td>-</td><td>-</td><td>-</td>
@@ -85,7 +85,7 @@
 <td>12 SMD buttons on one side: 74HC138 + 2x Line on other side</td>
 </tr>
 
-<tr><td>RTC</td>
+<tr><td>RTC</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -93,7 +93,7 @@
 <td>DS3231 + battery</td>
 </tr>
 
-<tr bgcolor="#ffe699"><td>Power</td>
+<tr bgcolor="#ffe699"><td>Power</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -101,7 +101,7 @@
 <td>Just power connectors to feed other shields</td>
 </tr>
 
-<tr><td>MOSFET</td>
+<tr><td>MOSFET</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>Gate1</td><td>Gate2</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -109,7 +109,7 @@
 <td>Powerful MOSFET to control some load</td>
 </tr>
 
-<tr><td>Relay</td>
+<tr><td>Relay</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>Relay1</td><td>Relay2</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -117,7 +117,7 @@
 <td>2x Relay to control something</td>
 </tr>
 
-<tr><td>L293</td>
+<tr><td>L293</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>Latch</td><td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td>
 <td>-</td><td>-</td><td>[PWM1]</td><td>[PWM2]</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -125,7 +125,7 @@
 <td>L293 motor shield, PWM is optional</td>
 </tr>
 
-<tr><td>A4988</td>
+<tr><td>A4988</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>Step</td><td>Dir</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -133,7 +133,7 @@
 <td>A4988 stepper motor driver</td>
 </tr>
 
-<tr><td>R-2R</td>
+<tr><td>R-2R</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>Latch</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
 <td>D4</td><td>D5</td><td>D6</td><td>D7</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -141,7 +141,7 @@
 <td>R-2R with latch</td>
 </tr>
 
-<tr><td>Beep</td>
+<tr><td>Beep</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>[Beep On!]</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td colspan=2>[Beep On!+Jumper]</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -149,7 +149,7 @@
 <td>Just piezo sound generator (HPM14AX)</td>
 </tr>
 
-<tr><td>8x8 LED</td>
+<tr><td>8x8 LED</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -157,7 +157,7 @@
 <td>8x8 LED matrix on ???</td>
 </tr>
 
-<tr><td>12x LED</td>
+<tr><td>12x LED</td><td></td>
 <td>-</td><td>-</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
 <td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -165,7 +165,7 @@
 <td>Just LEDs to control all digital pins</td>
 </tr>
 
-<tr bgcolor="#e6fff9"><td>I2C</td>
+<tr bgcolor="#e6fff9"><td>I2C</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -173,15 +173,15 @@
 <td>Many I2C pins</td>
 </tr>
 
-<tr bgcolor="#ffdf80"><td>2x/3x</td>
+<tr bgcolor="#ffdf80"><td>2x/3x</td><td>2x/3x</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td>
-<td>2x/3x connector board. Connect some other modules to each other</td><td>2x/3x</td>
+<td>2x/3x connector board. Connect some other modules to each other</td>
 </tr>
 
-<tr><td>Joystick</td>
+<tr><td>Joystick</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>R1</td><td>R2</td>
@@ -189,7 +189,7 @@
 <td>Joystick == 3D potentiometer</td>
 </tr>
 
-<tr><td>FreqShield</td>
+<tr><td>FreqShield</td><td></td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
@@ -197,7 +197,7 @@
 <td>Amplifier + Divider</td>
 </tr>
 
-<tr><td>Sensor Shield</td>
+<tr><td>Sensor Shield</td><td></td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
@@ -205,12 +205,12 @@
 <td>Pins, more pins. Sometimes pullups.</td>
 </tr>
 
-<tr><td>Arduino Uno Shield<br>to 2x HardDuino shield</td>
+<tr><td>Arduino Uno Shield<br>to 2x HardDuino shield</td><td>Uno</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td>
-<td></td></tr>
+<td>HardDuino pins to Uno pins</td></tr>
 
 </table>
 

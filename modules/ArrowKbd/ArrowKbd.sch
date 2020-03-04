@@ -561,8 +561,6 @@ F 3 "" H 1675 5925 50  0001 C CNN
 	1    1675 5925
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5975 4900 5975 4975
 $Comp
 L Device:R R1
 U 1 1 5E5EFE44

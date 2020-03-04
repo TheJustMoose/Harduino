@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 29)
+    (drawings 30)
     (tracks 167)
     (zones 0)
     (modules 42)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.6)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 0.6)
@@ -1774,6 +1774,9 @@
     )
   )
 
+  (gr_text 04.03.2020 (at 114.935 86.36) (layer B.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text HardDuino (at 109.5375 61.595) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -1846,8 +1849,6 @@
   (gr_line (start 129.54 53.34) (end 129.54 88.9) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 91.44 50.8) (end 127 50.8) (layer Edge.Cuts) (width 0.15))
 
-  (via (at 99.695 63.8175) (size 1.6) (drill 0.9) (layers F.Cu B.Cu) (net 20))
-  (via (at 100.0125 69.5325) (size 1.6) (drill 0.9) (layers F.Cu B.Cu) (net 20))
   (segment (start 123.19 69.85) (end 125.73 67.31) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 123.19 64.77) (end 125.73 64.77) (width 0.6) (layer B.Cu) (net 8))
   (segment (start 95.25 67.31) (end 95.5675 67.6275) (width 0.6) (layer B.Cu) (net 11))
@@ -1896,6 +1897,8 @@
   (segment (start 103.895 70.485) (end 104.775 70.485) (width 0.6) (layer B.Cu) (net 19))
   (segment (start 102.17 70.1675) (end 103.5775 70.1675) (width 0.6) (layer B.Cu) (net 19))
   (segment (start 103.5775 70.1675) (end 103.895 70.485) (width 0.6) (layer B.Cu) (net 19))
+  (via (at 99.695 63.8175) (size 1.6) (drill 0.9) (layers F.Cu B.Cu) (net 20))
+  (via (at 100.0125 69.5325) (size 1.6) (drill 0.9) (layers F.Cu B.Cu) (net 20))
   (segment (start 102.17 68.8975) (end 103.505 68.8975) (width 0.6) (layer B.Cu) (net 20))
   (segment (start 103.505 68.8975) (end 103.895 68.5075) (width 0.6) (layer B.Cu) (net 20))
   (segment (start 103.895 68.5075) (end 104.775 68.5075) (width 0.6) (layer B.Cu) (net 20))

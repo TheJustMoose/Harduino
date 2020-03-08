@@ -69,8 +69,6 @@ void read_btn(uint8_t btn) {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   set_dig(3);
   set_num(0);
   delay(del);

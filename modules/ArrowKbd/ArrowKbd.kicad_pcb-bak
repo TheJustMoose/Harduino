@@ -1778,7 +1778,7 @@
   (gr_text 04.03.2020 (at 114.935 86.36) (layer B.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text HardDuino (at 109.5375 61.595) (layer F.SilkS)
+  (gr_text HardDuino (at 116.7 61) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Gnd (at 90.17 82.55) (layer F.SilkS)

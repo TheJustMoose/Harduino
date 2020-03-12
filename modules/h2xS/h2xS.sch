@@ -923,4 +923,40 @@ Wire Wire Line
 	2950 4825 3050 4825
 Wire Wire Line
 	3050 4825 3050 4925
+Text Label 1375 2500 0    50   ~ 0
+2
+Text Label 1375 2600 0    50   ~ 0
+3
+Text Label 1375 2700 0    50   ~ 0
+4
+Text Label 1400 2800 0    50   ~ 0
+5
+Text Label 1425 2900 0    50   ~ 0
+6
+Text Label 1425 3000 0    50   ~ 0
+7
+Text Label 1450 3100 0    50   ~ 0
+8
+Text Label 1475 3200 0    50   ~ 0
+9
+Text Label 1500 3300 0    50   ~ 0
+10
+Text Label 1525 3400 0    50   ~ 0
+11
+Text Label 1525 4000 0    50   ~ 0
+12
+Text Label 1525 4150 0    50   ~ 0
+13
+Text Label 6225 2500 0    50   ~ 0
+A0
+Text Label 6225 2600 0    50   ~ 0
+A1
+Text Label 6225 2700 0    50   ~ 0
+A2
+Text Label 6225 2800 0    50   ~ 0
+A3
+Text Label 6225 2900 0    50   ~ 0
+A4
+Text Label 6225 3000 0    50   ~ 0
+A5
 $EndSCHEMATC

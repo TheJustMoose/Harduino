@@ -883,21 +883,21 @@ Connection ~ 5950 2900
 Wire Wire Line
 	5950 2900 6525 2900
 $Comp
-L Connector:Barrel_Jack_Switch J?
+L Connector:Barrel_Jack_Switch J29
 U 1 1 5E694DB2
 P 2650 4725
-F 0 "J?" H 2500 4950 50  0000 C CNN
+F 0 "J29" H 2500 4950 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 2450 4500 50  0000 C CNN
-F 2 "" H 2700 4685 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2700 4685 50  0001 C CNN
 F 3 "~" H 2700 4685 50  0001 C CNN
 	1    2650 4725
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 5E695966
 P 3050 4925
-F 0 "#PWR?" H 3050 4675 50  0001 C CNN
+F 0 "#PWR08" H 3050 4675 50  0001 C CNN
 F 1 "GND" H 3055 4752 50  0000 C CNN
 F 2 "" H 3050 4925 50  0001 C CNN
 F 3 "" H 3050 4925 50  0001 C CNN
@@ -905,10 +905,10 @@ F 3 "" H 3050 4925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR07
 U 1 1 5E6962B6
 P 3050 4525
-F 0 "#PWR?" H 3050 4375 50  0001 C CNN
+F 0 "#PWR07" H 3050 4375 50  0001 C CNN
 F 1 "VCC" H 3067 4698 50  0000 C CNN
 F 2 "" H 3050 4525 50  0001 C CNN
 F 3 "" H 3050 4525 50  0001 C CNN
@@ -923,4 +923,40 @@ Wire Wire Line
 	2950 4825 3050 4825
 Wire Wire Line
 	3050 4825 3050 4925
+Text Label 1375 2500 0    50   ~ 0
+2
+Text Label 1375 2600 0    50   ~ 0
+3
+Text Label 1375 2700 0    50   ~ 0
+4
+Text Label 1400 2800 0    50   ~ 0
+5
+Text Label 1425 2900 0    50   ~ 0
+6
+Text Label 1425 3000 0    50   ~ 0
+7
+Text Label 1450 3100 0    50   ~ 0
+8
+Text Label 1475 3200 0    50   ~ 0
+9
+Text Label 1500 3300 0    50   ~ 0
+10
+Text Label 1525 3400 0    50   ~ 0
+11
+Text Label 1525 4000 0    50   ~ 0
+12
+Text Label 1525 4150 0    50   ~ 0
+13
+Text Label 6225 2500 0    50   ~ 0
+A0
+Text Label 6225 2600 0    50   ~ 0
+A1
+Text Label 6225 2700 0    50   ~ 0
+A2
+Text Label 6225 2800 0    50   ~ 0
+A3
+Text Label 6225 2900 0    50   ~ 0
+A4
+Text Label 6225 3000 0    50   ~ 0
+A5
 $EndSCHEMATC

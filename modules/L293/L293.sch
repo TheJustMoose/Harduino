@@ -640,37 +640,6 @@ NoConn ~ 6750 2950
 NoConn ~ 6750 3100
 NoConn ~ 6750 3250
 $Comp
-L Device:C C3
-U 1 1 5E4FFB73
-P 3275 2050
-F 0 "C3" V 3225 1950 50  0000 C CNN
-F 1 "0.1uF" V 3225 2200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3313 1900 50  0001 C CNN
-F 3 "~" H 3275 2050 50  0001 C CNN
-	1    3275 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5E4FFF70
-P 3050 2050
-F 0 "#PWR01" H 3050 1800 50  0001 C CNN
-F 1 "GND" V 3055 1922 50  0000 R CNN
-F 2 "" H 3050 2050 50  0001 C CNN
-F 3 "" H 3050 2050 50  0001 C CNN
-	1    3050 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3125 2050 3050 2050
-Wire Wire Line
-	3600 1750 3600 2050
-Wire Wire Line
-	3425 2050 3600 2050
-Connection ~ 3600 2050
-Wire Wire Line
-	3600 2050 3600 2400
-$Comp
 L Device:R R1
 U 1 1 5E5CB29D
 P 1750 2400
@@ -827,4 +796,6 @@ Wire Wire Line
 	6175 2350 6375 2350
 Text Notes 5650 2000 0    50   ~ 0
 Set jumper if you want\nto power HardDuino\nfrom battery!
+Wire Wire Line
+	3600 1750 3600 2400
 $EndSCHEMATC

@@ -698,7 +698,7 @@ Wire Wire Line
 	1750 2550 1750 2650
 Connection ~ 1750 2650
 Wire Wire Line
-	3800 1800 3800 2400
+	3800 1800 3800 2350
 $Comp
 L Device:CP C4
 U 1 1 5E5DD515
@@ -724,4 +724,107 @@ F 3 "" H 3950 2100 50  0001 C CNN
 	1    3950 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L CommonLibrary:L4940 U6
+U 1 1 5E6BBCDA
+P 5400 2250
+F 0 "U6" H 5400 2415 50  0000 C CNN
+F 1 "L4940" H 5400 2324 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5250 2300 50  0001 C CNN
+F 3 "" H 5250 2300 50  0001 C CNN
+	1    5400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E6C2000
+P 5400 2650
+F 0 "#PWR05" H 5400 2400 50  0001 C CNN
+F 1 "GND" H 5405 2477 50  0000 C CNN
+F 2 "" H 5400 2650 50  0001 C CNN
+F 3 "" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2350 4900 2350
+Connection ~ 3800 2350
+Wire Wire Line
+	3800 2350 3800 2400
+$Comp
+L Device:C C5
+U 1 1 5E6C83B5
+P 4900 2500
+F 0 "C5" H 4950 2600 50  0000 L CNN
+F 1 "0,1uF" H 4950 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 2350 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 2350
+Wire Wire Line
+	4900 2350 5100 2350
+$Comp
+L power:GND #PWR04
+U 1 1 5E6C8A38
+P 4900 2650
+F 0 "#PWR04" H 4900 2400 50  0001 C CNN
+F 1 "GND" H 4905 2477 50  0000 C CNN
+F 2 "" H 4900 2650 50  0001 C CNN
+F 3 "" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 5E6CA1A7
+P 5775 2500
+F 0 "C6" H 5893 2546 50  0000 L CNN
+F 1 "22uF" H 5893 2455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5813 2350 50  0001 C CNN
+F 3 "~" H 5775 2500 50  0001 C CNN
+	1    5775 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E6CAAB6
+P 5775 2650
+F 0 "#PWR06" H 5775 2400 50  0001 C CNN
+F 1 "GND" H 5780 2477 50  0000 C CNN
+F 2 "" H 5775 2650 50  0001 C CNN
+F 3 "" H 5775 2650 50  0001 C CNN
+	1    5775 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2350 5775 2350
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5E6CD8DC
+P 5975 2350
+F 0 "JP1" H 5975 2585 50  0000 C CNN
+F 1 "Jumper_2_Open" H 5975 2494 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5975 2350 50  0001 C CNN
+F 3 "~" H 5975 2350 50  0001 C CNN
+	1    5975 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5775 2350
+$Comp
+L power:VCC #PWR07
+U 1 1 5E6CE5E9
+P 6375 2350
+F 0 "#PWR07" H 6375 2200 50  0001 C CNN
+F 1 "VCC" H 6392 2523 50  0000 C CNN
+F 2 "" H 6375 2350 50  0001 C CNN
+F 3 "" H 6375 2350 50  0001 C CNN
+	1    6375 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 2350 6375 2350
+Text Notes 5650 2000 0    50   ~ 0
+Set jumper if you want\nto power HardDuino\nfrom battery!
 $EndSCHEMATC

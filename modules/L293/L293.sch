@@ -349,7 +349,7 @@ U 1 1 5E4E5DE1
 P 2150 2900
 F 0 "U1" H 2150 3217 50  0000 C CNN
 F 1 "74LVC1G79" H 2150 3126 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 2900 50  0001 C CNN
+F 2 "CommonLibrary:tssop5" H 2150 2900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2150 2900 50  0001 C CNN
 	1    2150 2900
 	1    0    0    -1  
@@ -360,7 +360,7 @@ U 1 1 5E4E6677
 P 2150 3400
 F 0 "U2" H 2150 3717 50  0000 C CNN
 F 1 "74LVC1G79" H 2150 3626 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 3400 50  0001 C CNN
+F 2 "CommonLibrary:tssop5" H 2150 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2150 3400 50  0001 C CNN
 	1    2150 3400
 	1    0    0    -1  
@@ -371,7 +371,7 @@ U 1 1 5E4E6CD5
 P 2150 3900
 F 0 "U3" H 2150 4217 50  0000 C CNN
 F 1 "74LVC1G79" H 2150 4126 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 3900 50  0001 C CNN
+F 2 "CommonLibrary:tssop5" H 2150 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2150 3900 50  0001 C CNN
 	1    2150 3900
 	1    0    0    -1  
@@ -382,7 +382,7 @@ U 1 1 5E4E7283
 P 2150 4400
 F 0 "U4" H 2150 4717 50  0000 C CNN
 F 1 "74LVC1G79" H 2150 4626 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 2150 4400 50  0001 C CNN
+F 2 "CommonLibrary:tssop5" H 2150 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2150 4400 50  0001 C CNN
 	1    2150 4400
 	1    0    0    -1  

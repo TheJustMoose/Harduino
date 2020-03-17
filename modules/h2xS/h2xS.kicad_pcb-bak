@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 79)
+    (drawings 80)
     (tracks 199)
     (zones 0)
     (modules 37)
@@ -1550,6 +1550,9 @@
     )
   )
 
+  (gr_text +5V (at 71.12 81.915) (layer B.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_line (start 142.875 79.375) (end 148.59 85.09) (layer F.SilkS) (width 0.12))
   (gr_text Power (at 69.85 74.295) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))

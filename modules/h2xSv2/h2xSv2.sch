@@ -189,12 +189,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x10_Male J3
 U 1 1 5E7C4275
-P 2450 2400
-F 0 "J3" H 2500 2900 50  0000 R CNN
-F 1 "Conn_01x10_Male" V 2350 2650 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 2450 2400 50  0001 C CNN
-F 3 "~" H 2450 2400 50  0001 C CNN
-	1    2450 2400
+P 3200 2400
+F 0 "J3" H 3250 2900 50  0000 R CNN
+F 1 "Conn_01x10_Male" V 3100 2650 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3200 2400 50  0001 C CNN
+F 3 "~" H 3200 2400 50  0001 C CNN
+	1    3200 2400
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -278,27 +278,15 @@ Text Label 2000 3500 0    50   ~ 0
 SCL
 Text Label 2000 3600 0    50   ~ 0
 SDA
-Wire Wire Line
-	1750 2000 2250 2000
 Connection ~ 1750 2000
 Wire Wire Line
 	1750 2100 2175 2100
 Wire Wire Line
 	1750 2200 2075 2200
 Wire Wire Line
-	1750 2300 2250 2300
-Wire Wire Line
-	1750 2400 2250 2400
-Wire Wire Line
-	1750 2500 2250 2500
-Wire Wire Line
-	1750 2600 2250 2600
-Wire Wire Line
 	1750 2700 2225 2700
 Wire Wire Line
 	1750 2800 2150 2800
-Wire Wire Line
-	1750 2900 2250 2900
 Connection ~ 1750 2900
 Wire Wire Line
 	4250 2000 4550 2000
@@ -378,8 +366,6 @@ Wire Wire Line
 	6525 1750 6525 3050
 Connection ~ 2175 2100
 Wire Wire Line
-	2175 2100 2250 2100
-Wire Wire Line
 	5550 3125 5550 3050
 Wire Wire Line
 	5550 3050 6525 3050
@@ -392,8 +378,6 @@ Wire Wire Line
 Wire Wire Line
 	6625 3125 5650 3125
 Connection ~ 2075 2200
-Wire Wire Line
-	2075 2200 2250 2200
 $Comp
 L power:GND #PWR01004
 U 1 1 5E7F68FD
@@ -457,16 +441,12 @@ Wire Wire Line
 	2150 3500 2300 3500
 Connection ~ 2150 2800
 Wire Wire Line
-	2150 2800 2250 2800
-Wire Wire Line
 	2225 2700 2225 3325
 Wire Wire Line
 	2225 3325 2375 3325
 Wire Wire Line
 	2375 3325 2375 3600
 Connection ~ 2225 2700
-Wire Wire Line
-	2225 2700 2250 2700
 Connection ~ 2375 3600
 Wire Wire Line
 	4550 3675 4650 3675
@@ -622,4 +602,65 @@ F 3 "~" H 8750 4000 50  0001 C CNN
 	1    8750 4000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1750 2000 3000 2000
+Wire Wire Line
+	2175 2100 3000 2100
+Wire Wire Line
+	2075 2200 3000 2200
+Wire Wire Line
+	1750 2300 2850 2300
+Wire Wire Line
+	1750 2400 2750 2400
+Wire Wire Line
+	1750 2500 2650 2500
+Wire Wire Line
+	1750 2600 2550 2600
+Wire Wire Line
+	2225 2700 2450 2700
+Wire Wire Line
+	2150 2800 2350 2800
+Wire Wire Line
+	1750 2900 3000 2900
+$Comp
+L Connector:Conn_01x06_Male J11
+U 1 1 5E7DADE2
+P 2550 3200
+F 0 "J11" V 2704 2812 50  0000 R CNN
+F 1 "Conn_01x06_Male" V 2450 3275 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2550 3200 50  0001 C CNN
+F 3 "~" H 2550 3200 50  0001 C CNN
+	1    2550 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 3000 2350 2800
+Connection ~ 2350 2800
+Wire Wire Line
+	2350 2800 3000 2800
+Wire Wire Line
+	2450 3000 2450 2700
+Connection ~ 2450 2700
+Wire Wire Line
+	2450 2700 3000 2700
+Wire Wire Line
+	2550 3000 2550 2600
+Connection ~ 2550 2600
+Wire Wire Line
+	2550 2600 3000 2600
+Wire Wire Line
+	2650 3000 2650 2500
+Connection ~ 2650 2500
+Wire Wire Line
+	2650 2500 3000 2500
+Wire Wire Line
+	2750 3000 2750 2400
+Connection ~ 2750 2400
+Wire Wire Line
+	2750 2400 3000 2400
+Wire Wire Line
+	2850 3000 2850 2300
+Connection ~ 2850 2300
+Wire Wire Line
+	2850 2300 3000 2300
 $EndSCHEMATC

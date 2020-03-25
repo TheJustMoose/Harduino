@@ -192,7 +192,7 @@ U 1 1 5E7C4275
 P 2450 2400
 F 0 "J3" H 2500 2900 50  0000 R CNN
 F 1 "Conn_01x10_Male" V 2350 2650 50  0000 R CNN
-F 2 "" H 2450 2400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 2450 2400 50  0001 C CNN
 F 3 "~" H 2450 2400 50  0001 C CNN
 	1    2450 2400
 	-1   0    0    -1  
@@ -203,7 +203,7 @@ U 1 1 5E7C5413
 P 4050 2400
 F 0 "J4" H 4050 2900 50  0000 C CNN
 F 1 "Conn_01x10_Male" V 3975 2350 50  0000 C CNN
-F 2 "" H 4050 2400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 4050 2400 50  0001 C CNN
 F 3 "~" H 4050 2400 50  0001 C CNN
 	1    4050 2400
 	1    0    0    -1  
@@ -214,7 +214,7 @@ U 1 1 5E7C66E2
 P 5050 3325
 F 0 "J7" H 5158 4006 50  0000 C CNN
 F 1 "Conn_01x12_Male" V 4975 3275 50  0000 C CNN
-F 2 "" H 5050 3325 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 5050 3325 50  0001 C CNN
 F 3 "~" H 5050 3325 50  0001 C CNN
 	1    5050 3325
 	0    -1   -1   0   
@@ -225,7 +225,7 @@ U 1 1 5E7C7558
 P 5050 4425
 F 0 "J9" H 5158 5106 50  0000 C CNN
 F 1 "Conn_01x12_Male" V 4925 4400 50  0000 C CNN
-F 2 "" H 5050 4425 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 5050 4425 50  0001 C CNN
 F 3 "~" H 5050 4425 50  0001 C CNN
 	1    5050 4425
 	0    -1   -1   0   
@@ -236,7 +236,7 @@ U 1 1 5E7C83F6
 P 5050 3875
 F 0 "J8" H 5158 4556 50  0000 C CNN
 F 1 "Conn_01x12_Male" V 4975 3875 50  0000 C CNN
-F 2 "" H 5050 3875 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 5050 3875 50  0001 C CNN
 F 3 "~" H 5050 3875 50  0001 C CNN
 	1    5050 3875
 	0    -1   -1   0   
@@ -247,7 +247,7 @@ U 1 1 5E7C919F
 P 1800 4350
 F 0 "J6" H 1825 4575 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 2000 4050 50  0000 R CNN
-F 2 "" H 1800 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1800 4350 50  0001 C CNN
 F 3 "~" H 1800 4350 50  0001 C CNN
 	1    1800 4350
 	1    0    0    -1  
@@ -258,7 +258,7 @@ U 1 1 5E7C99CD
 P 1800 3600
 F 0 "J5" H 1800 3825 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 2025 3275 50  0000 R CNN
-F 2 "" H 1800 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1800 3600 50  0001 C CNN
 F 3 "~" H 1800 3600 50  0001 C CNN
 	1    1800 3600
 	1    0    0    -1  
@@ -269,7 +269,7 @@ U 1 1 5E7CA196
 P 3050 5000
 F 0 "J10" H 3025 5125 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3100 4700 50  0000 C CNN
-F 2 "" H 3050 5000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3050 5000 50  0001 C CNN
 F 3 "~" H 3050 5000 50  0001 C CNN
 	1    3050 5000
 	1    0    0    -1  
@@ -576,6 +576,50 @@ F 1 "GND" H 3400 5025 50  0000 C CNN
 F 2 "" H 3250 5100 50  0001 C CNN
 F 3 "" H 3250 5100 50  0001 C CNN
 	1    3250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5E7BCAAE
+P 8750 2500
+F 0 "H5" H 8850 2546 50  0000 L CNN
+F 1 "MountingHole" H 8850 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8750 2500 50  0001 C CNN
+F 3 "~" H 8750 2500 50  0001 C CNN
+	1    8750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5E7BCF2B
+P 8750 3000
+F 0 "H6" H 8850 3046 50  0000 L CNN
+F 1 "MountingHole" H 8850 2955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8750 3000 50  0001 C CNN
+F 3 "~" H 8750 3000 50  0001 C CNN
+	1    8750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5E7BD33B
+P 8750 3500
+F 0 "H7" H 8850 3546 50  0000 L CNN
+F 1 "MountingHole" H 8850 3455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8750 3500 50  0001 C CNN
+F 3 "~" H 8750 3500 50  0001 C CNN
+	1    8750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5E7BD737
+P 8750 4000
+F 0 "H7" H 8850 4046 50  0000 L CNN
+F 1 "MountingHole" H 8850 3955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8750 4000 50  0001 C CNN
+F 3 "~" H 8750 4000 50  0001 C CNN
+	1    8750 4000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

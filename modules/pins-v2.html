@@ -1,0 +1,306 @@
+<html>
+<head>
+<title>Modules pins</title>
+
+<script>
+function s(v) {
+  document.getElementById(v).style.display = '';
+}
+
+function sall() {
+  table = document.getElementsByTagName("table")[0];
+  allrows = table.getElementsByTagName("tr");
+  for (i = 1; i < allrows.length; i++)
+    allrows[i].style.display = '';
+}
+</script>
+</head>
+
+<body bgcolor="#ffff99">
+
+<h2>Some fantasy about HardDuino</h2>
+
+<table border=1 onclick="sall();">
+
+<tr><td>Module</td><td>Size</td>
+<td>0</td><td>1</td><td>2</td><td>~3</td><td>4</td><td>~5</td><td>~6</td><td>7</td><td>8</td><td>~9</td><td>~10</td><td>~11</td><td>12</td><td>13</td>
+<td>A5</td><td>A4</td><td>A3</td><td>A2</td><td>A1</td><td>A0</td>
+<td>Gnd</td><td>Vcc</td>
+<td>Description</td>
+</tr>
+
+<tr><td>AVR pins</td><td></td>
+<td bgcolor="#ff9966">PD0</td><td bgcolor="#ff9966">PD1</td><td bgcolor="#ff9966">PD2</td><td bgcolor="#ff9966">PD3</td><td bgcolor="#ff9966">PD4</td><td bgcolor="#ff9966">PD5</td><td bgcolor="#ff9966">PD6</td><td bgcolor="#ff9966">PD7</td>
+<td bgcolor="#99ff66">PB0</td><td bgcolor="#99ff66">PB1</td><td bgcolor="#99ff66">PB2</td><td bgcolor="#99ff66">PB3</td><td bgcolor="#99ff66">PB4</td><td bgcolor="#99ff66">PB5</td>
+<td bgcolor="#6699ff">PC5</td><td bgcolor="#6699ff">PC4</td><td bgcolor="#6699ff">PC3</td><td bgcolor="#6699ff">PC2</td><td bgcolor="#6699ff">PC1</td><td bgcolor="#6699ff">PC0</td>
+<td bgcolor="#000000"></td><td bgcolor="#ff0000"></td>
+<td>Pin names like in ATmega328p datasheet ;)</td>
+</tr>
+
+<tr><td>&#10003; HardDuino <a href="imgs/HarduinoDIP.png">#</a></td><td></td>
+<td>RX</td><td>TX</td><td>-</td><td><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">PWM</a></td><td>-</td><td>PWM</td><td>PWM</td><td>-</td>
+<td>-</td><td colspan=2>PWM (broken<br>by TimerOne lib)</td><td>PWM</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Arduino pins meaning</td>
+</tr>
+
+<tr id="lcd" bgcolor="#e3e3b5" style="display:none;"><td>LCD</td><td>2x</td>
+<td>-</td><td>-</td><td>Enable</td><td>-</td><td>-</td><td>-</td><td>-</td><td>RS</td>
+<td>D0</td><td>D1</td><td>D2</td><td>D3</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>LCD shield: 1602 in 4 bit mode</td>
+</tr>
+
+<tr id="4511" bgcolor="#ff9966" style="display:none;"><td>LED</td><td>1x...</td>
+<td>-</td><td>-</td><td>Latch</td><td>-</td><td>Line0</td><td>-</td><td>-</td><td>-</td>
+<td>D0</td><td>D1</td><td>D2</td><td>D3</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>LED shield: 4digit 7segment 0.4inch LED (Common Cathode) + 74HC4511 + 74HC238 + 2x Btns</td>
+</tr>
+
+<tr id="7seg" bgcolor="#ff9966" style="display:none;"><td>&#10003; LED <a href="imgs/LED.png">#</a></td><td></td>
+<td>-</td><td>-</td><td>Enable?</td><td>-</td><td>Line0</td><td>-</td><td>-</td><td>-</td>
+<td>D0</td><td>D1</td><td>D2</td><td>D3</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>LED shield: 4digit 7segment 0.4inch LED (Common Anode) + 74LS247 + 74HC139 + 2x Btns</td>
+</tr>
+
+<tr id="tpic" bgcolor="#ff9966" style="display:none;"><td>LED 595</td><td>1x...</td>
+<td>-</td><td>-</td><td>Latch</td><td>-</td><td>Line0</td><td>-</td><td>-</td><td>-</td>
+<td>Data</td><td>Clock</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>LED shield: 4digit 7segment 0.4inch LED (Common Anode) + TPIC6C595 + 74HC139 + 2x Btns</td>
+</tr>
+
+<tr id="valc" style="display:none;"><td>&#10003; Valcoder <a href="imgs/valc.png">#</a></td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Plus</td><td>Minus</td>
+<td>+</td><td>+</td>
+<td>Valcoder and 2x buttons</td>
+</tr>
+
+<tr id="raw" bgcolor="#99ff66" style="display:none;"><td>Raw Kbd <a href="imgs/Kbd.png">#</a></td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>D0</td><td>D1</td><td>D2</td><td>D3</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>Line0</td><td>Line1</td><td>Line2</td>
+<td>+</td><td>+</td>
+<td>12 buttons keyboard matrix with 4x 1N4148 & 3x resistors (Do not use with valcoder!)</td>
+</tr>
+
+<tr id="klcd" bgcolor="#99ff66" style="display:none;"><td>Kbd for LCD/LED</td><td>1x/2x</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>Line0</td><td>-</td><td>-</td><td>Line0</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>Line1</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>8 buttons keyboard: 74HC139 + 2x Line</td>
+</tr>
+
+<tr id="arrow" bgcolor="#99ff66" style="display:none;"><td>&#10003; Arrow Kbd <a href="imgs/ArrowKbd.png">#</a></td><td>1x</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>Line0</td><td>-</td><td>-</td><td>Line0</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>Line1</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>8 buttons arrow keyboard (4x arrows, pause, +3 extra btn): 74HC139 + 2x Line</td>
+</tr>
+
+<tr id="ksmd" bgcolor="#99ff66" style="display:none;"><td>SMD Kbd for LCD/LED</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>Line0</td><td>A2</td><td>-</td><td>Line0</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>Line1</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>12 SMD buttons on one side: 74HC138 + 2x Line on other side</td>
+</tr>
+
+<tr id="rtc" style="display:none;"><td>&#10003; RTC <a href="imgs/RTC.png">#</a></td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>DS3231 + battery</td>
+</tr>
+
+<tr id="pwr" bgcolor="#ffe699" style="display:none;"><td>Power</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Just power connectors to feed other shields</td>
+</tr>
+
+<tr id="mosfet" style="display:none;"><td>MOSFET</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>Gate1</td><td>Gate2</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Powerful MOSFET to control some load</td>
+</tr>
+
+<tr id="relay" style="display:none;"><td>Relay</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>Relay1</td><td>Relay2</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>2x Relay to control something</td>
+</tr>
+
+<tr id="l293" style="display:none;"><td>&#10003; L293 <a href="imgs/L293.png">#</a></td><td></td>
+<td>-</td><td>-</td><td>-</td><td>Latch</td><td>-</td><td>PWM1</td><td>PWM2</td><td>-</td>
+<td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>L293 motor shield with L4940V5 LDO</td>
+</tr>
+
+<tr id="a4988" style="display:none;"><td>A4988</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>Step</td><td>Dir</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>A4988 stepper motor driver</td>
+</tr>
+
+<tr id="r-2r" style="display:none;"><td>R-2R</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>Latch</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>D4</td><td>D5</td><td>D6</td><td>D7</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>R-2R with latch</td>
+</tr>
+
+<tr id="beep" style="display:none;"><td>&#10003; Beep</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>[Beep On!]</td><td>-</td><td>-</td><td colspan=2>[Beep On!+Jumper]</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Just piezo sound generator (HPM14AX)</td>
+</tr>
+
+<tr id="8x8" style="display:none;"><td>8x8 LED</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>8x8 LED matrix on ???</td>
+</tr>
+
+<tr id="leds" style="display:none;"><td>12x LED</td><td></td>
+<td>-</td><td>-</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
+<td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Just LEDs to control all digital pins</td>
+</tr>
+
+<tr id="i2c" bgcolor="#e6fff9" style="display:none;"><td>I2C</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Many I2C pins</td>
+</tr>
+
+<tr id="h2x" bgcolor="#ffdf80" style="display:none;"><td>&#10003; 2x/3x <a href="imgs/h2x.png">#</a></td><td>2x/3x</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td>
+<td>2x/3x connector board. Connect some other modules to each other</td>
+</tr>
+
+<tr id="h2xs" bgcolor="#ffdf80" style="display:none;"><td>h2xS == 2x + Sensor Shield</td><td>2x+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td>
+<td>2x connector board. Connect two modules and have D2-D13 pins == Sensor Shield</td>
+</tr>
+
+<tr id="h3xs" bgcolor="#ffdf80" style="display:none;"><td>h3xS == 3x + Sensor Shield</td><td>3x+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td>
+<td>3x connector board. Connect two modules and have D2-D13 pins == Sensor Shield</td>
+</tr>
+
+<tr id="stick" style="display:none;"><td>Joystick</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>R1</td><td>R2</td>
+<td>+</td><td>+</td>
+<td>Joystick == 3D potentiometer</td>
+</tr>
+
+<tr id="freq" style="display:none;"><td>FreqShield</td><td></td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>Amplifier + Divider</td>
+</tr>
+
+<tr id="pins" style="display:none;"><td>Sensor Shield <a href="imgs/Pins.png">#</a></td><td></td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td>
+<td>Pins, more pins. Sometimes pullups.</td>
+</tr>
+
+<tr><td>Arduino Uno Shield<br>to 2x HardDuino shield</td><td>Uno</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>+</td><td>+</td>
+<td>HardDuino pins to Uno pins</td></tr>
+
+</table>
+
+<br>
+
+<p>Примечание:</p>
+<ul>
+<li>D0-D3 как бы шина данных</li>
+<li>Latch как бы сигнал записи</li>
+<li>A0-A1 как бы шина адреса</li>
+<li>LineX как бы сигнал чтения</li>
+<li>То есть, выставляем на ШД что-то, записываем, потом на ША выставляем адрес и что-то происходит (отображается цифра на индикаторе). Или отдельно ША, отдельно ШД. На ШД пишем просто данные (биты включения моторчика), а на ША пишем адрес чего-то (кнопки, которую хотим прочитать через LineX.</li>
+</ul>
+
+<br>
+
+<table border=1>
+<tr><td>Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td>LСD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
+<td bgcolor="#ff99cc">Motor<br>L293</td><td>Joystick(1)</td><td>HC-05(2)</td><td>MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td>R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
+<tr bgcolor="#99ff66" onclick="s('rtc');s('h2x');s('valc');s('7seg');"><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2xs');"><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>
+<tr onclick="s('h2x');s('l293');s('stick');"><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
+<tr onclick="s('h2x');s('7seg');s('valc');s('a4988');"><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr onclick="s('h2x');s('7seg');s('arrow');s('l293');s('8x8');"><td>Robot</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>7</td></tr>
+<tr onclick="s('h2x');s('7seg');s('valc');s('mosfet');s('beep');"><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
+<tr onclick="s('h2xs');s('7seg');s('valc');s('mosfet');"><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
+<tr onclick="s('h2xs');s('7seg');s('valc');s('beep');" bgcolor="#99ff66"><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
+<tr onclick="s('7seg');" bgcolor="#99ff66"><td>Thermometer</td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>2</td></tr>
+<tr onclick="s('h2x');s('7seg');s('valc');s('r-2r');"><td>Generator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td><td></td><td></td><td>6</td></tr>
+<tr onclick="s('h3xs');s('lcd');s('valc');s('rtc');s('klcd');"><td>Radio</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td>for LCD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h3xS</td><td>8?</td></tr>
+<tr onclick="s('h3xs');s('7seg');s('valc');s('rtc');s('klcd');"><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td>*</td><td>for LED</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h3xS</td><td>8</td></tr>
+<tr onclick="s('8x8');"><td>Smile!</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>2</td></tr>
+<tr onclick="s('h2x');s('7seg');s('raw');"><td>Calculator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Raw</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5</td></tr>
+<tr onclick="s('h2x');s('lcd');s('ksmd');"><td>Real ;) Calculator<br>or Reverse Polish notation</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>SMD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
+<tr onclick="s('h2x');s('7seg');s('valc');s('l293');" bgcolor="#99ff66"><td>PWM for motors</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr onclick="s('h2xs');s('7seg');s('valc');" bgcolor="#99ff66"><td>Servo tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS | Horizontal</td><td>5?</td></tr>
+<tr onclick="s('h2x');s('7seg');s('valc');s('arrow');s('l293');s('beep');"><td>BigTrak</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>8</td></tr>
+<tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Snake Game</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
+<tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Tetris</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
+</table>
+
+<br>
+
+</body>
+</html>

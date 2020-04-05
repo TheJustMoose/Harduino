@@ -7,7 +7,7 @@
 <table border=1>
 
 <tr><td>Module</td><td>Size</td>
-<td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+<td>0</td><td>1</td><td>2</td><td>~3</td><td>4</td><td>~5</td><td>~6</td><td>7</td><td>8</td><td>~9</td><td>~10</td><td>~11</td><td>12</td><td>13</td>
 <td>A5</td><td>A4</td><td>A3</td><td>A2</td><td>A1</td><td>A0</td>
 <td>Gnd</td><td>Vcc</td>
 <td>Description</td>
@@ -23,7 +23,7 @@
 
 <tr><td>&#10003; HardDuino <a href="imgs/HarduinoDIP.png">#</a></td><td></td>
 <td>RX</td><td>TX</td><td>-</td><td><a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">PWM</a></td><td>-</td><td>PWM</td><td>PWM</td><td>-</td>
-<td>-</td><td>PWM</td><td>PWM</td><td>PWM</td><td>-</td><td>-</td>
+<td>-</td><td colspan=2>PWM (broken<br>by TimerOne lib)</td><td>PWM</td><td>-</td><td>-</td>
 <td>SCL</td><td>SDA</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>Arduino pins meaning</td>
@@ -253,24 +253,24 @@
 
 <table border=1>
 <tr><td>Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td>LÑD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
-<td bgcolor="#ff99cc">Motor</td><td>Joystick(1)</td><td>HC-05(2)</td><td>MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td>R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td>Sensor Shield(5)</td><td>Cnt</td></tr>
-<tr><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
-<tr><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>
+<td bgcolor="#ff99cc">Motor</td><td>Joystick(1)</td><td>HC-05(2)</td><td>MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td>R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
+<tr bgcolor="#99ff66"><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr bgcolor="#99ff66"><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>
 <tr><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
 <tr><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 <tr><td>Robot</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>7</td></tr>
 <tr><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
 <tr><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
-<tr><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
-<tr><td>Thermometer</td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>2</td></tr>
+<tr bgcolor="#99ff66"><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr bgcolor="#99ff66"><td>Thermometer</td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>2</td></tr>
 <tr><td>Generator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td>*</td><td></td><td></td><td></td><td>6</td></tr>
 <tr><td>Radio</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td>for LCD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>I2C :(</td><td>8?</td></tr>
 <tr><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td>*</td><td>for LED</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>I2C :(</td><td>8</td></tr>
 <tr><td>Smile!</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>2</td></tr>
 <tr><td>Calculator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Raw</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5</td></tr>
 <tr><td>Real ;) Calculator<br>or Reverse Polish notation</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>SMD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
-<tr><td>PWM for motors</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
-<tr><td>Servo tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS | Horizontal</td><td>5?</td></tr>
+<tr bgcolor="#99ff66"><td>PWM for motors</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
+<tr bgcolor="#99ff66"><td>Servo tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS | Horizontal</td><td>5?</td></tr>
 <tr><td>BigTrak</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>8</td></tr>
 <tr><td>Snake Game</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
 <tr><td>Tetris</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>

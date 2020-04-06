@@ -70,7 +70,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00000_7fffffff)
+      (layerselection 0x00000_fffffffe)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -92,10 +92,10 @@
       (padsonsilk false)
       (subtractmaskfromsilk false)
       (outputformat 4)
-      (mirror true)
+      (mirror false)
       (drillshape 1)
       (scaleselection 1)
-      (outputdirectory "l293/"))
+      (outputdirectory "pdf/"))
   )
 
   (net 0 "")

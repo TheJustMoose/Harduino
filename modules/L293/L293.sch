@@ -408,60 +408,11 @@ Wire Wire Line
 Wire Wire Line
 	2900 3600 2900 4300
 Wire Wire Line
-	1225 2800 1900 2800
-Wire Wire Line
-	1225 2950 1675 2950
-Wire Wire Line
-	1675 2950 1675 3300
-Wire Wire Line
-	1675 3300 1900 3300
-Wire Wire Line
-	1225 3100 1600 3100
-Wire Wire Line
-	1600 3100 1600 3800
-Wire Wire Line
-	1600 3800 1900 3800
-Wire Wire Line
-	1225 3250 1525 3250
-Wire Wire Line
-	1525 3250 1525 4300
-Wire Wire Line
-	1525 4300 1900 4300
-Wire Wire Line
-	1900 3000 1900 3500
-Connection ~ 1900 3500
-Connection ~ 1900 4000
-Wire Wire Line
-	1900 3500 1900 4000
-Wire Wire Line
-	1900 4000 1900 4500
-Wire Wire Line
 	1225 2650 1750 2650
 Wire Wire Line
 	1750 2650 1750 3000
 Wire Wire Line
 	1750 3000 1900 3000
-Connection ~ 1900 3000
-Wire Wire Line
-	1225 3700 1450 3700
-Wire Wire Line
-	1450 3700 1450 4775
-Wire Wire Line
-	1450 4775 3025 4775
-Wire Wire Line
-	3025 4775 3025 3200
-Wire Wire Line
-	3025 3200 3200 3200
-Wire Wire Line
-	1225 3850 1375 3850
-Wire Wire Line
-	1375 3850 1375 4900
-Wire Wire Line
-	1375 4900 3150 4900
-Wire Wire Line
-	3150 4900 3150 3800
-Wire Wire Line
-	3150 3800 3200 3800
 $Comp
 L power:GND #PWR01003
 U 1 1 5E4F8706
@@ -629,10 +580,6 @@ F 3 "~" H 4175 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1225 2500
-NoConn ~ 1225 3400
-NoConn ~ 1225 3550
-NoConn ~ 1225 4000
-NoConn ~ 1225 4150
 NoConn ~ 6750 2500
 NoConn ~ 6750 2650
 NoConn ~ 6750 2800
@@ -699,7 +646,7 @@ U 1 1 5E6BBCDA
 P 5400 2250
 F 0 "U6" H 5400 2415 50  0000 C CNN
 F 1 "L4940" H 5400 2324 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5250 2300 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5250 2300 50  0001 C CNN
 F 3 "" H 5250 2300 50  0001 C CNN
 	1    5400 2250
 	1    0    0    -1  
@@ -798,4 +745,75 @@ Text Notes 5650 2000 0    50   ~ 0
 Set jumper if you want\nto power HardDuino\nfrom battery!
 Wire Wire Line
 	3600 1750 3600 2400
+Wire Wire Line
+	1225 2950 1650 2950
+Wire Wire Line
+	1650 2950 1650 3200
+Wire Wire Line
+	1650 3200 3200 3200
+Wire Wire Line
+	1225 3100 1550 3100
+Wire Wire Line
+	1550 3100 1550 3650
+Wire Wire Line
+	1550 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 3800
+Wire Wire Line
+	3050 3800 3200 3800
+Wire Wire Line
+	1225 3550 1650 3550
+Wire Wire Line
+	1650 3550 1650 3300
+Wire Wire Line
+	1650 3300 1900 3300
+Wire Wire Line
+	1225 3400 1450 3400
+Wire Wire Line
+	1450 3400 1450 2800
+Wire Wire Line
+	1450 2800 1900 2800
+Wire Wire Line
+	1225 3700 1650 3700
+Wire Wire Line
+	1650 3700 1650 3800
+Wire Wire Line
+	1650 3800 1900 3800
+Wire Wire Line
+	1225 3850 1550 3850
+Wire Wire Line
+	1550 3850 1550 4300
+Wire Wire Line
+	1550 4300 1900 4300
+Wire Wire Line
+	1750 3000 1750 3500
+Wire Wire Line
+	1750 3500 1900 3500
+Connection ~ 1750 3000
+Wire Wire Line
+	1750 3500 1750 4000
+Wire Wire Line
+	1750 4000 1900 4000
+Connection ~ 1750 3500
+Wire Wire Line
+	1750 4000 1750 4500
+Wire Wire Line
+	1750 4500 1900 4500
+Connection ~ 1750 4000
+Text Label 1500 2950 0    50   ~ 0
+PWM1
+Text Label 1475 3100 0    50   ~ 0
+PWM2
+Text Label 1500 2800 0    50   ~ 0
+M1+
+Text Label 1350 3550 0    50   ~ 0
+M1-
+Text Label 1375 3700 0    50   ~ 0
+M2+
+Text Label 1375 3850 0    50   ~ 0
+M2-
+NoConn ~ 1225 2800
+NoConn ~ 1225 3250
+NoConn ~ 1225 4000
+NoConn ~ 1225 4150
 $EndSCHEMATC

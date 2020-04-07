@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source D:\private\!me\github\Harduino2\modules\L293\L293.sch)
-    (date "06.04.2020 14:09:28")
+    (source C:\PROJECT\github\Harduino\modules\L293\L293.sch)
+    (date "07/04/2020 22:14:54")
     (tool "Eeschema (5.1.4)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -426,7 +426,7 @@
     (library (logical 74xGxx)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/74xGxx.lib"))
     (library (logical CommonLibrary)
-      (uri D:/private/!me/github/Harduino2/lib/CommonLibrary.lib))
+      (uri C:/PROJECT/github/Harduino/lib/CommonLibrary.lib))
     (library (logical Connector)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Device)

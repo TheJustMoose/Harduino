@@ -546,7 +546,7 @@ L power:VCC #PWR0104
 U 1 1 5D837204
 P 1575 4750
 F 0 "#PWR0104" H 1575 4600 50  0001 C CNN
-F 1 "VCC" H 1592 4923 50  0000 C CNN
+F 1 "VCC" H 1750 4825 50  0000 C CNN
 F 2 "" H 1575 4750 50  0001 C CNN
 F 3 "" H 1575 4750 50  0001 C CNN
 	1    1575 4750
@@ -555,42 +555,11 @@ $EndComp
 Wire Wire Line
 	1200 2650 1225 2650
 Wire Wire Line
-	1200 2500 1225 2500
-Wire Wire Line
 	1200 2950 1225 2950
-Wire Wire Line
-	1750 2950 1750 4250
-Connection ~ 1225 2950
-Wire Wire Line
-	1225 2950 1750 2950
 Wire Wire Line
 	1200 3100 1225 3100
 Wire Wire Line
-	1800 3100 1800 4350
-Connection ~ 1225 3100
-Wire Wire Line
-	1225 3100 1800 3100
-Wire Wire Line
-	1900 3250 1900 4450
-Wire Wire Line
-	1200 3250 1225 3250
-Connection ~ 1225 3250
-Wire Wire Line
-	1225 3250 1900 3250
-Wire Wire Line
-	1200 2800 1225 2800
-Wire Wire Line
-	1700 2800 1700 4150
-Connection ~ 1225 2800
-Wire Wire Line
-	1225 2800 1700 2800
-Wire Wire Line
-	2000 1000 2000 3400
-Wire Wire Line
-	1200 3400 1225 3400
-Connection ~ 1225 3400
-Wire Wire Line
-	1225 3400 2000 3400
+	2000 1000 2000 2800
 NoConn ~ 1200 2650
 $Comp
 L Device:C C1
@@ -619,19 +588,12 @@ Wire Wire Line
 	6975 5000 6975 4975
 Wire Wire Line
 	1575 4750 1675 4750
-Wire Wire Line
-	1200 3550 1225 3550
-Wire Wire Line
-	1200 3700 1225 3700
-Wire Wire Line
-	1200 3850 1225 3850
 NoConn ~ 6750 3250
 NoConn ~ 6750 2500
 NoConn ~ 6750 2650
 NoConn ~ 6750 2800
 NoConn ~ 6750 2950
 NoConn ~ 6750 3100
-NoConn ~ 3750 4850
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5D7932CC
@@ -677,19 +639,9 @@ F 3 "~" H 7500 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 3700 2400 3700
-Wire Wire Line
-	1450 3700 1450 4000
-Wire Wire Line
-	1500 4150 1500 3750
-Wire Wire Line
-	1500 3750 2450 3750
-Wire Wire Line
 	1225 4150 1500 4150
 Wire Wire Line
 	1225 4000 1450 4000
-NoConn ~ 1200 3700
-NoConn ~ 1200 3850
 $Comp
 L Diode:LL4148 D1
 U 1 1 5D8A50AE
@@ -712,10 +664,9 @@ F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 4675 1875 50  0001 C CNN
 	1    4675 1875
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1200 3550
-Text Label 1475 3700 0    50   ~ 0
+Text Label 1600 3150 0    50   ~ 0
 A0
-Text Label 1375 4150 0    50   ~ 0
+Text Label 1600 3250 0    50   ~ 0
 A1
 Text Notes 4100 5100 0    50   ~ 0
 CA
@@ -757,36 +708,11 @@ $EndComp
 Wire Wire Line
 	1975 4750 2150 4750
 Wire Wire Line
-	2150 4150 1700 4150
+	2150 4150 1975 4150
 Wire Wire Line
-	2150 4250 1750 4250
+	2150 4250 1900 4250
 Wire Wire Line
 	2150 4350 1800 4350
-Wire Wire Line
-	2150 4450 1900 4450
-NoConn ~ 1200 2500
-$Comp
-L Device:R R14
-U 1 1 5DA2086C
-P 2150 5100
-F 0 "R14" H 1950 5100 50  0000 L CNN
-F 1 "1k" V 2150 5025 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2080 5100 50  0001 C CNN
-F 3 "~" H 2150 5100 50  0001 C CNN
-	1    2150 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5DA20E1A
-P 2150 5250
-F 0 "#PWR02" H 2150 5000 50  0001 C CNN
-F 1 "GND" H 2155 5077 50  0000 C CNN
-F 2 "" H 2150 5250 50  0001 C CNN
-F 3 "" H 2150 5250 50  0001 C CNN
-	1    2150 5250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5DA22367
@@ -809,14 +735,6 @@ F 3 "" H 3175 3050 50  0001 C CNN
 	1    3175 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 2550 3175 2550
-Wire Wire Line
-	2400 2550 2400 3700
-Wire Wire Line
-	2450 2700 3175 2700
-Wire Wire Line
-	2450 2700 2450 3750
 $Comp
 L Transistor_FET:IRLML6402 Q1
 U 1 1 5DA3F1E0
@@ -982,14 +900,143 @@ NoConn ~ 3450 1425
 NoConn ~ 3450 1575
 NoConn ~ 3450 1775
 NoConn ~ 3450 1925
-Text Label 1425 2800 0    50   ~ 0
+Text Label 1575 3400 0    50   ~ 0
 D0
-Text Label 1425 2950 0    50   ~ 0
+Text Label 1575 3550 0    50   ~ 0
 D1
-Text Label 1425 3100 0    50   ~ 0
+Text Label 1575 3700 0    50   ~ 0
 D2
-Text Label 1425 3250 0    50   ~ 0
+Text Label 1575 3850 0    50   ~ 0
 D3
-Text Label 1425 3400 0    50   ~ 0
+Text Label 1475 2800 0    50   ~ 0
 Line0
+Wire Wire Line
+	2150 4950 2150 4750
+Connection ~ 2150 4750
+Wire Wire Line
+	1200 3400 1225 3400
+Connection ~ 1225 3400
+Wire Wire Line
+	1200 3250 1225 3250
+Wire Wire Line
+	1200 3550 1225 3550
+Connection ~ 1225 3550
+Wire Wire Line
+	1200 3700 1225 3700
+Wire Wire Line
+	1800 3700 1800 4350
+Connection ~ 1225 3700
+Wire Wire Line
+	1225 3700 1800 3700
+Wire Wire Line
+	1200 3850 1225 3850
+Connection ~ 1225 3850
+Wire Wire Line
+	1225 3850 1675 3850
+Wire Wire Line
+	1975 3400 1975 4150
+Wire Wire Line
+	1225 3400 1975 3400
+Wire Wire Line
+	1675 3850 1675 4450
+Wire Wire Line
+	1675 4450 2150 4450
+Wire Wire Line
+	1900 3550 1900 4250
+Wire Wire Line
+	1225 3550 1900 3550
+Wire Wire Line
+	1200 2800 1225 2800
+Connection ~ 1225 2800
+Wire Wire Line
+	1225 2800 2000 2800
+Wire Wire Line
+	1500 3250 2250 3250
+Wire Wire Line
+	2250 3250 2250 2700
+Wire Wire Line
+	1500 3250 1500 4150
+Wire Wire Line
+	2250 2700 3175 2700
+Wire Wire Line
+	1450 3150 2150 3150
+Wire Wire Line
+	2150 3150 2150 2550
+Wire Wire Line
+	1450 3150 1450 4000
+Wire Wire Line
+	2150 2550 3175 2550
+NoConn ~ 1200 2950
+NoConn ~ 1200 3100
+NoConn ~ 1200 3250
+$Comp
+L Transistor_FET:IRLML2060 Q5
+U 1 1 5E927114
+P 3650 5650
+F 0 "Q5" H 3856 5696 50  0000 L CNN
+F 1 "IRLML2060" H 3856 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3850 5575 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 3650 5650 50  0001 L CNN
+	1    3650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E92954A
+P 3750 5850
+F 0 "#PWR0105" H 3750 5600 50  0001 C CNN
+F 1 "GND" H 3755 5677 50  0000 C CNN
+F 2 "" H 3750 5850 50  0001 C CNN
+F 3 "" H 3750 5850 50  0001 C CNN
+	1    3750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E92A2EF
+P 3750 5175
+F 0 "R14" H 3820 5221 50  0000 L CNN
+F 1 "1k" H 3820 5130 50  0000 L CNN
+F 2 "" V 3680 5175 50  0001 C CNN
+F 3 "~" H 3750 5175 50  0001 C CNN
+	1    3750 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4850 3750 5025
+Wire Wire Line
+	3750 5325 3750 5450
+Wire Wire Line
+	1225 2500 1400 2500
+Wire Wire Line
+	1400 2500 1400 5650
+Wire Wire Line
+	1400 5650 3300 5650
+$Comp
+L Device:R R15
+U 1 1 5E938856
+P 3300 5800
+F 0 "R15" H 3370 5846 50  0000 L CNN
+F 1 "10k" H 3370 5755 50  0000 L CNN
+F 2 "" V 3230 5800 50  0001 C CNN
+F 3 "~" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 5650
+Wire Wire Line
+	3300 5650 3450 5650
+$Comp
+L power:GND #PWR0106
+U 1 1 5E939925
+P 3300 5950
+F 0 "#PWR0106" H 3300 5700 50  0001 C CNN
+F 1 "GND" H 3305 5777 50  0000 C CNN
+F 2 "" H 3300 5950 50  0001 C CNN
+F 3 "" H 3300 5950 50  0001 C CNN
+	1    3300 5950
+	1    0    0    -1  
+$EndComp
+Text Label 1300 2500 0    50   ~ 0
+DP
 $EndSCHEMATC

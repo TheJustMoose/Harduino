@@ -670,8 +670,6 @@ Text Label 1600 3250 0    50   ~ 0
 A1
 Text Notes 4100 5100 0    50   ~ 0
 CA
-Wire Wire Line
-	2000 1000 5600 1000
 $Comp
 L 74xx_IEEE:74LS139 U2
 U 2 1 5D9F2012
@@ -1039,4 +1037,19 @@ F 3 "" H 3300 5950 50  0001 C CNN
 $EndComp
 Text Label 1300 2500 0    50   ~ 0
 DP
+$Comp
+L Device:R R16
+U 1 1 5E8E75A2
+P 3850 1000
+F 0 "R16" V 3643 1000 50  0000 C CNN
+F 1 "100" V 3734 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 1000 50  0001 C CNN
+F 3 "~" H 3850 1000 50  0001 C CNN
+	1    3850 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1000 3700 1000
+Wire Wire Line
+	4000 1000 5600 1000
 $EndSCHEMATC

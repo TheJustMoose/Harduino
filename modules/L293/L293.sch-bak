@@ -800,4 +800,20 @@ Wire Wire Line
 Wire Wire Line
 	1750 4500 1900 4500
 Connection ~ 1750 4000
+Text Label 1500 2950 0    50   ~ 0
+PWM1
+Text Label 1475 3100 0    50   ~ 0
+PWM2
+Text Label 1500 2800 0    50   ~ 0
+M1+
+Text Label 1350 3550 0    50   ~ 0
+M1-
+Text Label 1375 3700 0    50   ~ 0
+M2+
+Text Label 1375 3850 0    50   ~ 0
+M2-
+NoConn ~ 1225 2800
+NoConn ~ 1225 3250
+NoConn ~ 1225 4000
+NoConn ~ 1225 4150
 $EndSCHEMATC

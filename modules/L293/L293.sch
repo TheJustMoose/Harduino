@@ -746,16 +746,6 @@ Set jumper if you want\nto power HardDuino\nfrom battery!
 Wire Wire Line
 	3600 1750 3600 2400
 Wire Wire Line
-	1225 2950 1650 2950
-Wire Wire Line
-	1650 2950 1650 3200
-Wire Wire Line
-	1650 3200 3200 3200
-Wire Wire Line
-	1225 3100 1550 3100
-Wire Wire Line
-	1550 3100 1550 3650
-Wire Wire Line
 	1550 3650 3050 3650
 Wire Wire Line
 	3050 3650 3050 3800
@@ -800,9 +790,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 4500 1900 4500
 Connection ~ 1750 4000
-Text Label 1500 2950 0    50   ~ 0
+Text Label 1700 3200 0    50   ~ 0
 PWM1
-Text Label 1475 3100 0    50   ~ 0
+Text Label 1600 3650 0    50   ~ 0
 PWM2
 Text Label 1500 2800 0    50   ~ 0
 M1+
@@ -816,4 +806,14 @@ NoConn ~ 1225 2800
 NoConn ~ 1225 3250
 NoConn ~ 1225 4000
 NoConn ~ 1225 4150
+Wire Wire Line
+	1225 2950 1550 2950
+Wire Wire Line
+	1550 2950 1550 3650
+Wire Wire Line
+	1650 3100 1650 3200
+Wire Wire Line
+	1650 3200 3200 3200
+Wire Wire Line
+	1225 3100 1650 3100
 $EndSCHEMATC

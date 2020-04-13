@@ -1008,8 +1008,6 @@ Wire Wire Line
 	1225 2500 1400 2500
 Wire Wire Line
 	1400 2500 1400 5650
-Wire Wire Line
-	1400 5650 3300 5650
 $Comp
 L Device:R R15
 U 1 1 5E938856
@@ -1021,7 +1019,6 @@ F 3 "~" H 3300 5800 50  0001 C CNN
 	1    3300 5800
 	1    0    0    -1  
 $EndComp
-Connection ~ 3300 5650
 Wire Wire Line
 	3300 5650 3450 5650
 $Comp
@@ -1052,4 +1049,20 @@ Wire Wire Line
 	2000 1000 3700 1000
 Wire Wire Line
 	4000 1000 5600 1000
+$Comp
+L Device:Jumper JP1
+U 1 1 5E952979
+P 2375 5650
+F 0 "JP1" H 2375 5914 50  0000 C CNN
+F 1 "Jumper" H 2375 5823 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2375 5650 50  0001 C CNN
+F 3 "~" H 2375 5650 50  0001 C CNN
+	1    2375 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5650 2075 5650
+Wire Wire Line
+	2675 5650 3300 5650
+Connection ~ 3300 5650
 $EndSCHEMATC

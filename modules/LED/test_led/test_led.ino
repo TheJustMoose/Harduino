@@ -1,17 +1,23 @@
 
 const int line = 8;
 
-const int a0 = 12;
-const int a1 = 13;
+const int dp = 2;
 
-const int d0 = 4;
-const int d1 = 5;
-const int d2 = 6;
-const int d3 = 7;
+const int d0 = 8;
+const int d1 = 9;
+const int d2 = 10;
+const int d3 = 11;
+
+const int a0 = 13;  // yes! it's fail :(
+const int a1 = 12;
+
+const int del = 5;
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(line, INPUT);
+
+  pinMode(dp, OUTPUT);
 
   pinMode(d0, OUTPUT);
   pinMode(d1, OUTPUT);
@@ -21,6 +27,8 @@ void setup() {
   pinMode(a0, OUTPUT);
   pinMode(a1, OUTPUT);
   
+  digitalWrite(dp, LOW);
+
   digitalWrite(d0, LOW);
   digitalWrite(d1, LOW);
   digitalWrite(d2, LOW);
@@ -34,8 +42,8 @@ void setup() {
 }
 
 void set_dig(unsigned int v) {
-  digitalWrite(a0, v & 0x02);
-  digitalWrite(a1, v & 0x01);
+  digitalWrite(a0, v & 0x01);
+  digitalWrite(a1, v & 0x02);
 }
 
 void set_num(unsigned int v) {
@@ -45,7 +53,9 @@ void set_num(unsigned int v) {
   digitalWrite(d3, v & 0x08);
 }
 
-const int del = 2;
+void set_dp(bool v) {
+  digitalWrite(dp, v ? HIGH : LOW);
+}
 
 uint8_t pressed_btn_mask = 0;
 
@@ -74,16 +84,18 @@ void loop() {
   delay(del);
 
   set_dig(2);
+  set_dp(true);
   set_num(1);
   delay(del);
 
   set_dig(1);
-  read_btn(1);
+  set_dp(false);
   set_num(2);
+  read_btn(1);
   delay(del);
 
   set_dig(0);
-  read_btn(0);
   set_num(3);
+  read_btn(0);
   delay(del);
 }

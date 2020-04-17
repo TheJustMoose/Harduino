@@ -469,14 +469,8 @@ F 3 "" H 3500 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1225 3700 2000 3700
-Wire Wire Line
 	2000 3250 2750 3250
 Connection ~ 2750 3250
-Wire Wire Line
-	1225 3850 2000 3850
-Wire Wire Line
-	2000 4250 2750 4250
 Connection ~ 2750 4250
 $Comp
 L Device:Buzzer BZ1
@@ -555,8 +549,6 @@ F 3 "" H 2175 2450 50  0001 C CNN
 $EndComp
 NoConn ~ 1225 2500
 NoConn ~ 1225 2800
-NoConn ~ 1225 2950
-NoConn ~ 1225 3100
 NoConn ~ 1225 3250
 NoConn ~ 1225 3400
 NoConn ~ 1225 3550
@@ -569,7 +561,15 @@ NoConn ~ 6750 2950
 NoConn ~ 6750 3100
 NoConn ~ 6750 3250
 Wire Wire Line
-	2000 3250 2000 3700
+	1225 2950 2000 2950
 Wire Wire Line
-	2000 3850 2000 4250
+	2000 2950 2000 3250
+Wire Wire Line
+	1225 3100 1900 3100
+Wire Wire Line
+	1900 3100 1900 4250
+Wire Wire Line
+	1900 4250 2750 4250
+NoConn ~ 1225 3700
+NoConn ~ 1225 3850
 $EndSCHEMATC

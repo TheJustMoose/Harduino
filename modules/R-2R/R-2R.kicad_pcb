@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
     (trace_clearance 0.2)
@@ -1138,7 +1138,7 @@
   (gr_text R-2R (at 103.1875 87.63) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text 19e5d0 (at 118.745 89.535) (layer F.Cu)
+  (gr_text 0aba84 (at 118.745 89.535) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2 (at 109.855 89.535) (layer F.Cu)

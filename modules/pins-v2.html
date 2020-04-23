@@ -142,7 +142,7 @@ function sall() {
 </tr>
 
 <tr id="mosfet" style="display:none;"><td>MOSFET</td><td></td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>Gate1</td><td>Gate2</td><td>-</td>
+<td>-</td><td>-</td><td>-</td><td>[Beep!]</td><td>-</td><td>Gate1</td><td>Gate2</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
@@ -288,10 +288,10 @@ function sall() {
 <td bgcolor="#ff99cc">Motor<br>L293</td><td bgcolor="#ff99cc">Joystick(1)</td><td>HC-05(2)</td><td bgcolor="#ff99cc">MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td>R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
 <tr bgcolor="#99ff66" onclick="s('rtc');s('h2x');s('valc');s('7seg');"><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr bgcolor="#99ff66" onclick="s('h2xs');"><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>
-<tr onclick="s('h2x');s('l293');s('stick');"><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2x');s('l293');s('stick');"><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
 <tr onclick="s('h2x');s('7seg');s('valc');s('a4988');"><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr onclick="s('h2x');s('7seg');s('arrow');s('l293');s('8x8');"><td>Robot</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>7</td></tr>
-<tr onclick="s('h2x');s('7seg');s('valc');s('mosfet');s('beep');"><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2x');s('7seg');s('valc');s('mosfet');s('beep');"><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
 <tr onclick="s('h2xs');s('7seg');s('valc');s('mosfet');"><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 <tr onclick="s('h2xs');s('7seg');s('valc');s('beep');" bgcolor="#99ff66"><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 <tr onclick="s('7seg');" bgcolor="#99ff66"><td>Thermometer</td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>2</td></tr>
@@ -299,13 +299,14 @@ function sall() {
 <tr onclick="s('h3xs');s('lcd');s('valc');s('rtc');s('klcd');"><td>Radio</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td>*</td><td>for LCD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h3xS</td><td>8?</td></tr>
 <tr onclick="s('h3xs');s('7seg');s('valc');s('rtc');s('kled');"><td>Radio</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td>*</td><td>for LED</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h3xS</td><td>8</td></tr>
 <tr onclick="s('8x8');"><td>Smile!</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>2</td></tr>
-<tr onclick="s('h2x');s('7seg');s('raw');"><td>Calculator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td bgcolor="#ff99cc">Raw</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2x');s('7seg');s('raw');"><td>Calculator</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td bgcolor="#ff99cc">Raw Kbd</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5</td></tr>
 <tr onclick="s('h2x');s('lcd');s('ksmd');"><td>Real ;) Calculator<br>or Reverse Polish notation</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>SMD</td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
 <tr onclick="s('h2x');s('7seg');s('valc');s('l293');" bgcolor="#99ff66"><td>PWM for motors</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr onclick="s('h2xs');s('7seg');s('valc');" bgcolor="#99ff66"><td>Servo tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS | Horizontal</td><td>5?</td></tr>
 <tr onclick="s('h2x');s('7seg');s('valc');s('arrow');s('l293');s('beep');"><td>BigTrak</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>8</td></tr>
 <tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Snake Game</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
 <tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Tetris</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2xs');s('raw');s('mosfet');"><td>Combination lock</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Raw Kbd</td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 </table>
 
 <br>

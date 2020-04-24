@@ -272,19 +272,19 @@ function sall() {
 
 <br>
 
-<p>Примечание:</p>
+<p>РџСЂРёРјРµС‡Р°РЅРёРµ:</p>
 <ul>
-<li>D0-D3 как бы шина данных</li>
-<li>Latch как бы сигнал записи</li>
-<li>A0-A1 как бы шина адреса</li>
-<li>LineX как бы сигнал чтения</li>
-<li>То есть, выставляем на ШД что-то, записываем, потом на ША выставляем адрес и что-то происходит (отображается цифра на индикаторе). Или отдельно ША, отдельно ШД. На ШД пишем просто данные (биты включения моторчика), а на ША пишем адрес чего-то (кнопки, которую хотим прочитать через LineX.</li>
+<li>D0-D3 РєР°Рє Р±С‹ С€РёРЅР° РґР°РЅРЅС‹С…</li>
+<li>Latch РєР°Рє Р±С‹ СЃРёРіРЅР°Р» Р·Р°РїРёСЃРё</li>
+<li>A0-A1 РєР°Рє Р±С‹ С€РёРЅР° Р°РґСЂРµСЃР°</li>
+<li>LineX РєР°Рє Р±С‹ СЃРёРіРЅР°Р» С‡С‚РµРЅРёСЏ</li>
+<li>РўРѕ РµСЃС‚СЊ, РІС‹СЃС‚Р°РІР»СЏРµРј РЅР° РЁР” С‡С‚Рѕ-С‚Рѕ, Р·Р°РїРёСЃС‹РІР°РµРј, РїРѕС‚РѕРј РЅР° РЁРђ РІС‹СЃС‚Р°РІР»СЏРµРј Р°РґСЂРµСЃ Рё С‡С‚Рѕ-С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ (РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ С†РёС„СЂР° РЅР° РёРЅРґРёРєР°С‚РѕСЂРµ). РР»Рё РѕС‚РґРµР»СЊРЅРѕ РЁРђ, РѕС‚РґРµР»СЊРЅРѕ РЁР”. РќР° РЁР” РїРёС€РµРј РїСЂРѕСЃС‚Рѕ РґР°РЅРЅС‹Рµ (Р±РёС‚С‹ РІРєР»СЋС‡РµРЅРёСЏ РјРѕС‚РѕСЂС‡РёРєР°), Р° РЅР° РЁРђ РїРёС€РµРј Р°РґСЂРµСЃ С‡РµРіРѕ-С‚Рѕ (РєРЅРѕРїРєРё, РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РёРј РїСЂРѕС‡РёС‚Р°С‚СЊ С‡РµСЂРµР· LineX.</li>
 </ul>
 
 <br>
 
 <table border=1>
-<tr><td>Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td>LСD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
+<tr><td>Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td>LРЎD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
 <td bgcolor="#ff99cc">Motor<br>L293</td><td bgcolor="#ff99cc">Joystick(1)</td><td>HC-05(2)</td><td bgcolor="#ff99cc">MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td>R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
 <tr bgcolor="#99ff66" onclick="s('rtc');s('h2x');s('valc');s('7seg');"><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr bgcolor="#99ff66" onclick="s('h2xs');"><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>

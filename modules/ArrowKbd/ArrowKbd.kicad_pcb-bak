@@ -1774,8 +1774,8 @@
     )
   )
 
-  (gr_text hash (at 117.475 89.2175) (layer F.Cu)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  (gr_text c62680 (at 118.11 89.2175) (layer F.Cu)
+    (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2 (at 98.425 89.2175) (layer F.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.3)))

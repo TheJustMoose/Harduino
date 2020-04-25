@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 32)
+    (drawings 33)
     (tracks 178)
     (zones 0)
     (modules 42)
@@ -1774,6 +1774,9 @@
     )
   )
 
+  (gr_text hash (at 117.475 89.2175) (layer F.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text v2 (at 98.425 89.2175) (layer F.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ArrowKbd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -676,17 +675,7 @@ F 3 "" H 5550 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1225 3550 2725 3550
-Wire Wire Line
-	2725 3550 2725 3175
-Wire Wire Line
 	2725 2675 2725 2450
-Wire Wire Line
-	2725 2450 2425 2450
-Wire Wire Line
-	2425 2450 2425 3400
-Wire Wire Line
-	2425 3400 1225 3400
 Wire Wire Line
 	2875 2925 4500 2925
 Wire Wire Line
@@ -715,4 +704,35 @@ Wire Wire Line
 Connection ~ 1450 4150
 Wire Wire Line
 	1450 4150 1675 4150
+Wire Wire Line
+	1225 2800 1800 2800
+Wire Wire Line
+	1800 2800 1800 2450
+Wire Wire Line
+	1800 2450 2725 2450
+Wire Wire Line
+	1225 3250 1800 3250
+Wire Wire Line
+	1800 3250 1800 3375
+Wire Wire Line
+	1800 3375 2725 3375
+Wire Wire Line
+	2725 3375 2725 3175
+NoConn ~ 1225 2500
+NoConn ~ 1225 2650
+NoConn ~ 1225 2950
+NoConn ~ 1225 3100
+NoConn ~ 1225 3400
+NoConn ~ 1225 3550
+NoConn ~ 1225 3700
+NoConn ~ 1225 3850
+NoConn ~ 2775 5125
+NoConn ~ 2775 5275
+NoConn ~ 2775 5475
+NoConn ~ 2775 5625
+NoConn ~ 6750 2500
+NoConn ~ 6750 2650
+NoConn ~ 6750 2800
+NoConn ~ 6750 3100
+NoConn ~ 6750 3250
 $EndSCHEMATC

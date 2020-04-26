@@ -119,12 +119,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x10_Male J2
 U 1 1 5E7C1FC2
-P 3700 2400
-F 0 "J2" H 3725 2875 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 3525 1800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3700 2400 50  0001 C CNN
-F 3 "~" H 3700 2400 50  0001 C CNN
-	1    3700 2400
+P 3950 2400
+F 0 "J2" H 3975 2875 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 3775 1800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3950 2400 50  0001 C CNN
+F 3 "~" H 3950 2400 50  0001 C CNN
+	1    3950 2400
 	-1   0    0    -1  
 $EndComp
 Text Label 1750 2100 0    50   ~ 0
@@ -143,25 +143,23 @@ Text Label 1750 2700 0    50   ~ 0
 A4
 Text Label 1750 2800 0    50   ~ 0
 A5
-Text Label 3500 2000 0    50   ~ 0
+Text Label 3650 2000 0    50   ~ 0
 11
-Text Label 3500 2900 0    50   ~ 0
-2
-Text Label 3500 2800 0    50   ~ 0
+Text Label 3750 2800 0    50   ~ 0
 3
-Text Label 3500 2700 0    50   ~ 0
+Text Label 3750 2700 0    50   ~ 0
 4
-Text Label 3500 2600 0    50   ~ 0
+Text Label 3750 2600 0    50   ~ 0
 5
-Text Label 3500 2500 0    50   ~ 0
+Text Label 3750 2500 0    50   ~ 0
 6
-Text Label 3500 2400 0    50   ~ 0
+Text Label 3675 2400 0    50   ~ 0
 7
-Text Label 3500 2300 0    50   ~ 0
+Text Label 3575 2300 0    50   ~ 0
 8
-Text Label 3500 2200 0    50   ~ 0
+Text Label 3600 2200 0    50   ~ 0
 9
-Text Label 3500 2100 0    50   ~ 0
+Text Label 3625 2100 0    50   ~ 0
 10
 $Comp
 L power:GND #PWR01002
@@ -197,33 +195,13 @@ F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 3500 2200 50  0001 C
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3200 2000 3500 2000
-Wire Wire Line
-	3200 2100 3500 2100
-Wire Wire Line
-	3200 2200 3500 2200
-Wire Wire Line
-	3200 2300 3500 2300
-Wire Wire Line
 	3200 2600 3350 2600
 Wire Wire Line
 	3350 2600 3350 2400
 Wire Wire Line
-	3350 2400 3500 2400
-Wire Wire Line
 	3200 2800 3350 2800
 Wire Wire Line
 	3350 2800 3350 2900
-Wire Wire Line
-	3350 2900 3500 2900
-Text Label 3325 2300 0    50   ~ 0
-D0
-Text Label 3325 2200 0    50   ~ 0
-D1
-Text Label 3325 2100 0    50   ~ 0
-D2
-Text Label 3325 2000 0    50   ~ 0
-D3
 Text Label 3350 2400 0    50   ~ 0
 RS
 Text Label 3375 2900 0    50   ~ 0
@@ -330,12 +308,42 @@ NoConn ~ 1750 2500
 NoConn ~ 1750 2600
 NoConn ~ 1750 2700
 NoConn ~ 1750 2800
-NoConn ~ 3200 1600
-NoConn ~ 3200 1700
-NoConn ~ 3200 1800
-NoConn ~ 3200 1900
-NoConn ~ 3500 2500
-NoConn ~ 3500 2600
-NoConn ~ 3500 2700
-NoConn ~ 3500 2800
+NoConn ~ 3200 2000
+NoConn ~ 3200 2100
+NoConn ~ 3200 2200
+NoConn ~ 3200 2300
+Wire Wire Line
+	3350 2400 3750 2400
+Wire Wire Line
+	3200 1900 3350 1900
+Wire Wire Line
+	3350 1900 3350 2300
+Wire Wire Line
+	3350 2300 3750 2300
+Wire Wire Line
+	3200 1800 3425 1800
+Wire Wire Line
+	3425 1800 3425 2200
+Wire Wire Line
+	3425 2200 3750 2200
+Wire Wire Line
+	3200 1700 3500 1700
+Wire Wire Line
+	3500 1700 3500 2100
+Wire Wire Line
+	3500 2100 3750 2100
+Wire Wire Line
+	3200 1600 3575 1600
+Wire Wire Line
+	3575 1600 3575 2000
+Wire Wire Line
+	3575 2000 3750 2000
+NoConn ~ 3750 2500
+NoConn ~ 3750 2600
+NoConn ~ 3750 2700
+NoConn ~ 3750 2800
+Wire Wire Line
+	3350 2900 3750 2900
+Text Label 3675 2900 0    50   ~ 0
+2
 $EndSCHEMATC

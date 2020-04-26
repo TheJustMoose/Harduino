@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Kbd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -61,123 +60,112 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J1
 U 1 1 5D793457
-P 1025 2500
-F 0 "J1" H 975 2550 50  0000 C CNN
-F 1 "2" H 1275 2550 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2500 50  0001 C CNN
-F 3 "~" H 1025 2500 50  0001 C CNN
-	1    1025 2500
-	1    0    0    -1  
+P 1050 3825
+F 0 "J1" H 1000 3875 50  0000 C CNN
+F 1 "2" H 1300 3875 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3825 50  0001 C CNN
+F 3 "~" H 1050 3825 50  0001 C CNN
+	1    1050 3825
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J2
 U 1 1 5D794940
-P 1025 2650
-F 0 "J2" H 975 2700 50  0000 C CNN
-F 1 "3" H 1275 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2650 50  0001 C CNN
-F 3 "~" H 1025 2650 50  0001 C CNN
-	1    1025 2650
-	1    0    0    -1  
+P 1050 3675
+F 0 "J2" H 1000 3725 50  0000 C CNN
+F 1 "3" H 1300 3725 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3675 50  0001 C CNN
+F 3 "~" H 1050 3675 50  0001 C CNN
+	1    1050 3675
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5D794B32
-P 1025 2800
-F 0 "J3" H 975 2850 50  0000 C CNN
-F 1 "4" H 1275 2850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2800 50  0001 C CNN
-F 3 "~" H 1025 2800 50  0001 C CNN
-	1    1025 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J4
-U 1 1 5D794C66
-P 1025 2950
-F 0 "J4" H 975 3000 50  0000 C CNN
-F 1 "5" H 1275 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 2950 50  0001 C CNN
-F 3 "~" H 1025 2950 50  0001 C CNN
-	1    1025 2950
-	1    0    0    -1  
+P 1050 3525
+F 0 "J3" H 1000 3575 50  0000 C CNN
+F 1 "4" H 1300 3575 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3525 50  0001 C CNN
+F 3 "~" H 1050 3525 50  0001 C CNN
+	1    1050 3525
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J5
 U 1 1 5D794EF4
-P 1025 3100
-F 0 "J5" H 975 3150 50  0000 C CNN
-F 1 "6" H 1275 3150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3100 50  0001 C CNN
-F 3 "~" H 1025 3100 50  0001 C CNN
-	1    1025 3100
-	1    0    0    -1  
+P 1050 3225
+F 0 "J5" H 1000 3275 50  0000 C CNN
+F 1 "6" H 1300 3275 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3225 50  0001 C CNN
+F 3 "~" H 1050 3225 50  0001 C CNN
+	1    1050 3225
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J6
 U 1 1 5D795168
-P 1025 3250
-F 0 "J6" H 975 3300 50  0000 C CNN
-F 1 "7" H 1275 3300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3250 50  0001 C CNN
-F 3 "~" H 1025 3250 50  0001 C CNN
-	1    1025 3250
-	1    0    0    -1  
+P 1050 3075
+F 0 "J6" H 1000 3125 50  0000 C CNN
+F 1 "7" H 1300 3125 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3075 50  0001 C CNN
+F 3 "~" H 1050 3075 50  0001 C CNN
+	1    1050 3075
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J7
 U 1 1 5D795340
-P 1025 3400
-F 0 "J7" H 975 3450 50  0000 C CNN
-F 1 "8" H 1275 3450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3400 50  0001 C CNN
-F 3 "~" H 1025 3400 50  0001 C CNN
-	1    1025 3400
-	1    0    0    -1  
+P 1050 2925
+F 0 "J7" H 1000 2975 50  0000 C CNN
+F 1 "8" H 1300 2975 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2925 50  0001 C CNN
+F 3 "~" H 1050 2925 50  0001 C CNN
+	1    1050 2925
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J8
 U 1 1 5D7955DE
-P 1025 3550
-F 0 "J8" H 975 3600 50  0000 C CNN
-F 1 "9" H 1275 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3550 50  0001 C CNN
-F 3 "~" H 1025 3550 50  0001 C CNN
-	1    1025 3550
-	1    0    0    -1  
+P 1050 2775
+F 0 "J8" H 1000 2825 50  0000 C CNN
+F 1 "9" H 1300 2825 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2775 50  0001 C CNN
+F 3 "~" H 1050 2775 50  0001 C CNN
+	1    1050 2775
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 5D7957DA
-P 1025 3700
-F 0 "J9" H 975 3750 50  0000 C CNN
-F 1 "10" H 1275 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3700 50  0001 C CNN
-F 3 "~" H 1025 3700 50  0001 C CNN
-	1    1025 3700
-	1    0    0    -1  
+P 1050 2625
+F 0 "J9" H 1000 2675 50  0000 C CNN
+F 1 "10" H 1300 2675 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2625 50  0001 C CNN
+F 3 "~" H 1050 2625 50  0001 C CNN
+	1    1050 2625
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J10
 U 1 1 5D795810
-P 1025 3850
-F 0 "J10" H 975 3900 50  0000 C CNN
-F 1 "11" H 1275 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 3850 50  0001 C CNN
-F 3 "~" H 1025 3850 50  0001 C CNN
-	1    1025 3850
-	1    0    0    -1  
+P 1050 2475
+F 0 "J10" H 1000 2525 50  0000 C CNN
+F 1 "11" H 1300 2525 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2475 50  0001 C CNN
+F 3 "~" H 1050 2475 50  0001 C CNN
+	1    1050 2475
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J11
 U 1 1 5D7959D6
-P 1025 4000
-F 0 "J11" H 975 4050 50  0000 C CNN
-F 1 "12" H 1275 4050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 4000 50  0001 C CNN
-F 3 "~" H 1025 4000 50  0001 C CNN
-	1    1025 4000
-	1    0    0    -1  
+P 1050 2325
+F 0 "J11" H 1000 2375 50  0000 C CNN
+F 1 "12" H 1300 2375 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2325 50  0001 C CNN
+F 3 "~" H 1050 2325 50  0001 C CNN
+	1    1050 2325
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J13
@@ -270,13 +258,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Male J12
 U 1 1 5D79744D
-P 1025 4150
-F 0 "J12" H 975 4200 50  0000 C CNN
-F 1 "13" H 1275 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1025 4150 50  0001 C CNN
-F 3 "~" H 1025 4150 50  0001 C CNN
-	1    1025 4150
-	1    0    0    -1  
+P 1050 2175
+F 0 "J12" H 1000 2225 50  0000 C CNN
+F 1 "13" H 1300 2225 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 2175 50  0001 C CNN
+F 3 "~" H 1050 2175 50  0001 C CNN
+	1    1050 2175
+	1    0    0    1   
 $EndComp
 $Comp
 L CommonLibrary:6x6-tact-btn D1
@@ -506,17 +494,6 @@ Wire Wire Line
 	6000 2800 6750 2800
 Connection ~ 2700 3675
 $Comp
-L Diode:LL4148 VD1
-U 1 1 5E4DB037
-P 2250 2475
-F 0 "VD1" H 2200 2575 50  0000 C CNN
-F 1 "LL4148" H 2450 2525 50  0000 C CNN
-F 2 "Diode_SMD:D_MiniMELF" H 2250 2300 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 2475 50  0001 C CNN
-	1    2250 2475
-	1    0    0    -1  
-$EndComp
-$Comp
 L Diode:LL4148 VD2
 U 1 1 5E4DC08E
 P 2250 2925
@@ -604,14 +581,14 @@ Wire Wire Line
 Connection ~ 6425 3550
 Wire Wire Line
 	6750 3550 6425 3550
-NoConn ~ 1225 2500
-NoConn ~ 1225 2650
-NoConn ~ 1225 3400
-NoConn ~ 1225 3550
-NoConn ~ 1225 3700
-NoConn ~ 1225 3850
-NoConn ~ 1225 4000
-NoConn ~ 1225 4150
+NoConn ~ 1250 3825
+NoConn ~ 1250 3675
+NoConn ~ 1250 3075
+NoConn ~ 1250 3225
+NoConn ~ 1250 3375
+NoConn ~ 1250 3525
+NoConn ~ 1250 2325
+NoConn ~ 1250 2175
 NoConn ~ 6750 2950
 NoConn ~ 6750 3100
 NoConn ~ 6750 3250
@@ -628,28 +605,46 @@ Connection ~ 3100 3325
 Wire Wire Line
 	2400 3750 3100 3750
 Connection ~ 3100 3750
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5D794C66
+P 1050 3375
+F 0 "J4" H 1000 3425 50  0000 C CNN
+F 1 "5" H 1300 3425 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1050 3375 50  0001 C CNN
+F 3 "~" H 1050 3375 50  0001 C CNN
+	1    1050 3375
+	1    0    0    1   
+$EndComp
+$Comp
+L Diode:LL4148 VD1
+U 1 1 5E4DB037
+P 2250 2475
+F 0 "VD1" H 2200 2575 50  0000 C CNN
+F 1 "LL4148" H 2450 2525 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2250 2300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 2250 2475 50  0001 C CNN
+	1    2250 2475
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1750 2800 1750 3750
+	1250 2475 2100 2475
 Wire Wire Line
-	1750 3750 2100 3750
+	1250 2625 1900 2625
 Wire Wire Line
-	1225 2800 1750 2800
+	1900 2625 1900 2925
 Wire Wire Line
-	1225 2950 1875 2950
+	1900 2925 2100 2925
 Wire Wire Line
-	1875 2950 1875 3325
+	1250 2775 1775 2775
 Wire Wire Line
-	1875 3325 2100 3325
+	1775 2775 1775 3325
 Wire Wire Line
-	2000 3100 2000 2925
+	1775 3325 2100 3325
 Wire Wire Line
-	2000 2925 2100 2925
+	1250 2925 1650 2925
 Wire Wire Line
-	1225 3100 2000 3100
+	1650 2925 1650 3750
 Wire Wire Line
-	1225 3250 1625 3250
-Wire Wire Line
-	1625 3250 1625 2475
-Wire Wire Line
-	1625 2475 2100 2475
+	1650 3750 2100 3750
 $EndSCHEMATC

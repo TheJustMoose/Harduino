@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00000_fffffffe)
+      (layerselection 0x00000_7fffffff)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -1793,7 +1793,7 @@
   (gr_text PORTD (at 116.713 76.8985 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text hash (at 118.11 89.535) (layer F.Cu)
+  (gr_text 06eece (at 118.11 89.4715) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2 (at 109.855 89.2175) (layer F.Cu)

@@ -1,8 +1,17 @@
 
+#define V2
+
+#ifdef V2
+const int D0 = 8;
+const int D1 = 9;
+const int D2 = 10;
+const int D3 = 11;
+#else
 const int D0 = 4;
 const int D1 = 5;
 const int D2 = 6;
 const int D3 = 7;
+#endif
 
 const int Line0 = A2;
 const int Line1 = A1;

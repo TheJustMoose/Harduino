@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Harduino-rescue)(type Legacy)(uri ${KIPRJMOD}/Harduino-rescue.lib)(options "")(descr ""))
-)

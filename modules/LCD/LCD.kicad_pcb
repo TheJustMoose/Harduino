@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
     (trace_clearance 0.2)
@@ -570,7 +570,7 @@
     (effects (font (size 1.5 1.5) (thickness 0.2)))
   )
   (gr_line (start 107.315 25.4) (end 113.665 25.4) (layer Edge.Cuts) (width 0.15) (tstamp 5EA55F7F))
-  (gr_text 64baef (at 135.89 56.515) (layer B.Cu)
+  (gr_text ad9ce5 (at 135.89 56.515) (layer B.Cu)
     (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
   )
   (gr_text v2 (at 127.9525 56.1975) (layer B.Cu)

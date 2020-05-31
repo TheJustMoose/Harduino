@@ -740,4 +740,18 @@ Text Label 2975 1550 1    50   ~ 0
 SCK
 Text Label 3150 2000 1    50   ~ 0
 RST
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5ED32770
+P 3475 2250
+F 0 "J5" H 3583 2431 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3583 2340 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3475 2250 50  0001 C CNN
+F 3 "~" H 3475 2250 50  0001 C CNN
+	1    3475 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 2250 3675 2500
+Connection ~ 3675 2500
 $EndSCHEMATC

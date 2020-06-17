@@ -3,7 +3,7 @@
 
 RTClib rtc;
 
-const int line = 8;
+const int line = 4;
 
 const int dp = 2;
 
@@ -65,6 +65,7 @@ void set_dp(bool v) {
 uint8_t pressed_btn_mask = 0;
 
 void read_btn(uint8_t btn) {
+/*
   uint8_t mask = 1 << btn;
   if (digitalRead(line)) {
     pressed_btn_mask &= 0xFF ^ mask; // reset/release current btn
@@ -81,37 +82,44 @@ void read_btn(uint8_t btn) {
     Serial.print(btn);
     Serial.println(" pressed");
   }
+*/
 }
 
 int cnt = 0;
-int h = 0, m = 0;
+int hh = 0, hl = 0, mh = 0, ml = 0;
 
 void loop() {
   if (cnt > 5) {
     DateTime now = rtc.now();
-    h = now.hour();
-    m = now.minute();
+
+    hh = now.hour();
+    hl = hh % 10;
+    hh /= 10;
+
+    mh = now.minute();
+    ml = mh % 10;
+    mh /= 10;
   }
   else
     cnt++;
 
   set_dig(3);
-  set_num(h / 10);
+  set_num(hh);
   delay(del);
 
   set_dig(2);
   set_dp(true);
-  set_num(h % 10);
+  set_num(hl);
   delay(del);
 
   set_dig(1);
   set_dp(false);
-  set_num(m / 10);
+  set_num(mh);
   read_btn(1);
   delay(del);
 
   set_dig(0);
-  set_num(m % 10);
+  set_num(ml);
   read_btn(0);
   delay(del);
 }

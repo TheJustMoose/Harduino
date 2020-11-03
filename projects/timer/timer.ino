@@ -1,4 +1,5 @@
 #include <TimerOne.h>
+#include <EEPROM.h>
 
 // hardware:
 // 3 tactile button + rotary encoder button
@@ -30,9 +31,10 @@
 #define NUM_BIT_2 2
 #define NUM_BIT_3 3
 
-const int line = 4;
-
 const int dp = 2;  // decimal point
+const int buzzer = 3;
+const int line = 4;  // buttons state
+const int mosfet1 = 5;
 
 const int d0 = 8;
 const int d1 = 9;
@@ -46,8 +48,12 @@ const int del = 5; // delay ms
 
 uint8_t btn_was_pressed[4] = {0, 0, 0, 0};
 uint8_t btn_pressed[4] = {0, 0, 0, 0};
-uint8_t LED[4] = {0, 1, 2, 3}; // the numbers on the LED
+uint8_t LED[4] = {0, 0, 0, 0}; // the numbers on the LED
 uint8_t digit = 0; // current processed digit | button
+boolean in_edit = true;
+uint16_t counter = 0;  // how many times timer interrupt was called
+int16_t rest_of_time = 0;
+bool should_update = false;
 
 void set_addr(uint8_t addr) {
   // PB5 == A decoder pin
@@ -85,14 +91,26 @@ void set_number(uint8_t number) {
     bitClear(NUM_PORT, NUM_BIT_3);
 }
 
-void on_tmr() {
-  digit++;
-  if (digit >= 4)
-    digit = 0;
+void on() {
+  digitalWrite(mosfet1, HIGH);
+  Serial.println("ON");
+}
 
-  set_addr(digit);
-  set_number(LED[digit]);
+void off() {
+  digitalWrite(mosfet1, LOW);
+  Serial.println("OFF");
+}
 
+void beep() {
+  for (int i = 0; i < 3; i++) {
+    digitalWrite(buzzer, HIGH);
+    delay(500);
+    digitalWrite(buzzer, LOW);
+    delay(500);
+  }
+}
+
+void check_buttons() {
   byte val = BTN_PORT;
   boolean vbl = val & _BV(BTN_BIT);
   if (!vbl) {
@@ -106,6 +124,37 @@ void on_tmr() {
   }
 }
 
+/* returns change in encoder state (-1,0,1) */
+int8_t read_encoder() {
+  static int8_t enc_states[] = {0,1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  static uint8_t old_AB = 0;
+
+  old_AB <<= 2;                   // remember previous state
+  old_AB |= ( ENC_PORT & 0x03 );  // add current state
+  return (enc_states[( old_AB & 0x0f )]);
+}
+
+void on_tmr() {
+  digit++;
+  if (digit >= 4)
+    digit = 0;
+
+  set_addr(digit);
+  set_number(LED[digit]);
+  check_buttons();
+
+  if (in_edit)
+    return;
+
+  counter++;
+  if (counter < 1000)
+    return;
+
+  counter = 0;
+  rest_of_time--;
+  should_update = true;
+}
+
 void setup() {
   // put your setup code here, to run once:
   Timer1.initialize(1000); // in us
@@ -114,6 +163,7 @@ void setup() {
   pinMode(line, INPUT);
 
   pinMode(dp, OUTPUT);
+  pinMode(buzzer, OUTPUT);
 
   pinMode(d0, OUTPUT);
   pinMode(d1, OUTPUT);
@@ -124,6 +174,7 @@ void setup() {
   pinMode(a1, OUTPUT);
   
   digitalWrite(dp, LOW);
+  digitalWrite(buzzer, LOW);
 
   digitalWrite(d0, LOW);
   digitalWrite(d1, LOW);
@@ -135,15 +186,99 @@ void setup() {
 
   Serial.begin(115200);
   Serial.println("Start");
+
+  rest_of_time = load();
+  update_led();
+}
+
+void save(uint16_t val) {
+  uint8_t low = val & 0xFF;
+  EEPROM.write(0, low);
+
+  uint8_t high = val >> 8;
+  EEPROM.write(1, high);
+}
+
+uint16_t load() {
+  uint8_t low = EEPROM.read(0);
+  uint8_t high = EEPROM.read(1);
+  return (high << 8) + low;
+}
+
+void update_led() {
+  int t = rest_of_time;
+  LED[0] = t % 10;
+  t /= 10;
+  LED[1] = t % 10;
+  t /= 10;
+  LED[2] = t % 10;
+  t /= 10;
+  LED[3] = t % 10;
+  t /= 10;
+}
+
+void edit() {
+  int8_t zoom = btn_pressed[3] ? 10 : 1;
+  int8_t tmp = read_encoder()*zoom;
+  if (tmp) {
+    Serial.print(tmp);
+    Serial.print(" ");
+    rest_of_time += tmp;
+    if (rest_of_time < 0)
+      rest_of_time = 0;
+    if (rest_of_time > 9999)
+      rest_of_time = 9999;
+    Serial.println(rest_of_time);
+    update_led();
+  }
+  
+  if (btn_pressed[2]) {
+    if (rest_of_time) {
+      save(rest_of_time);
+      counter = 0;
+      in_edit = false;
+      on();
+    }
+    Serial.println("Start");
+    return;
+  }
+  
+  if (btn_pressed[1]) {
+    Serial.println("btn 1 pressed");
+  }
+  
+  if (btn_pressed[2]) {
+    Serial.println("btn 2 pressed");
+  }
+}
+
+void timer() {
+  if (btn_pressed[1]) {
+    off();
+    in_edit = true;
+    rest_of_time = load();
+    update_led();
+    return;
+  }
+
+  if (!should_update)
+    return;
+
+  if (!rest_of_time) {
+    off();
+    in_edit = true;
+    update_led();
+    beep();
+    rest_of_time = load();
+  }
+  
+  update_led();
+  should_update = false;
 }
 
 void loop() {
-  if (btn_pressed[0])
-    Serial.println("btn 0 pressed");
-  if (btn_pressed[1])
-    Serial.println("btn 1 pressed");
-  if (btn_pressed[2])
-    Serial.println("btn 2 pressed");
-  if (btn_pressed[3])
-    Serial.println("btn 3 pressed");
+  if (in_edit)
+    edit();
+  else
+    timer();
 }

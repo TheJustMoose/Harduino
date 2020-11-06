@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:LED-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -671,28 +670,6 @@ A1
 Text Notes 4100 5100 0    50   ~ 0
 CA
 $Comp
-L 74xx_IEEE:74LS139 U2
-U 2 1 5D9F2012
-P 3725 2800
-F 0 "U2" H 3525 3250 50  0000 C CNN
-F 1 "74LS139" H 3925 3250 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3725 2800 50  0001 C CNN
-F 3 "" H 3725 2800 50  0001 C CNN
-	2    3725 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx_IEEE:74LS139 U2
-U 1 1 5D9F2921
-P 2900 1675
-F 0 "U2" H 2725 2125 50  0000 C CNN
-F 1 "74LS139" H 3075 2125 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2900 1675 50  0001 C CNN
-F 3 "" H 2900 1675 50  0001 C CNN
-	1    2900 1675
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS247 U1
 U 1 1 5D9F3F2D
 P 2650 4550
@@ -885,14 +862,6 @@ F 3 "" H 2350 2050 50  0001 C CNN
 	1    2350 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 1425 2350 1575
-Wire Wire Line
-	2350 1575 2350 1925
-Connection ~ 2350 1575
-Wire Wire Line
-	2350 1925 2350 2050
-Connection ~ 2350 1925
 NoConn ~ 3150 4950
 NoConn ~ 3450 1425
 NoConn ~ 3450 1575
@@ -1047,8 +1016,6 @@ F 3 "~" H 3850 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 1000 3700 1000
-Wire Wire Line
-	4000 1000 5600 1000
 $Comp
 L Device:Jumper JP1
 U 1 1 5E952979
@@ -1065,4 +1032,36 @@ Wire Wire Line
 Wire Wire Line
 	2675 5650 3300 5650
 Connection ~ 3300 5650
+$Comp
+L 74xx_IEEE:74LS139 U2
+U 1 1 5FA62F1E
+P 2900 1675
+F 0 "U2" H 2900 2291 50  0000 C CNN
+F 1 "74LS139" H 2900 2200 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2900 1675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 2900 1675 50  0001 C CNN
+	1    2900 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:74LS139 U2
+U 2 1 5FA64326
+P 3725 2800
+F 0 "U2" H 3725 3416 50  0000 C CNN
+F 1 "74LS139" H 3725 3325 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3725 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 3725 2800 50  0001 C CNN
+	2    3725 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1425 2350 1575
+Wire Wire Line
+	2350 2050 2350 1925
+Wire Wire Line
+	4000 1000 5600 1000
+Wire Wire Line
+	2350 1925 2350 1575
+Connection ~ 2350 1925
+Connection ~ 2350 1575
 $EndSCHEMATC

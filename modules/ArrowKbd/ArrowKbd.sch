@@ -521,10 +521,6 @@ Wire Wire Line
 Connection ~ 3200 4500
 Wire Wire Line
 	3200 4500 3400 4500
-Wire Wire Line
-	1225 4000 1550 4000
-Wire Wire Line
-	1225 4150 1450 4150
 $Comp
 L power:GND #PWR01001
 U 1 1 5E5E8D6C
@@ -691,20 +687,6 @@ Wire Wire Line
 	4750 4850 3800 4850
 Connection ~ 3800 4850
 Wire Wire Line
-	1675 5125 1550 5125
-Wire Wire Line
-	1550 5125 1550 4000
-Connection ~ 1550 4000
-Wire Wire Line
-	1550 4000 1675 4000
-Wire Wire Line
-	1675 5275 1450 5275
-Wire Wire Line
-	1450 5275 1450 4150
-Connection ~ 1450 4150
-Wire Wire Line
-	1450 4150 1675 4150
-Wire Wire Line
 	1225 2800 1800 2800
 Wire Wire Line
 	1800 2800 1800 2450
@@ -735,4 +717,24 @@ NoConn ~ 6750 2650
 NoConn ~ 6750 2800
 NoConn ~ 6750 3100
 NoConn ~ 6750 3250
+Wire Wire Line
+	1225 4000 1675 4000
+Wire Wire Line
+	1225 4150 1675 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5FA6E132
+P 1675 5375
+F 0 "#PWR?" H 1675 5125 50  0001 C CNN
+F 1 "GND" H 1680 5202 50  0000 C CNN
+F 2 "" H 1675 5375 50  0001 C CNN
+F 3 "" H 1675 5375 50  0001 C CNN
+	1    1675 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 5125 1675 5275
+Wire Wire Line
+	1675 5375 1675 5275
+Connection ~ 1675 5275
 $EndSCHEMATC

@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 33)
-    (tracks 196)
+    (tracks 199)
     (zones 0)
     (modules 42)
     (nets 36)
@@ -63,7 +63,7 @@
     (pad_size 2 2)
     (pad_drill 1)
     (pad_to_mask_clearance 0.051)
-    (solder_mask_min_width 0.25)
+    (solder_mask_min_width 0.1)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -1771,7 +1771,7 @@
   (gr_text 07.11.2020 (at 110.49 77.47) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text hash (at 110.49 75.2475) (layer F.Cu)
+  (gr_text f9b630 (at 110.49 75.2475) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2.1 (at 110.49 72.39) (layer F.Cu)
@@ -1850,6 +1850,9 @@
   (gr_line (start 123.19 40.64) (end 123.19 76.2) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 85.09 38.1) (end 120.65 38.1) (layer Edge.Cuts) (width 0.15))
 
+  (segment (start 83.82 70.8025) (end 83.82 69.215) (width 0.25) (layer F.Cu) (net 0))
+  (segment (start 82.8675 70.8025) (end 83.82 70.8025) (width 0.25) (layer F.Cu) (net 0))
+  (segment (start 83.82 70.8025) (end 84.7725 70.8025) (width 0.25) (layer F.Cu) (net 0))
   (segment (start 94.615 52.3875) (end 94.615 49.53) (width 0.6) (layer B.Cu) (net 11))
   (segment (start 94.615 49.53) (end 86.36 49.53) (width 0.6) (layer B.Cu) (net 11))
   (segment (start 99.06 53.34) (end 95.5675 53.34) (width 0.6) (layer B.Cu) (net 11))

@@ -217,7 +217,7 @@
     (descr "Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html")
     (tags "rotary encoder")
     (path /5D7E7CAC)
-    (fp_text reference SW1 (at 8.5725 2.54 90) (layer F.SilkS)
+    (fp_text reference SW1 (at 6.985 3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Rotary_Encoder_Switch (at 7.5 10.4 90) (layer F.Fab)

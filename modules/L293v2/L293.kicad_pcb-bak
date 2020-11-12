@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 41)
+    (drawings 42)
     (tracks 217)
     (zones 0)
     (modules 38)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.6)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
     (user_trace_width 0.6)
@@ -67,7 +67,7 @@
     (pad_size 2 2)
     (pad_drill 0.8)
     (pad_to_mask_clearance 0.051)
-    (solder_mask_min_width 0.25)
+    (solder_mask_min_width 0.1)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -1880,6 +1880,9 @@
     )
   )
 
+  (gr_text 3357b8 (at 98.7425 59.055) (layer F.Cu) (tstamp 5FAD956D)
+    (effects (font (size 1 1) (thickness 0.2)))
+  )
   (gr_text 74HC175 (at 116.5225 46.6725) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )

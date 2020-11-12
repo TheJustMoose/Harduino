@@ -502,7 +502,7 @@ L power:PWR_FLAG #FLG0103
 U 1 1 5E5201BC
 P 4175 1800
 F 0 "#FLG0103" H 4175 1875 50  0001 C CNN
-F 1 "PWR_FLAG" H 4175 1973 50  0000 C CNN
+F 1 "PWR_FLAG" H 4400 1925 50  0000 C CNN
 F 2 "" H 4175 1800 50  0001 C CNN
 F 3 "~" H 4175 1800 50  0001 C CNN
 	1    4175 1800
@@ -677,9 +677,9 @@ Text Label 1425 1900 0    50   ~ 0
 PWM1
 Text Label 1475 2950 0    50   ~ 0
 PWM2
-Text Label 1325 3400 0    50   ~ 0
+Text Label 1325 3550 0    50   ~ 0
 M1+
-Text Label 1350 3550 0    50   ~ 0
+Text Label 1325 3400 0    50   ~ 0
 M1-
 Text Label 1375 3700 0    50   ~ 0
 M2+
@@ -757,17 +757,6 @@ NoConn ~ 3000 2900
 NoConn ~ 3000 3100
 NoConn ~ 3000 3300
 $Comp
-L power:VCC #PWR08
-U 1 1 5FAF8DE2
-P 4925 5400
-F 0 "#PWR08" H 4925 5250 50  0001 C CNN
-F 1 "VCC" H 4940 5573 50  0000 C CNN
-F 2 "" H 4925 5400 50  0001 C CNN
-F 3 "" H 4925 5400 50  0001 C CNN
-	1    4925 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 5FB01962
 P 2000 2350
@@ -822,14 +811,99 @@ Connection ~ 1950 2600
 Wire Wire Line
 	1950 2600 2000 2600
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR09
 U 1 1 5FAF2DDD
 P 2500 3700
-F 0 "#PWR?" H 2500 3550 50  0001 C CNN
+F 0 "#PWR09" H 2500 3550 50  0001 C CNN
 F 1 "VCC" H 2515 3873 50  0000 C CNN
 F 2 "" H 2500 3700 50  0001 C CNN
 F 3 "" H 2500 3700 50  0001 C CNN
 	1    2500 3700
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:Conn_01x01_Male J24
+U 1 1 5FADBB27
+P 1800 2500
+F 0 "J24" H 1800 2575 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1700 2450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1800 2500 50  0001 C CNN
+F 3 "~" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 2500
+$Comp
+L Connector:Conn_01x01_Male J25
+U 1 1 5FADCDAD
+P 3750 1500
+F 0 "J25" H 3750 1575 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 4350 1550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3750 1500 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FADEC8D
+P 3950 1650
+F 0 "R4" H 4100 1675 50  0000 R CNN
+F 1 "50k" V 3950 1725 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3880 1650 50  0001 C CNN
+F 3 "~" H 3950 1650 50  0001 C CNN
+	1    3950 1650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FADFB3B
+P 3950 1350
+F 0 "R3" H 4000 1375 50  0000 L CNN
+F 1 "10k" V 3950 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3880 1350 50  0001 C CNN
+F 3 "~" H 3950 1350 50  0001 C CNN
+	1    3950 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 1500
+$Comp
+L power:GND #PWR010
+U 1 1 5FAE7967
+P 3950 1200
+F 0 "#PWR010" H 3950 950 50  0001 C CNN
+F 1 "GND" H 3955 1027 50  0000 C CNN
+F 2 "" H 3950 1200 50  0001 C CNN
+F 3 "" H 3950 1200 50  0001 C CNN
+	1    3950 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FAEF0CB
+P 4200 1350
+F 0 "C3" H 4315 1396 50  0000 L CNN
+F 1 "0.1uF" H 4315 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4238 1200 50  0001 C CNN
+F 3 "~" H 4200 1350 50  0001 C CNN
+	1    4200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5FAEFA4D
+P 4200 1200
+F 0 "#PWR011" H 4200 950 50  0001 C CNN
+F 1 "GND" H 4205 1027 50  0000 C CNN
+F 2 "" H 4200 1200 50  0001 C CNN
+F 3 "" H 4200 1200 50  0001 C CNN
+	1    4200 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 1500 4200 1500
+Text Notes 3800 1475 1    50   ~ 0
+Check battery voltage here!
+Text Notes 1850 2375 1    50   ~ 0
+Reset
 $EndSCHEMATC

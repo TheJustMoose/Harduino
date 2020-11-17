@@ -104,9 +104,9 @@ void off() {
 void beep() {
   for (int i = 0; i < 3; i++) {
     digitalWrite(buzzer, HIGH);
-    delay(500);
+    delay(150);
     digitalWrite(buzzer, LOW);
-    delay(500);
+    delay(200);
   }
 }
 
@@ -164,6 +164,7 @@ void setup() {
 
   pinMode(dp, OUTPUT);
   pinMode(buzzer, OUTPUT);
+  pinMode(mosfet1, OUTPUT);
 
   pinMode(d0, OUTPUT);
   pinMode(d1, OUTPUT);
@@ -172,9 +173,11 @@ void setup() {
 
   pinMode(a0, OUTPUT);
   pinMode(a1, OUTPUT);
+
   
   digitalWrite(dp, LOW);
   digitalWrite(buzzer, LOW);
+  digitalWrite(mosfet1, LOW);
 
   digitalWrite(d0, LOW);
   digitalWrite(d1, LOW);

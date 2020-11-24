@@ -212,6 +212,14 @@ function sall() {
 <td>8x8 LED matrix on ???</td>
 </tr>
 
+<tr id="raw8x8" style="display:none;"><td>Raw 8x8 LED</td><td></td>
+<td>-</td><td>-</td><td>Latch</td><td>-</td><td>D0</td><td>D1</td><td>D2</td><td>D3</td>
+<td>D4</td><td>D5</td><td>D6</td><td>D7</td><td>A0</td><td>A1</td>
+<td>-</td><td>-</td><td>A2</td><td>-</td><td>-</td><td>-</td>
+<td>+</td><td>+</td>
+<td>8x8 LED matrix + 74HC138 + 74HC573 ;)</td>
+</tr>
+
 <tr id="leds" style="display:none;"><td>18x LED <a href="https://www.instagram.com/p/B_ki3p3D8pf/">#</a></td><td></td>
 <td>-</td><td>-</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
 <td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td><td>LED</td>
@@ -269,7 +277,7 @@ function sall() {
 </tr>
 
 <tr id="pins" style="display:none;"><td>Sensor Shield <a href="https://www.instagram.com/p/CBidVOWjqy6/">#</a></td><td></td>
-<td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
+<td>-</td><td>-</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td><td>+</td><td>+</td><td>+</td><td>+</td>
 <td>+</td><td>+</td>
@@ -306,7 +314,7 @@ function sall() {
 <tr bgcolor="#99ff66" onclick="s('h2x');s('l293');s('stick');"><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
 <tr onclick="s('h2x');s('7seg');s('valc');s('a4988');"><td>Step Motor tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td>*</td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr onclick="s('h2x');s('7seg');s('arrow');s('l293');s('8x8');"><td>Robot</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td></td></td><td></td><td></td><td>*</td><td></td><td></td><td>7</td></tr>
-<tr bgcolor="#99ff66" onclick="s('h2x');s('7seg');s('valc');s('mosfet');s('beep');"><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
+<tr bgcolor="#99ff66" onclick="s('h2x');s('7seg');s('valc');s('mosfet');"><td>Timer</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>7</td></tr>
 <tr onclick="s('h2xs');s('7seg');s('valc');s('mosfet');"><td>Thermostat</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 <tr onclick="s('h2xs');s('7seg');s('valc');s('beep');" bgcolor="#99ff66"><td>ThermoAlarm</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
 <tr onclick="s('7seg');" bgcolor="#99ff66"><td>Thermometer</td><td>*</td><td></td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>2</td></tr>
@@ -320,9 +328,15 @@ function sall() {
 <tr onclick="s('h2xs');s('7seg');s('valc');" bgcolor="#99ff66"><td>Servo tester</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS | Horizontal</td><td>5?</td></tr>
 <tr onclick="s('h2x');s('7seg');s('kbig');s('l293');s('beep');"><td>BigTrak</td><td>*</td><td></td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>Arrow Kbd</td><td>*</td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td></td><td></td><td>8</td></tr>
 <tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Snake Game</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
-<tr onclick="s('h2x');s('arrow');s('8x8');s('beep');"><td>Tetris</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Arrow Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
+<tr onclick="s('h2x');s('raw');s('raw8x8');s('beep');"><td>Tetris</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Raw Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td>*</td><td>?</td><td></td><td>6</td></tr>
 <tr bgcolor="#99ff66" onclick="s('h2xs');s('raw');s('mosfet');"><td>Combination lock</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Raw Kbd</td><td></td><td></td><td></td><td>*</td><td>*</td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>6</td></tr>
+<tr onclick="s('h2xs');s('raw');s('glcd');s('beep');"><td>I2C tester</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td>Raw Kbd</td><td></td><td></td><td></td><td></td><td>*</td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
+<tr onclick="s('h2xs');s('raw');s('glcd');s('beep');"><td>Lego controller<br>(instead of Brick)</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
+<tr onclick="s('h2xs');s('stick');s('glcd');s('beep');"><td>Flight simulator</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
+<tr onclick="s('h2xs');s('??');s('glcd');s('beep');"><td>74HC pin checker!</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
 </table>
+
+<p>Lost shields: SD card, EEPROM, SRAM, Net, MC34063, UPS, CNC (можно сделать рисовалку на шаговиках, или сложного робота)</p>
 
 <br>
 

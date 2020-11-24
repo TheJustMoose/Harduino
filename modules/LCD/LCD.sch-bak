@@ -260,7 +260,7 @@ U 1 1 5E9D1EF9
 P 2100 2800
 F 0 "RV1" H 2031 2846 50  0000 R CNN
 F 1 "R_POT" H 2031 2755 50  0000 R CNN
-F 2 "CommonLibrary:pot-5x5" H 2100 2800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 2100 2800 50  0001 C CNN
 F 3 "~" H 2100 2800 50  0001 C CNN
 	1    2100 2800
 	1    0    0    -1  

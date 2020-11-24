@@ -111,7 +111,7 @@ U 1 1 5E7C174E
 P 1550 2400
 F 0 "J1" H 1550 2900 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 1400 1800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 1550 2400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 1550 2400 50  0001 C CNN
 F 3 "~" H 1550 2400 50  0001 C CNN
 	1    1550 2400
 	1    0    0    -1  
@@ -122,7 +122,7 @@ U 1 1 5E7C1FC2
 P 3950 2400
 F 0 "J2" H 3975 2875 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 3775 1800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3950 2400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3950 2400 50  0001 C CNN
 F 3 "~" H 3950 2400 50  0001 C CNN
 	1    3950 2400
 	-1   0    0    -1  

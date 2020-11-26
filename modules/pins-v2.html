@@ -2,13 +2,45 @@
 <head>
 <title>Modules pins</title>
 
+<style>
+ table {
+  border-collapse: collapse;
+ }
+
+ table.shields tr td {
+  min-width: 40px;
+  max-width: 40px;
+ }
+
+ table.shields tr td.descr {
+  min-width: 100px;
+  max-width: 100px;
+ }
+
+ table.devices tr td {
+  min-width: 40px;
+  max-width: 120px;
+ }
+
+ table.devices tr td.ddescr {
+  min-width: 160px;
+  max-width: 160px;
+ }
+
+ .layer2 {
+  position: fixed; /* Абсолютное позиционирование */
+  background: #ffff99; /* Цвет фона */
+  top: 150px; /* Положение от нижнего края */
+  z-index: 100;
+ }
+</style>
 <script>
 function s(v) {
   document.getElementById(v).style.display = '';
 }
 
 function sall() {
-  table = document.getElementsByTagName("table")[0];
+  table = document.getElementsByTagName("table")[1];
   allrows = table.getElementsByTagName("tr");
   for (i = 1; i < allrows.length; i++)
     allrows[i].style.display = '';
@@ -27,21 +59,24 @@ function sall() {
 <li>v2.1: A0 and A1 was swapped cause KiCad symbol 74LS139 pins A0-A1 was mixed up</li>
 </ul>
 
-<table border=1 onclick="sall();">
-
-<tr><td>Module</td><td>Size</td>
+<div class="layer2">
+<table border=1 class="shields" bgcolor="#F7FE2E">
+<tr><td class="descr">Module</td><td>Size</td>
 <td>0</td><td>1</td><td>2</td><td>~3</td><td>4</td><td>~5</td><td>~6</td><td>7</td><td>8</td><td>~9</td><td>~10</td><td>~11</td><td>12</td><td>13</td>
 <td>A5</td><td>A4</td><td>A3</td><td>A2</td><td>A1</td><td>A0</td>
 <td>Gnd</td><td>Vcc</td>
-<td>Description</td>
-</tr>
+<td class="descr">Description</td></tr></table>
+</div>
 
-<tr><td>AVR pins</td><td></td>
+<br>
+<table border=1 onclick="sall();" class="shields">
+
+<tr><td class="descr">AVR pins</td><td></td>
 <td bgcolor="#ff9966">PD0</td><td bgcolor="#ff9966">PD1</td><td bgcolor="#ff9966">PD2</td><td bgcolor="#ff9966">PD3</td><td bgcolor="#ff9966">PD4</td><td bgcolor="#ff9966">PD5</td><td bgcolor="#ff9966">PD6</td><td bgcolor="#ff9966">PD7</td>
 <td bgcolor="#99ff66">PB0</td><td bgcolor="#99ff66">PB1</td><td bgcolor="#99ff66">PB2</td><td bgcolor="#99ff66">PB3</td><td bgcolor="#99ff66">PB4</td><td bgcolor="#99ff66">PB5</td>
 <td bgcolor="#6699ff">PC5</td><td bgcolor="#6699ff">PC4</td><td bgcolor="#6699ff">PC3</td><td bgcolor="#6699ff">PC2</td><td bgcolor="#6699ff">PC1</td><td bgcolor="#6699ff">PC0</td>
 <td bgcolor="#000000"></td><td bgcolor="#ff0000"></td>
-<td>Pin names like in ATmega328p datasheet ;)</td>
+<td class="descr">Pin names like in ATmega328p datasheet ;)</td>
 </tr>
 
 <tr><td>&#10003; HardDuino <a href="https://www.instagram.com/p/B4LD73yl61u/">#</a> <a href="https://www.instagram.com/p/CBGZAI5DMnu/">#</a></td><td></td>
@@ -174,7 +209,7 @@ function sall() {
 
 <tr id="l293" style="display:none;"><td>&#10003; L293 <a href="https://www.instagram.com/p/B-2XhHsjtE8/">#</a></td><td></td>
 <td>-</td><td>-</td><td>-</td><td>Latch</td><td>-</td><td>PWM2</td><td>PWM1</td><td>-</td>
-<td>M1+</td><td>M1-</td><td>M2+</td><td>M2-</td><td>-</td><td>-</td>
+<td>M1-</td><td>M1+</td><td>M2+</td><td>M2-</td><td>-</td><td>-</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
 <td>+</td><td>+</td>
 <td>L293 motor shield with L4940V5 LDO</td>
@@ -306,9 +341,9 @@ function sall() {
 
 <br>
 
-<table border=1>
-<tr><td>Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td bgcolor="#ff99cc">LСD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
-<td bgcolor="#ff99cc">Motor<br>L293</td><td bgcolor="#ff99cc">Joystick(1)</td><td>HC-05(2)</td><td bgcolor="#ff99cc">MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td bgcolor="#ff99cc">R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
+<table border=1 class="devices">
+<tr><td class="ddescr">Device</td><td bgcolor="#ff99cc">HardDuino</td><td bgcolor="#ff99cc">2x</td><td>3x(4)</td><td bgcolor="#ff99cc">LED</td><td bgcolor="#ff99cc">LСD(2)</td><td bgcolor="#ff99cc">Valc</td><td bgcolor="#ff99cc">RTC</td><td>Kbd(4/1/1/1/1)</td>
+ <td bgcolor="#ff99cc">Motor<br>L293</td><td bgcolor="#ff99cc">Joystick(1)</td><td>HC-05(2)</td><td bgcolor="#ff99cc">MOSFET(2)</td><td bgcolor="#ff99cc">Beep!</td><td>A4988(1)</td><td bgcolor="#ff99cc">R-2R(1)</td><td>8x8 LED(4)</td><td>GLCD</td><td bgcolor="#ff99cc">Sensor Shield(5)</td><td>Cnt</td></tr>
 <tr bgcolor="#99ff66" onclick="s('rtc');s('h2x');s('valc');s('7seg');"><td>Clock</td><td>*</td><td>*</td><td></td><td>*</td><td></td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>6</td></tr>
 <tr bgcolor="#99ff66" onclick="s('h2xs');"><td>Barrier</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td>h2xS</td><td>3</td></tr>
 <tr bgcolor="#99ff66" onclick="s('h2x');s('l293');s('stick');"><td>RC car/tank</td><td>2x</td><td>2x</td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td>*</td><td>2x</td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td><td>5+5</td></tr>
@@ -334,6 +369,8 @@ function sall() {
 <tr onclick="s('h2xs');s('raw');s('glcd');s('beep');"><td>Lego controller<br>(instead of Brick)</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
 <tr onclick="s('h2xs');s('stick');s('glcd');s('beep');"><td>Flight simulator</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
 <tr onclick="s('h2xs');s('??');s('glcd');s('beep');"><td>74HC pin checker!</td><td>*</td><td>*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>*</td><td></td><td></td><td></td></td><td></td><td></td><td></td><td>*</td><td></td><td>6</td></tr>
+<tr><td>Тот самый то ли робот то ли кран с Алиэкспресс с управлением джойстиками!</td></tr>
+<tr><td>Портальный кран из детства, который, по сути, трёх координатный станок</td></tr>
 </table>
 
 <p>Lost shields: SD card, EEPROM, SRAM, Net, MC34063, UPS, CNC (можно сделать рисовалку на шаговиках, или сложного робота)</p>

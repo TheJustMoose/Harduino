@@ -409,12 +409,12 @@ Connection ~ 3600 1750
 $Comp
 L Connector:Screw_Terminal_01x02 J21
 U 1 1 5E5027C6
-P 4575 1800
-F 0 "J21" H 4655 1792 50  0000 L CNN
-F 1 "Pwr" H 4655 1701 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4575 1800 50  0001 C CNN
-F 3 "~" H 4575 1800 50  0001 C CNN
-	1    4575 1800
+P 5150 1800
+F 0 "J21" H 5230 1792 50  0000 L CNN
+F 1 "Pwr" H 5230 1701 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5150 1800 50  0001 C CNN
+F 3 "~" H 5150 1800 50  0001 C CNN
+	1    5150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -489,13 +489,7 @@ F 3 "~" H 4175 1950 50  0001 C CNN
 $EndComp
 Connection ~ 4175 1800
 Wire Wire Line
-	4175 1800 4375 1800
-Wire Wire Line
 	4175 2100 4275 2100
-Wire Wire Line
-	4375 2100 4275 2100
-Wire Wire Line
-	4375 1900 4375 2100
 Connection ~ 4275 2100
 $Comp
 L power:PWR_FLAG #FLG0103
@@ -838,7 +832,7 @@ L Connector:Conn_01x01_Male J25
 U 1 1 5FADCDAD
 P 3750 1500
 F 0 "J25" H 3750 1575 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 4350 1550 50  0000 C CNN
+F 1 "Conn_01x01_Male" V 3675 1025 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3750 1500 50  0001 C CNN
 F 3 "~" H 3750 1500 50  0001 C CNN
 	1    3750 1500
@@ -906,4 +900,26 @@ Text Notes 3800 1475 1    50   ~ 0
 Check battery voltage here!
 Text Notes 1850 2375 1    50   ~ 0
 Reset
+$Comp
+L Transistor_FET:IRLML5203 Q1
+U 1 1 5FC35DF4
+P 4750 1900
+F 0 "Q1" V 4650 1975 50  0000 C CNN
+F 1 "IRLML5203" V 4975 2025 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 1825 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml5203pbf.pdf?fileId=5546d462533600a40153566868da261d" H 4750 1900 50  0001 L CNN
+	1    4750 1900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4175 1800 4550 1800
+Wire Wire Line
+	4275 2100 4750 2100
+Wire Wire Line
+	4750 2100 4950 2100
+Wire Wire Line
+	4950 2100 4950 1900
+Connection ~ 4750 2100
+Text Notes 4650 1600 0    50   ~ 0
+Reverse\npolarity\nprotection
 $EndSCHEMATC

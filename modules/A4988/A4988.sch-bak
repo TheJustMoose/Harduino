@@ -481,7 +481,7 @@ U 1 1 5FC183BE
 P 4975 4100
 F 0 "J6" H 5000 4050 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5000 3950 50  0000 L CNN
-F 2 "" H 4975 4100 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4975 4100 50  0001 C CNN
 F 3 "~" H 4975 4100 50  0001 C CNN
 	1    4975 4100
 	1    0    0    -1  

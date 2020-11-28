@@ -236,11 +236,11 @@ Wire Wire Line
 Wire Wire Line
 	4325 4900 4675 4900
 Text Label 2850 4300 0    50   ~ 0
-MS0
-Text Label 2850 4400 0    50   ~ 0
 MS1
-Text Label 2850 4500 0    50   ~ 0
+Text Label 2850 4400 0    50   ~ 0
 MS2
+Text Label 2850 4500 0    50   ~ 0
+MS3
 Text Label 2850 4600 0    50   ~ 0
 RST
 Text Label 2850 4700 0    50   ~ 0

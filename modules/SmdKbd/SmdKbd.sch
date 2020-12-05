@@ -616,4 +616,44 @@ F 3 "" H 2450 5250 50  0001 C CNN
 	1    2450 5250
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4900 2500 4900 3000
+Wire Wire Line
+	4900 3000 4900 3500
+Connection ~ 4900 3000
+Wire Wire Line
+	4900 3500 4900 4000
+Connection ~ 4900 3500
+Wire Wire Line
+	5650 2500 5650 3000
+Wire Wire Line
+	5650 3000 5650 3500
+Connection ~ 5650 3000
+Wire Wire Line
+	5650 3500 5650 4000
+Connection ~ 5650 3500
+Wire Wire Line
+	7150 2500 7150 3000
+Wire Wire Line
+	7150 3000 7150 3500
+Connection ~ 7150 3000
+Wire Wire Line
+	7150 3500 7150 4000
+Connection ~ 7150 3500
+Wire Wire Line
+	7900 2500 7900 3000
+Wire Wire Line
+	7900 3000 7900 3500
+Connection ~ 7900 3000
+Wire Wire Line
+	7900 3500 7900 4000
+Connection ~ 7900 3500
+Wire Wire Line
+	4900 2500 5000 2500
+Connection ~ 4900 2500
+Wire Wire Line
+	5650 2500 5750 2500
+Connection ~ 5650 2500
+Text Label 5000 2500 0    50   ~ 0
+A3
 $EndSCHEMATC

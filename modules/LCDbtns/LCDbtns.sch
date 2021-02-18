@@ -82,23 +82,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5E9F03FE
-P 5125 1900
-F 0 "H1" H 5225 1946 50  0000 L CNN
-F 1 "MountingHole" H 5225 1855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 1900 50  0001 C CNN
-F 3 "~" H 5125 1900 50  0001 C CNN
-	1    5125 1900
+P 4000 4000
+F 0 "H1" H 4100 4046 50  0000 L CNN
+F 1 "MountingHole" H 4100 3955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4000 4000 50  0001 C CNN
+F 3 "~" H 4000 4000 50  0001 C CNN
+	1    4000 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5E9F0888
-P 5125 2400
-F 0 "H2" H 5225 2446 50  0000 L CNN
-F 1 "MountingHole" H 5225 2355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 5125 2400 50  0001 C CNN
-F 3 "~" H 5125 2400 50  0001 C CNN
-	1    5125 2400
+P 4000 4500
+F 0 "H2" H 4100 4546 50  0000 L CNN
+F 1 "MountingHole" H 4100 4455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4000 4500 50  0001 C CNN
+F 3 "~" H 4000 4500 50  0001 C CNN
+	1    4000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -222,12 +222,6 @@ F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3050 3500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 2900 3500
-Wire Wire Line
-	3200 3500 3300 3500
-Wire Wire Line
-	3300 3500 3300 3350
-Wire Wire Line
-	3300 3350 3375 3350
 $Comp
 L Diode:LL4148 VD1
 U 1 1 5FBD776B
@@ -265,4 +259,20 @@ Connection ~ 2900 4000
 Wire Wire Line
 	3200 4000 3375 4000
 Connection ~ 2900 3100
+Text Label 3250 3250 0    50   ~ 0
+S0
+Text Label 3250 3350 0    50   ~ 0
+S1
+Text Label 3250 4000 0    50   ~ 0
+S2
+Text Label 3250 4500 0    50   ~ 0
+S3
+Text Label 2125 4825 0    50   ~ 0
+L0
+Text Label 2650 4725 0    50   ~ 0
+L1
+Wire Wire Line
+	3200 3350 3200 3500
+Wire Wire Line
+	3200 3350 3375 3350
 $EndSCHEMATC

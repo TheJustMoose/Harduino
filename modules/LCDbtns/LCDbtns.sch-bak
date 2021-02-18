@@ -208,7 +208,7 @@ F 1 "LL4148" H 3050 4126 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 3050 3825 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3050 4000 50  0001 C CNN
 	1    3050 4000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Diode:LL4148 VD2
@@ -219,15 +219,9 @@ F 1 "LL4148" H 3050 3626 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 3050 3325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3050 3500 50  0001 C CNN
 	1    3050 3500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Connection ~ 2900 3500
-Wire Wire Line
-	3200 3500 3300 3500
-Wire Wire Line
-	3300 3500 3300 3350
-Wire Wire Line
-	3300 3350 3375 3350
 $Comp
 L Diode:LL4148 VD1
 U 1 1 5FBD776B
@@ -237,9 +231,8 @@ F 1 "LL4148" H 3050 3226 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 3050 2925 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3050 3100 50  0001 C CNN
 	1    3050 3100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
-Connection ~ 2900 3100
 Wire Wire Line
 	3200 3100 3200 3250
 Wire Wire Line
@@ -253,7 +246,7 @@ F 1 "LL4148" H 3050 4626 50  0000 C CNN
 F 2 "Diode_SMD:D_MiniMELF" H 3050 4325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 3050 4500 50  0001 C CNN
 	1    3050 4500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Connection ~ 2900 4500
 Wire Wire Line
@@ -265,4 +258,21 @@ Wire Wire Line
 Connection ~ 2900 4000
 Wire Wire Line
 	3200 4000 3375 4000
+Connection ~ 2900 3100
+Text Label 3250 3250 0    50   ~ 0
+S0
+Text Label 3250 3350 0    50   ~ 0
+S1
+Text Label 3250 4000 0    50   ~ 0
+S2
+Text Label 3250 4500 0    50   ~ 0
+S3
+Text Label 2125 4825 0    50   ~ 0
+L0
+Text Label 2650 4725 0    50   ~ 0
+L1
+Wire Wire Line
+	3200 3350 3200 3500
+Wire Wire Line
+	3200 3350 3375 3350
 $EndSCHEMATC

@@ -395,7 +395,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79781E)
-    (at 86.36 41.91)
+    (at 85.7250 41.2750)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D791BF4)
@@ -415,7 +415,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797826)
-    (at 86.36 74.93)
+    (at 85.7250 75.5650)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793188)
@@ -435,7 +435,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79782E)
-    (at 119.38 41.91)
+    (at 120.0150 41.2750)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793224)
@@ -455,7 +455,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797836)
-    (at 119.38 74.93)
+    (at 120.0150 75.5650)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D7932CC)

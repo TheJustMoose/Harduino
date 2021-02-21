@@ -216,8 +216,6 @@ Wire Wire Line
 Wire Wire Line
 	2975 4700 2625 4700
 Wire Wire Line
-	2975 4800 2625 4800
-Wire Wire Line
 	2975 4900 2625 4900
 Wire Wire Line
 	4325 4200 4600 4200
@@ -267,9 +265,9 @@ Text Label 4375 4900 0    50   ~ 0
 GND
 Text Notes 3525 4600 0    50   ~ 0
 A4988\nModule
-Text Label 2725 4800 0    50   ~ 0
+Text Label 1750 4950 0    50   ~ 0
 5
-Text Label 2725 4900 0    50   ~ 0
+Text Label 1750 5450 0    50   ~ 0
 6
 $Comp
 L power:GND #PWR0103
@@ -355,7 +353,7 @@ U 1 1 5FC1E3CD
 P 1950 4025
 F 0 "R1" H 1975 4175 50  0000 L CNN
 F 1 "10k" V 1950 3975 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1880 4025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1880 4025 50  0001 C CNN
 F 3 "~" H 1950 4025 50  0001 C CNN
 	1    1950 4025
 	1    0    0    -1  
@@ -366,7 +364,7 @@ U 1 1 5FC1F37B
 P 2125 4025
 F 0 "R2" H 2150 4175 50  0000 L CNN
 F 1 "10k" V 2125 3975 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2055 4025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2055 4025 50  0001 C CNN
 F 3 "~" H 2125 4025 50  0001 C CNN
 	1    2125 4025
 	1    0    0    -1  
@@ -377,7 +375,7 @@ U 1 1 5FC1F626
 P 2300 4025
 F 0 "R3" H 2325 4175 50  0000 L CNN
 F 1 "10k" V 2300 3975 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 4025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2230 4025 50  0001 C CNN
 F 3 "~" H 2300 4025 50  0001 C CNN
 	1    2300 4025
 	1    0    0    -1  
@@ -499,4 +497,82 @@ F 3 "" H 4775 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 4200 4775 4200
+$Comp
+L Device:Jumper JP1
+U 1 1 6032ADEA
+P 2050 4950
+F 0 "JP1" H 1800 4850 50  0000 C CNN
+F 1 "Jumper" H 2050 4850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 4950 50  0001 C CNN
+F 3 "~" H 2050 4950 50  0001 C CNN
+	1    2050 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP2
+U 1 1 6032BDE6
+P 2050 5450
+F 0 "JP2" H 1800 5350 50  0000 C CNN
+F 1 "Jumper" H 2050 5350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2050 5450 50  0001 C CNN
+F 3 "~" H 2050 5450 50  0001 C CNN
+	1    2050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4950 2475 4950
+Wire Wire Line
+	2475 4950 2475 4800
+Wire Wire Line
+	2475 4800 2975 4800
+Wire Wire Line
+	2625 5450 2350 5450
+$Comp
+L Device:R R5
+U 1 1 6032F8CD
+P 2625 5600
+F 0 "R5" H 2675 5650 50  0000 L CNN
+F 1 "10k" V 2625 5525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2555 5600 50  0001 C CNN
+F 3 "~" H 2625 5600 50  0001 C CNN
+	1    2625 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2625 5450
+$Comp
+L power:GND #PWR02
+U 1 1 60330511
+P 2625 5750
+F 0 "#PWR02" H 2625 5500 50  0001 C CNN
+F 1 "GND" H 2475 5700 50  0000 C CNN
+F 2 "" H 2625 5750 50  0001 C CNN
+F 3 "" H 2625 5750 50  0001 C CNN
+	1    2625 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60331332
+P 2475 5100
+F 0 "R4" H 2525 5150 50  0000 L CNN
+F 1 "10k" V 2475 5025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2405 5100 50  0001 C CNN
+F 3 "~" H 2475 5100 50  0001 C CNN
+	1    2475 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2475 4950
+$Comp
+L power:GND #PWR01
+U 1 1 60334154
+P 2475 5250
+F 0 "#PWR01" H 2475 5000 50  0001 C CNN
+F 1 "GND" H 2350 5200 50  0000 C CNN
+F 2 "" H 2475 5250 50  0001 C CNN
+F 3 "" H 2475 5250 50  0001 C CNN
+	1    2475 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 4900 2625 5450
 $EndSCHEMATC

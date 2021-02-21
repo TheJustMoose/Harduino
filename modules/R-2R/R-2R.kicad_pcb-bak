@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 0.8)
     (trace_clearance 0.2)
@@ -791,7 +791,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79781E)
-    (at 92.71 54.61)
+    (at 92.0750 53.9750)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D791BF4)
@@ -811,7 +811,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797826)
-    (at 92.71 87.63)
+    (at 92.0750 88.2650)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793188)
@@ -831,7 +831,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79782E)
-    (at 125.73 54.61)
+    (at 126.3650 53.9750)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793224)
@@ -851,7 +851,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797836)
-    (at 125.73 87.63)
+    (at 126.3650 88.2650)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D7932CC)
@@ -1138,7 +1138,7 @@
   (gr_text R-2R (at 103.1875 87.63) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text 19e5d0 (at 118.745 89.535) (layer F.Cu)
+  (gr_text 0aba84 (at 118.745 89.535) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2 (at 109.855 89.535) (layer F.Cu)

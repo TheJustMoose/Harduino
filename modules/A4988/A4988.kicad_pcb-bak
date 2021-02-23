@@ -92,7 +92,7 @@
       (mirror false)
       (drillshape 1)
       (scaleselection 1)
-      (outputdirectory "pdf"))
+      (outputdirectory "pdf/"))
   )
 
   (net 0 "")

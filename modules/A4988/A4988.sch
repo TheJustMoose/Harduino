@@ -252,13 +252,13 @@ VMOT
 Text Label 4375 4300 0    50   ~ 0
 GND
 Text Label 4375 4400 0    50   ~ 0
-MB2
+2B
 Text Label 4375 4500 0    50   ~ 0
-MB1
+2A
 Text Label 4375 4600 0    50   ~ 0
-MA1
+1A
 Text Label 4375 4700 0    50   ~ 0
-MA2
+1B
 Text Label 4375 4800 0    50   ~ 0
 VCC
 Text Label 4375 4900 0    50   ~ 0

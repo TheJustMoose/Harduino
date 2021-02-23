@@ -1,4 +1,6 @@
 // Test code for A4988 shield
+// See description of StepperDriver library here:
+// https://www.arduino.cc/reference/en/libraries/stepperdriver/
 //
 #include "A4988.h"
 

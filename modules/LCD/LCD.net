@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\PROJECT\github\HardDuino\modules\LCD\LCD.sch)
-    (date "19/02/2021 01:10:57")
+    (date "30/06/2021 18:17:02")
     (tool "Eeschema (5.1.8)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -66,7 +66,7 @@
       (tstamp 5E9C831B))
     (comp (ref RV1)
       (value R_POT)
-      (footprint Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal)
+      (footprint CommonLibrary:pot-5x5)
       (datasheet ~)
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))

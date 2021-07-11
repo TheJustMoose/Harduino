@@ -891,7 +891,7 @@
   (gr_text hash (at 87.63 42.545) (layer F.Cu) (tstamp 6032B864)
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text 22.06.2021 (at 78.74 42.545) (layer F.Cu)
+  (gr_text 11.07.2021 (at 78.74 42.545) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text v2.5 (at 69.215 42.2275) (layer F.Cu)

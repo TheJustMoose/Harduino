@@ -1686,7 +1686,7 @@
   (gr_text 12 (at 122.99 57.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text 13 (at 121.41 52.51) (layer F.SilkS)
+  (gr_text 13 (at 122.8725 54.9275) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text 5 (at 95.85 80.05) (layer F.SilkS)

@@ -176,7 +176,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79781E)
-    (at 116.84 38.4175 270)
+    (at 115.6550 40.0125)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D791BF4)
@@ -196,7 +196,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797826)
-    (at 82.55 38.4175 270)
+    (at 83.7350 40.0125)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793188)
@@ -216,7 +216,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D79782E)
-    (at 116.84 72.7075 270)
+    (at 115.6550 71.1125)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D793224)
@@ -236,7 +236,7 @@
   )
 
   (module MountingHole:MountingHole_3.2mm_M3 (layer F.Cu) (tedit 56D1B4CB) (tstamp 5D797836)
-    (at 82.55 72.7075 270)
+    (at 83.7350 71.1125)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (path /5D7932CC)
@@ -558,7 +558,7 @@
     (tags "LED handsolder")
     (path /5EC11726)
     (attr smd)
-    (fp_text reference D2 (at -2.8575 -0.0725 90) (layer F.SilkS)
+    (fp_text reference D2 (at -2.8575 -0.0725 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value LED (at 3.175 -0.0725 180) (layer F.Fab)
@@ -642,7 +642,7 @@
     (tags "resistor handsolder")
     (path /5EC11FBF)
     (attr smd)
-    (fp_text reference R1 (at 2.8575 0 90) (layer F.SilkS)
+    (fp_text reference R1 (at 2.8575 0 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1k (at -2.8575 0 180) (layer F.Fab)
